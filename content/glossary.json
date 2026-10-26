@@ -1,0 +1,294 @@
+{
+ "version": 1,
+ "note": "Shared glossary for AI Safety from Scratch and Security from Scratch. Each term has a stable id; `sites` lists which sites use it.",
+ "terms": [
+  {
+   "id": "ai",
+   "term": "AI (artificial intelligence)",
+   "short": "Computer systems that do tasks we usually call “smart”, such as recognising speech or writing text.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "generative-ai",
+   "term": "Generative AI",
+   "short": "AI that creates new text, images, audio or video.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "deepfake",
+   "term": "Deepfake",
+   "short": "Realistic fake video, image or audio of a real person, made with AI.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "voice-clone",
+   "term": "Voice clone",
+   "short": "An AI copy of a person’s voice, made from a short recording.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "phishing",
+   "term": "Phishing",
+   "short": "A message that pretends to come from someone trusted to trick you into clicking, paying or giving away details.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "code-word",
+   "term": "Family code word",
+   "short": "A secret word or phrase agreed in advance so family members can prove who they are on the phone.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "call-back",
+   "term": "Call-back",
+   "short": "Hanging up and calling the person or company back on a number you already know is real.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "jailbreak",
+   "term": "Jailbreak",
+   "short": "A trick that talks an AI out of its safety rules, for example through role-play or a disguised request.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "indirect-injection",
+   "term": "Indirect prompt injection",
+   "short": "Instructions hidden in something the AI reads for you, such as a web page, file or email, rather than typed by you.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "least-privilege",
+   "term": "Least privilege",
+   "short": "Giving a person or program only the access it needs, for only as long as it needs it.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "lethal-trifecta",
+   "term": "Lethal trifecta",
+   "short": "Simon Willison’s name for an AI agent that has private data, reads untrusted content and can send data out: together they let an attacker steal data.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "mcp",
+   "term": "MCP (Model Context Protocol)",
+   "short": "An open standard for connecting AI apps to tools and data, through small programs called MCP servers.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "human-in-the-loop",
+   "term": "Human in the loop",
+   "short": "A design where a person must approve certain actions before the AI or agent carries them out.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "allowlist",
+   "term": "Allowlist",
+   "short": "A list of the only people, shops or addresses something is allowed to deal with. Everything else is blocked.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "spending-cap",
+   "term": "Spending cap",
+   "short": "A hard limit on how much can be spent, per payment or per day, that the agent cannot raise itself.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "revoke",
+   "term": "Revoke",
+   "short": "To take back a permission you gave earlier, so it stops working.",
+   "sites": [
+    "ai-safety",
+    "security"
+   ]
+  },
+  {
+   "id": "scam",
+   "term": "Scam",
+   "short": "A trick to get your money, your details or control of your accounts, usually by pretending to be someone you trust.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "spoofing",
+   "term": "Spoofing",
+   "short": "Faking the number or name that appears on your phone, or the sender of a message, so it looks like someone trusted.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "smishing",
+   "term": "Smishing",
+   "short": "Phishing by text message (SMS): a fake text that tries to make you tap a link, call a number or share details.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "vishing",
+   "term": "Vishing",
+   "short": "Phishing by phone call: a caller pretends to be your bank, the police or support to trick you.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "robocall",
+   "term": "Robot call",
+   "short": "A call that plays a recorded message instead of a real person talking, often asking you to press a key.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "remote-access",
+   "term": "Remote access",
+   "short": "Letting another person control your phone or computer from far away through an app. Never allow it for someone who called you.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "password-manager",
+   "term": "Password manager",
+   "short": "A safe app that creates, stores and fills in your passwords, so each account can have a different one.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "passphrase",
+   "term": "Passphrase",
+   "short": "A password made of several random words, which makes it long but easy to type.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "data-breach",
+   "term": "Data breach (leak)",
+   "short": "When a company’s customer data, such as emails or passwords, is stolen or exposed.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "two-factor",
+   "term": "Two-step sign-in (2FA)",
+   "short": "Signing in with your password plus a second proof, such as a code or a tap on your phone.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "passkey",
+   "term": "Passkey",
+   "short": "A way to sign in with your phone’s fingerprint, face or screen lock instead of a password.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "link",
+   "term": "Link",
+   "short": "Words or a button in a message or web page that open a website when you tap them.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "domain",
+   "term": "Website name (domain)",
+   "short": "The real name of a website, such as twint.ch. It is the part just before the first single slash.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "padlock",
+   "term": "Padlock symbol",
+   "short": "The small lock next to a web address. It means the connection is private, not that the website is honest.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "bookmark",
+   "term": "Bookmark",
+   "short": "A saved shortcut to a website you trust, so you can open it without searching or tapping links.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "qr-code",
+   "term": "QR code",
+   "short": "A square pattern you scan with your phone’s camera to open a link. A fake one can lead to a fake website.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "attachment",
+   "term": "Attachment",
+   "short": "A file sent with an email or message, such as a document or a picture.",
+   "sites": [
+    "security"
+   ]
+  },
+  {
+   "id": "caller-id",
+   "term": "Caller ID",
+   "short": "The number or name your phone shows for an incoming call. It can be faked.",
+   "sites": [
+    "security"
+   ]
+  }
+ ]
+}

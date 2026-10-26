@@ -1,0 +1,389 @@
+{
+ "checked": "2026-10-26",
+ "note": "Every source was opened and read on the checked date. Only verified sources may be linked from lessons (scripts/check-lessons.mjs enforces this).",
+ "sources": [
+  {
+   "url": "https://www.bacs.admin.ch/de/hjb-25-2-de",
+   "title": "Halbjahresbericht 2025/2: Cyberbedrohungen in der Schweiz",
+   "publisher": "Swiss Federal Office for Cyber Security (BACS)",
+   "date": "2026",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "29,006 voluntary reports in H2 2025; fraud 52%; SMS blasters used in Switzerland from summer 2025."
+  },
+  {
+   "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
+   "title": "Internet Crime Report 2025",
+   "publisher": "FBI Internet Crime Complaint Center (IC3)",
+   "date": "2026",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Victims aged 60+: 201,266 complaints, about $7.7 billion in losses."
+  },
+  {
+   "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/2026-older-adults-report-10192026.pdf",
+   "title": "Protecting Older Consumers 2025–2026",
+   "publisher": "US Federal Trade Commission",
+   "date": "2026-10-19",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Reported losses by people 60+ over $3 billion in 2025."
+  },
+  {
+   "url": "https://cybercrimepolice.ch/de/faelle/schockanruf-durch-falsche-polizisten",
+   "title": "Schockanruf durch falsche Polizisten",
+   "publisher": "Kantonspolizei Zürich, cybercrimepolice.ch",
+   "date": "2025-03-03",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Crying voice, in some cases AI-generated; hang up, call the person directly or 117; police never ask for money by phone."
+  },
+  {
+   "url": "https://cybercrimepolice.ch/de/faelle/falsche-polizisten-rufen-wieder-aeltere-personen-an",
+   "title": "Angebliche Polizisten rufen wieder ältere Personen an",
+   "publisher": "Kantonspolizei Zürich, cybercrimepolice.ch",
+   "date": "2019-09-05",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Manipulated numbers, even the police number; call 117 after hanging up and waiting for the dial tone."
+  },
+  {
+   "url": "https://cybercrimepolice.ch/de/faelle/vorsicht-bei-telefonanrufen-mit-bandansagen",
+   "title": "Vorsicht bei Telefonanrufen mit Bandansagen",
+   "publisher": "Kantonspolizei Zürich, cybercrimepolice.ch",
+   "date": "2023-10-17",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Press 1 connects to fake officer; Swiss mobile numbers spoofed; goal remote-control program; police never play recordings."
+  },
+  {
+   "url": "https://www.sg.ch/sicherheit/kantonspolizei/praevention--jugend--cybercrime/cybercrime/telefonbetrug.html",
+   "title": "Telefonbetrug",
+   "publisher": "Kantonspolizei St.Gallen",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "“Legen Sie einfach auf!”; fake police steps; shock call; remote support scam; fake bank security."
+  },
+  {
+   "url": "https://www.bacs.admin.ch/de/phishing-de",
+   "title": "Phishing, Vishing und Smishing",
+   "publisher": "Swiss Federal Office for Cyber Security (BACS)",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "No bank asks by email to change passwords or verify card data; senders easily faked; report to antiphishing.ch."
+  },
+  {
+   "url": "https://www.bacs.admin.ch/de/finanzieller-schaden",
+   "title": "Finanzieller Schaden",
+   "publisher": "Swiss Federal Office for Cyber Security (BACS)",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Contact bank immediately to block; many have 24-hour block hotlines; report to police."
+  },
+  {
+   "url": "https://www.twint.ch/privatkunden/support/sicherheit/sicher-twinten/",
+   "title": "Sicher twinten",
+   "publisher": "TWINT",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Staff never ask for passwords; links start with https://go.twint.ch/; forward suspicious mail to abuse@twint.ch."
+  },
+  {
+   "url": "https://www.report.ncsc.admin.ch/en/",
+   "title": "Report a cyber incident",
+   "publisher": "Swiss Federal Office for Cyber Security (BACS)",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Not processed around the clock; acute emergency: call 112 or 117."
+  },
+  {
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/112",
+   "title": "112: the European emergency number",
+   "publisher": "European Commission",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Free, works everywhere in the EU."
+  },
+  {
+   "url": "https://www.justice.gov/elderjustice/find-help-or-report-abuse",
+   "title": "Find help or report abuse",
+   "publisher": "US Department of Justice, Elder Justice Initiative",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "If this is an emergency, call 9-1-1."
+  },
+  {
+   "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+   "title": "Scammers use fake emergencies to steal your money",
+   "publisher": "US Federal Trade Commission",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Voice cloning from a short clip; don’t trust the voice; hang up and call back on a known number."
+  },
+  {
+   "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+   "title": "Criminals use generative AI to facilitate financial fraud (PSA)",
+   "publisher": "FBI IC3",
+   "date": "2024-12-03",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Create a secret word or phrase with your family."
+  },
+  {
+   "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams",
+   "title": "How to recognize and avoid phishing scams",
+   "publisher": "US Federal Trade Commission",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Signs of phishing; contact the company on a number or website you know is real; forward to reportphishing@apwg.org."
+  },
+  {
+   "url": "https://consumer.ftc.gov/articles/how-recognize-and-report-spam-text-messages",
+   "title": "How to recognize and report spam text messages",
+   "publisher": "US Federal Trade Commission",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Fake package notices; companies won’t ask for account info by text; forward to 7726."
+  },
+  {
+   "url": "https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information",
+   "title": "Scammers hide harmful links in QR codes",
+   "publisher": "US Federal Trade Commission",
+   "date": "2023-12",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Don’t scan an unexpected QR code in an email or text."
+  },
+  {
+   "url": "https://www.fcc.gov/consumers/guides/spoofing",
+   "title": "Caller ID spoofing",
+   "publisher": "US Federal Communications Commission",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Caller ID can be falsified; if a recording asks you to press a button, hang up."
+  },
+  {
+   "url": "https://www.ic3.gov/PSA/2019/PSA190610",
+   "title": "Cyber actors exploit “secure” websites in phishing campaigns (PSA)",
+   "publisher": "FBI IC3",
+   "date": "2019-06-10",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Do not trust a website just because it has a lock icon or https."
+  },
+  {
+   "url": "https://www.cisa.gov/secure-our-world/use-strong-passwords",
+   "title": "Use strong passwords",
+   "publisher": "US Cybersecurity and Infrastructure Security Agency (CISA)",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Long (16+), random, unique; passphrase of 4–7 words; use a password manager."
+  },
+  {
+   "url": "https://www.cisa.gov/secure-our-world/turn-mfa",
+   "title": "Turn on multifactor authentication",
+   "publisher": "US Cybersecurity and Infrastructure Security Agency (CISA)",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Turn on MFA, starting with email."
+  },
+  {
+   "url": "https://haveibeenpwned.com/",
+   "title": "Have I Been Pwned",
+   "publisher": "Troy Hunt (independent service)",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Check if your email address is in a data breach."
+  },
+  {
+   "url": "https://support.apple.com/guide/iphone/make-text-easier-to-read-iph3c076905a/ios",
+   "title": "Make text easier to read on iPhone",
+   "publisher": "Apple Support",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Settings > Accessibility > Display & Text Size > Larger Text."
+  },
+  {
+   "url": "https://support.apple.com/guide/iphone/report-spam-and-block-senders-iph3f94d910d/ios",
+   "title": "Report spam and block senders in Messages on iPhone",
+   "publisher": "Apple Support",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Swipe left, Delete and Report Spam; Report Spam link for unknown senders."
+  },
+  {
+   "url": "https://support.apple.com/guide/iphone/screen-and-block-calls-iphe4b3f7823/ios",
+   "title": "Screen and block calls on iPhone",
+   "publisher": "Apple Support",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Settings > Apps > Phone: screen or silence unknown callers; block a contact."
+  },
+  {
+   "url": "https://support.apple.com/guide/iphone/use-contacts-from-the-phone-app-iph9b90d0aba/ios",
+   "title": "Use contacts from the Phone app on iPhone",
+   "publisher": "Apple Support",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Add to Favorites."
+  },
+  {
+   "url": "https://support.apple.com/guide/iphone/add-and-use-contact-information-iph3e0ca2db/ios",
+   "title": "Add and use contact information on iPhone",
+   "publisher": "Apple Support",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Contacts app, tap +, enter name and number, tap Done."
+  },
+  {
+   "url": "https://support.apple.com/guide/iphone/browse-the-web-iph1fbef4daa/ios",
+   "title": "Browse the web using Safari on iPhone",
+   "publisher": "Apple Support",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Touch and hold a link to see a preview without opening the page."
+  },
+  {
+   "url": "https://support.apple.com/guide/iphone/bookmark-a-website-iph42ab2f3a7/ios",
+   "title": "Bookmark a website in Safari on iPhone",
+   "publisher": "Apple Support",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Add a bookmark."
+  },
+  {
+   "url": "https://support.apple.com/en-us/120758",
+   "title": "Use the Passwords app on your iPhone",
+   "publisher": "Apple Support",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Passwords app from iOS 18; warns about weak, reused or leaked passwords."
+  },
+  {
+   "url": "https://support.apple.com/guide/iphone/use-passwords-iphd18e98624/ios",
+   "title": "Use passwords on iPhone",
+   "publisher": "Apple Support",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Security recommendations in the Passwords app."
+  },
+  {
+   "url": "https://support.apple.com/en-us/104955",
+   "title": "Find saved passwords and passkeys on your iPhone",
+   "publisher": "Apple Support",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Open the Passwords app."
+  },
+  {
+   "url": "https://support.google.com/accessibility/android/answer/11183305",
+   "title": "Change text & display settings",
+   "publisher": "Google Android Accessibility Help",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Settings > search Font size > slider."
+  },
+  {
+   "url": "https://support.google.com/messages/answer/9061432",
+   "title": "Report spam & block numbers in Google Messages",
+   "publisher": "Google Messages Help",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Touch and hold the conversation > Block > Report spam > OK."
+  },
+  {
+   "url": "https://support.google.com/phoneapp/answer/3459196",
+   "title": "See caller ID & spam protection",
+   "publisher": "Google Phone app Help",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "More options > Settings > Caller ID and spam; Filter spam calls."
+  },
+  {
+   "url": "https://support.google.com/contacts/answer/1069522?co=GENIE.Platform%3DAndroid&hl=en",
+   "title": "Add, find & edit contacts on Android",
+   "publisher": "Google Contacts Help",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Contacts app > Add > name and number > Save."
+  },
+  {
+   "url": "https://support.google.com/chrome/answer/95606?co=GENIE.Platform%3DAndroid&hl=en",
+   "title": "Manage passwords in Chrome (Android)",
+   "publisher": "Google Chrome Help",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Chrome offers to save; Google Password Manager; add a password."
+  },
+  {
+   "url": "https://support.google.com/accounts/answer/6208650?co=GENIE.Platform%3DAndroid&hl=en",
+   "title": "Manage passwords in Google Password Manager (Android)",
+   "publisher": "Google Account Help",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Save and manage passwords."
+  },
+  {
+   "url": "https://support.google.com/accounts/answer/9457609",
+   "title": "Use Password Checkup",
+   "publisher": "Google Account Help",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Check saved passwords for leaks, reuse and weakness."
+  },
+  {
+   "url": "https://support.google.com/accounts/answer/46526",
+   "title": "Make your account more secure",
+   "publisher": "Google Account Help",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Security Checkup; add a recovery phone and email."
+  },
+  {
+   "url": "https://support.google.com/chrome/answer/188842?co=GENIE.Platform%3DAndroid&hl=en",
+   "title": "Create, find & edit bookmarks in Chrome (Android)",
+   "publisher": "Google Chrome Help",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "More > Add to bookmarks."
+  }
+ ],
+ "unverified": [
+  "Reporting contacts for Phase 10 (beyond 117, 112 and 911) are not published yet. Each will be re-checked before its lesson goes live.",
+  "Phases 04 to 12 are not written yet. Lessons from other sites that link to them show “Coming soon”.",
+  "Phase 12 (optional wallet basics) will be checked against ethskills.com before it is written."
+ ]
+}

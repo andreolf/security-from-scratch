@@ -1,0 +1,478 @@
+{
+ "title": "Security from Scratch",
+ "tagline": "Calm, simple steps to stay one step ahead of scammers.",
+ "phases": [
+  {
+   "id": "p00",
+   "number": 0,
+   "title": "Welcome: Stop, Hang Up, Check",
+   "tagline": "Use the three golden rules on any message or call, and use this site comfortably.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "00-01",
+     "n": 1,
+     "title": "Welcome, and how this site works"
+    },
+    {
+     "id": "00-02",
+     "n": 2,
+     "title": "Why scams work on clever people"
+    },
+    {
+     "id": "00-03",
+     "n": 3,
+     "title": "The three golden rules: Stop, Hang up, Check"
+    },
+    {
+     "id": "00-04",
+     "n": 4,
+     "title": "Your \"trusted numbers\" card"
+    }
+   ]
+  },
+  {
+   "id": "p01",
+   "number": 1,
+   "title": "Phone Calls and Text Messages",
+   "tagline": "Recognise the grandchild call, fake police, fake bank and robot calls and fake SMS, and end them calmly.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "01-01",
+     "n": 1,
+     "title": "The grandchild-in-trouble phone call"
+    },
+    {
+     "id": "01-02",
+     "n": 2,
+     "title": "The fake police officer (Swiss \"falsche Polizisten\")"
+    },
+    {
+     "id": "01-03",
+     "n": 3,
+     "title": "\"This is your bank calling.\""
+    },
+    {
+     "id": "01-04",
+     "n": 4,
+     "title": "Robot calls: \"Press 1 to speak to an officer.\""
+    },
+    {
+     "id": "01-05",
+     "n": 5,
+     "title": "Why the screen can show a false number"
+    },
+    {
+     "id": "01-06",
+     "n": 6,
+     "title": "Fake text messages (SMS)"
+    },
+    {
+     "id": "01-07",
+     "n": 7,
+     "title": "Practice: saying no on the phone"
+    }
+   ]
+  },
+  {
+   "id": "p02",
+   "number": 2,
+   "title": "Emails and Fake Websites",
+   "tagline": "Tell a fake email or website from a real one and get to your bank or shop the safe way.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "02-01",
+     "n": 1,
+     "title": "What \"phishing\" means"
+    },
+    {
+     "id": "02-02",
+     "n": 2,
+     "title": "Reading the sender and the link without clicking"
+    },
+    {
+     "id": "02-03",
+     "n": 3,
+     "title": "Fake websites that look real"
+    },
+    {
+     "id": "02-04",
+     "n": 4,
+     "title": "The safe way in: bookmarks and the official app"
+    },
+    {
+     "id": "02-05",
+     "n": 5,
+     "title": "Attachments and \"invoices\" you did not expect"
+    },
+    {
+     "id": "02-06",
+     "n": 6,
+     "title": "Practice: spot the fake"
+    }
+   ]
+  },
+  {
+   "id": "p03",
+   "number": 3,
+   "title": "Passwords Made Easy",
+   "tagline": "Use strong, different passwords without remembering them, with a password manager.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "03-01",
+     "n": 1,
+     "title": "Why one password everywhere is risky"
+    },
+    {
+     "id": "03-02",
+     "n": 2,
+     "title": "Has my email been in a leak?"
+    },
+    {
+     "id": "03-03",
+     "n": 3,
+     "title": "A password manager: one safe notebook for all your passwords"
+    },
+    {
+     "id": "03-04",
+     "n": 4,
+     "title": "Try it: set up your password manager"
+    },
+    {
+     "id": "03-05",
+     "n": 5,
+     "title": "Your email is your master key"
+    }
+   ]
+  },
+  {
+   "id": "p04",
+   "number": 4,
+   "title": "A Second Lock: 2FA and Passkeys",
+   "tagline": "Add a second lock to your important accounts and know why a code must never be shared.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "04-01",
+     "n": 1,
+     "title": "What \"two-step login\" (2FA) means"
+    },
+    {
+     "id": "04-02",
+     "n": 2,
+     "title": "The golden rule: never read a code to anyone"
+    },
+    {
+     "id": "04-03",
+     "n": 3,
+     "title": "Try it: turn on 2FA for your email"
+    },
+    {
+     "id": "04-04",
+     "n": 4,
+     "title": "Passkeys: signing in with your face or fingerprint"
+    },
+    {
+     "id": "04-05",
+     "n": 5,
+     "title": "Backup codes and a \"spare key\""
+    }
+   ]
+  },
+  {
+   "id": "p05",
+   "number": 5,
+   "title": "Keeping Your Phone and Computer Healthy",
+   "tagline": "Turn on automatic updates, spot fake \"virus\" warnings and never let a stranger control your screen.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "05-01",
+     "n": 1,
+     "title": "Why updates matter"
+    },
+    {
+     "id": "05-02",
+     "n": 2,
+     "title": "Try it: turn on automatic updates"
+    },
+    {
+     "id": "05-03",
+     "n": 3,
+     "title": "Fake \"virus\" warnings and tech-support calls"
+    },
+    {
+     "id": "05-04",
+     "n": 4,
+     "title": "Never let a stranger control your screen"
+    },
+    {
+     "id": "05-05",
+     "n": 5,
+     "title": "Apps only from the official store"
+    }
+   ]
+  },
+  {
+   "id": "p06",
+   "number": 6,
+   "title": "WhatsApp and Social Media",
+   "tagline": "Lock your WhatsApp, spot \"Hi Mum, new number\" messages, and share without oversharing.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "06-01",
+     "n": 1,
+     "title": "\"Hi Mum, this is my new number.\""
+    },
+    {
+     "id": "06-02",
+     "n": 2,
+     "title": "Try it: lock your WhatsApp with two-step verification"
+    },
+    {
+     "id": "06-03",
+     "n": 3,
+     "title": "Never forward a WhatsApp code"
+    },
+    {
+     "id": "06-04",
+     "n": 4,
+     "title": "Share less, stay safe"
+    },
+    {
+     "id": "06-05",
+     "n": 5,
+     "title": "Fake friend requests and hacked friends"
+    },
+    {
+     "id": "06-06",
+     "n": 6,
+     "title": "Fake ads with famous faces"
+    }
+   ]
+  },
+  {
+   "id": "p07",
+   "number": 7,
+   "title": "Shopping and Paying Safely",
+   "tagline": "Shop online, use cards and TWINT safely, and spot fake shops and marketplace tricks.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "07-01",
+     "n": 1,
+     "title": "Is this shop real?"
+    },
+    {
+     "id": "07-02",
+     "n": 2,
+     "title": "Paying by card online, safely"
+    },
+    {
+     "id": "07-03",
+     "n": 3,
+     "title": "TWINT, the safe way"
+    },
+    {
+     "id": "07-04",
+     "n": 4,
+     "title": "Selling on marketplaces: the \"buyer\" with a payment link"
+    },
+    {
+     "id": "07-05",
+     "n": 5,
+     "title": "Parcel and delivery tricks"
+    },
+    {
+     "id": "07-06",
+     "n": 6,
+     "title": "Cross-border shopping problems"
+    }
+   ]
+  },
+  {
+   "id": "p08",
+   "number": 8,
+   "title": "Love and Money: Romance and Investment Scams",
+   "tagline": "Recognise slow-burn scams built on trust or big promised returns, and talk about them without shame.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "08-01",
+     "n": 1,
+     "title": "When a new online friend needs money"
+    },
+    {
+     "id": "08-02",
+     "n": 2,
+     "title": "Why it is not your fault"
+    },
+    {
+     "id": "08-03",
+     "n": 3,
+     "title": "\"Guaranteed\" returns"
+    },
+    {
+     "id": "08-04",
+     "n": 4,
+     "title": "The friendly investment \"advisor\" and the fake trading app"
+    },
+    {
+     "id": "08-05",
+     "n": 5,
+     "title": "\"Pay a fee to get your money out.\""
+    },
+    {
+     "id": "08-06",
+     "n": 6,
+     "title": "Practice: the trusted-person test"
+    }
+   ]
+  },
+  {
+   "id": "p09",
+   "number": 9,
+   "title": "Fake Voices and Faces",
+   "tagline": "Understand voice and video fakes, and set up a family code word.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "09-01",
+     "n": 1,
+     "title": "Voices can be copied"
+    },
+    {
+     "id": "09-02",
+     "n": 2,
+     "title": "Video calls can be faked too"
+    },
+    {
+     "id": "09-03",
+     "n": 3,
+     "title": "Try it: set up a family code word"
+    },
+    {
+     "id": "09-04",
+     "n": 4,
+     "title": "Keep your voice and photos private"
+    }
+   ]
+  },
+  {
+   "id": "p10",
+   "number": 10,
+   "title": "If Something Goes Wrong",
+   "tagline": "Act in the right order after a scam, know who to call in CH, EU and US, and avoid \"recovery\" scams.",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "10-01",
+     "n": 1,
+     "title": "First: it is not your fault, and time matters"
+    },
+    {
+     "id": "10-02",
+     "n": 2,
+     "title": "Step 1: call your bank"
+    },
+    {
+     "id": "10-03",
+     "n": 3,
+     "title": "Step 2: report it"
+    },
+    {
+     "id": "10-04",
+     "n": 4,
+     "title": "Step 3: change passwords and secure your email"
+    },
+    {
+     "id": "10-05",
+     "n": 5,
+     "title": "The second scam: \"We can get your money back.\""
+    },
+    {
+     "id": "10-06",
+     "n": 6,
+     "title": "Getting support and talking about it"
+    }
+   ]
+  },
+  {
+   "id": "p11",
+   "number": 11,
+   "title": "Helping Your Family (Helper Track)",
+   "tagline": "Set up a loved one's devices with respect, and run a 30-minute \"safety afternoon\".",
+   "track": "core",
+   "lessons": [
+    {
+     "id": "11-01",
+     "n": 1,
+     "title": "How to help without taking over"
+    },
+    {
+     "id": "11-02",
+     "n": 2,
+     "title": "The 30-minute safety afternoon"
+    },
+    {
+     "id": "11-03",
+     "n": 3,
+     "title": "Setting up a new phone together"
+    },
+    {
+     "id": "11-04",
+     "n": 4,
+     "title": "Be the \"call me first\" person"
+    },
+    {
+     "id": "11-05",
+     "n": 5,
+     "title": "Signs someone may be in a scam"
+    }
+   ]
+  },
+  {
+   "id": "p12",
+   "number": 12,
+   "title": "Crypto Wallets and the Secret Phrase",
+   "tagline": "Understand what a wallet's secret phrase is, why no one may ever have it, and how crypto scams work.",
+   "track": "optional",
+   "lessons": [
+    {
+     "id": "12-01",
+     "n": 1,
+     "title": "What a crypto wallet is, in plain words"
+    },
+    {
+     "id": "12-02",
+     "n": 2,
+     "title": "The secret phrase: 12 or 24 words that are the whole safe"
+    },
+    {
+     "id": "12-03",
+     "n": 3,
+     "title": "Nobody real will ever ask for your phrase"
+    },
+    {
+     "id": "12-04",
+     "n": 4,
+     "title": "Crypto ATMs and \"move your money into crypto to protect it\""
+    },
+    {
+     "id": "12-05",
+     "n": 5,
+     "title": "Hardware wallets, and the pre-filled phrase trap"
+    },
+    {
+     "id": "12-06",
+     "n": 6,
+     "title": "Clicked something bad? What to do"
+    }
+   ]
+  }
+ ]
+}

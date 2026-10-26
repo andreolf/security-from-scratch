@@ -1,0 +1,10 @@
+import { h } from '../util.js';
+// CISA: a passphrase of 4–7 unrelated words is one way to make a long, random password.
+const WORDS = 'apple river candle garden pencil window orange basket silver yellow forest button carpet ladder mirror pepper rocket saddle tiger violin walnut anchor bridge cactus dragon engine falcon guitar harbor island jacket kettle lemon magnet napkin ocean parrot quartz rabbit sailor tomato umbrella velvet wagon zebra blanket castle donkey feather glacier honey igloo jungle koala lantern meadow noodle oyster pillow quilt ribbon spoon tunnel unicorn valley whistle yogurt acorn bamboo cherry daisy elbow fossil goblet hammock iris jigsaw kayak lobster muffin nutmeg orchid peanut radish sparrow thimble tulip vase willow almond biscuit coconut dolphin envelope fiddle gravel hazel inkwell juniper kiwi lilac marble nectar olive pebble raisin saffron tractor turnip vapor wombat cobalt moose puffin'.split(' ');
+export function pick(n, rand = (k) => crypto.getRandomValues(new Uint32Array(1))[0] % k) { return Array.from({ length: n }, () => WORDS[rand(WORDS.length)]); }
+export default function (body, ctx) {
+  const out = h('p', { class: 'passphrase', 'data-testid': 'pp-out', 'aria-live': 'polite' }, '…'); const info = h('p', { class: 'muted' });
+  const make = () => { const w = pick(5); const s = w.map((x) => x[0].toUpperCase() + x.slice(1)).join(' '); out.textContent = s; info.textContent = `${w.length} words, ${s.length} characters. CISA suggests at least 16 characters.`; ctx.status('Made on this device. Nothing was sent anywhere.'); ctx.done(); };
+  body.append(h('div', { class: 'actions' }, h('button', { class: 'btn btn-primary', type: 'button', 'data-testid': 'pp-make', onclick: make }, 'Make a practice passphrase')), out, info,
+    h('p', {}, h('b', {}, 'This is for practice. '), 'For your real accounts, let your password manager create and save the passwords. The one passphrase worth remembering is the one that unlocks the password manager itself, if it asks for one.'));
+}
