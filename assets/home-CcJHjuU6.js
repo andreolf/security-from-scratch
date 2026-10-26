@@ -1,10 +1,10 @@
-import{D as e,O as t,T as n,d as r,n as i,w as a}from"./index-BTuzQhaB.js";import{n as o,t as s}from"./map-BzyvQn-I.js";function c(c){let l=e.get().last,u=r[0].id;return c.innerHTML=`<div class="wrap">
+import{D as e,O as t,T as n,d as r,n as i,w as a}from"./index-CoeEjTx0.js";import{n as o,t as s}from"./map-C5nYzCTP.js";function c(c){let l=e.get().last,u=r[0].id;return c.innerHTML=`<div class="wrap">
   <section class="hero" aria-labelledby="hero-title">
     <p class="pill">Free · no sign-up · in plain English</p>
     <h1 id="hero-title" class="display" style="margin-top:14px">Security <br>from <span class="hl">Scratch</span></h1>
     <p class="lede">How to spot phone scams, fake messages and bad links, and how to keep your accounts safe. Short lessons, big text, calm practice.</p>
     <div class="actions"><a class="btn btn-primary" href="#/learn/${l||u}" data-testid="start">${l?`Continue where you left off`:`Start the first lesson`}</a><a class="btn btn-quiet" href="#/practice">Try the practice exercises</a></div>
-    <ul class="stats"><li><b>${r.length}</b><span>short lessons</span></li><li><b>${a.length}</b><span>phases</span></li><li><b data-testid="written-count">${n()}</b><span>ready so far</span></li></ul>
+    <ul class="stats"><li><b>${r.length}</b><span>short lessons</span></li><li><b>${a.length}</b><span>phases</span></li><li><b data-testid="written-count">${n()}</b><span>${n()===r.length?`ready to read`:`ready so far`}</span></li></ul>
   </section>
   <section class="section" aria-labelledby="rules-h"><h2 id="rules-h">If you remember only one thing</h2>
     <ol class="rules" data-testid="golden-rules">
