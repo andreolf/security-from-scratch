@@ -1,4 +1,4 @@
-import{D as e,O as t,T as n,d as r,n as i,w as a}from"./index-BIH_p5d-.js";import{n as o,t as s}from"./map-CXqMUuoT.js";function c(c){let l=e.get().last,u=r[0].id;return c.innerHTML=`<div class="wrap">
+import{D as e,O as t,T as n,d as r,n as i,w as a}from"./index-DY-BLDIA.js";import{n as o,t as s}from"./map-DnyoviTZ.js";function c(c){let l=e.get().last,u=r[0].id;return c.innerHTML=`<div class="wrap">
   <section class="hero" aria-labelledby="hero-title">
     <p class="pill">Free · no sign-up · in plain English</p>
     <h1 id="hero-title" class="display" style="margin-top:14px">Security <br>from <span class="hl">Scratch</span></h1>
