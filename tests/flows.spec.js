@@ -226,3 +226,53 @@ test('“What would you do?” practices: a wrong choice is explained kindly, th
     await expect(page.getByTestId('practice-scenes-status')).toContainText('3 of 3 safe choices');
   }
 });
+
+// End to end, no seeding: pass every phase check through the page, then earn and verify all three certificates.
+test('full course: pass all 13 phase checks in the UI, earn core, helper and wallet certificates, verify each', async ({ page }) => {
+  test.setTimeout(240_000);
+  const errs = watchErrors(page);
+  const ids = Array.from({ length: 13 }, (_, i) => 'p' + String(i).padStart(2, '0'));
+  for (const pid of ids) {
+    await go(page, `#/test/${pid}`);
+    const qs = page.getByTestId('question'); const n = await qs.count();
+    expect(n, `${pid} has questions`).toBeGreaterThan(0);
+    for (let i = 0; i < n; i++) await qs.nth(i).locator('label.q-opt[data-correct="true"]').click();
+    await page.getByTestId('submit-test').click();
+    await expect(page.getByTestId('test-result'), `${pid} passed`).toHaveAttribute('data-pass', 'true');
+  }
+  await expect(page.getByTestId('test-result').getByRole('link', { name: 'Get your certificate' })).toBeVisible();
+  const st = await page.evaluate(() => JSON.parse(localStorage.getItem('sfs-v1')));
+  for (const pid of ids) expect(st.tests[pid]?.passed, pid).toBe(true);
+  const sets = { core: ids.slice(0, 12), helper: ['p00', 'p01', 'p11'], wallet: ['p12'] };
+  for (const [key, ph] of Object.entries(sets)) {
+    const date = ph.map((p) => st.tests[p].date).sort().pop();
+    await go(page, `#/certificate/${key}`);
+    await expect(page.getByTestId('cert-locked')).toHaveCount(0);
+    await page.getByTestId('cert-name').fill('Grace Hopper');
+    const want = code(`SFS-CERT-1|grace hopper|${key}|${ph.join(',')}|${date}`);
+    await expect(page.getByTestId('cert-code')).toHaveText(want);
+    await expect(page.getByTestId('cert-canvas')).toHaveAttribute('data-ready', '1');
+    const [png] = await Promise.all([page.waitForEvent('download'), page.getByTestId('cert-png').click()]);
+    expect(png.suggestedFilename()).toBe(`security-from-scratch-${key}-certificate.png`);
+    await go(page, '#/verify');
+    await page.getByTestId('v-name').fill('Grace Hopper');
+    await page.getByTestId('v-key').selectOption(key);
+    await page.getByTestId('v-date').fill(date);
+    await page.getByTestId('v-code').fill(want);
+    await page.getByTestId('v-submit').click();
+    await expect(page.getByTestId('v-out'), `${key} verifies`).toHaveAttribute('data-ok', 'true');
+    await page.getByTestId('v-key').selectOption(key === 'core' ? 'wallet' : 'core');
+    await page.getByTestId('v-submit').click();
+    await expect(page.getByTestId('v-out')).toHaveAttribute('data-ok', 'false');
+  }
+  await go(page, '#/');
+  expect(await page.locator('body').innerText()).not.toMatch(/coming soon/i);
+  expect(errs).toEqual([]);
+});
+
+test('no "Coming soon" anywhere: every lesson and phase page is ready', async ({ page }) => {
+  for (const r of ['#/', '#/progress', ...Array.from({ length: 13 }, (_, i) => '#/phase/p' + String(i).padStart(2, '0'))]) {
+    await go(page, r);
+    expect(await page.locator('body').innerText(), r).not.toMatch(/coming soon/i);
+  }
+});

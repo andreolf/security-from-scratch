@@ -1246,11 +1246,12 @@
     }
   ],
   "unverified": [
-    "Reporting contacts for Phase 10 (beyond 117, 112 and 911) are not published yet. Each will be re-checked before its lesson goes live.",
-    "Phases 10 to 12 are not written yet. Lessons from other sites that link to them show “Coming soon”.",
-    "Phase 12 (optional wallet basics) will be checked against ethskills.com before it is written.",
     "Android steps to preview where a link goes (lesson 02.02): no official Google help page found yet, so no Android steps are given.",
     "Cross-border complaints for US residents (lesson 07.06): econsumer.gov could not be read (the page loads only with JavaScript), so it is not listed. The European Consumer Centres cover people living in the EU, Iceland and Norway; the lesson points people in Switzerland to the Swiss Ombudsstelle E-Commerce instead.",
-    "Card dispute rights outside the US (lesson 07.02): only the US 60-day rule (FTC) is stated; Swiss and EU card rules depend on the card company, so the lesson says to ask it."
+    "Card dispute rights outside the US (lesson 07.02): only the US 60-day rule (FTC) is stated; Swiss and EU card rules depend on the card company, so the lesson says to ask it.",
+    "ReportFraud.ftc.gov and IdentityTheft.gov (Phase 10): both sites load only with JavaScript and could not be read directly. They are named as the FTC describes them on its page “What To Do if You Were Scammed”, which was read on 26 October 2026, and are not linked.",
+    "116 006, the EU helpline for victims of crime (lesson 10.06): the newest official count found is from February 2022 (thirteen EU countries). Whether it works in each country was not checked, so the lesson says that availability varies by country.",
+    "Suisse ePolice (lesson 10.03): named because the BACS page on romance scams points to it to find police stations. Only the site’s title was confirmed, so it is not linked.",
+    "Phase 12 (wallet basics): ethskills.com was read first (its main SKILL.md and its wallets skill). It is written for developers, so the facts in the lessons come from ethereum.org, the FTC, the FBI’s IC3 and the hardware wallet makers’ own pages. Ledger and Trezor are quoted only for their warnings, and neither is recommended."
   ]
 }

@@ -10,7 +10,7 @@ export async function renderLesson(root, id) {
   const L = await loadLesson(id); const p = meta.phase; const { prev, next } = neighbours(id);
   const nav = `<nav class="lesson-nav" aria-label="Lesson navigation"><div class="wrap">${prev ? `<a class="btn btn-quiet" href="#/learn/${prev.id}" data-testid="prev">← Back</a>` : '<span></span>'}<a class="btn btn-quiet" href="#/phase/${p.id}">Phase ${pad2(p.number)}</a>${next ? `<a class="btn btn-primary" href="#/learn/${next.id}" data-testid="next">Next →</a>` : '<a class="btn btn-primary" href="#/progress">My progress</a>'}</div></nav>`;
   if (!L) {
-    root.innerHTML = `<div class="page"><p class="kicker"><a href="#/phase/${p.id}">Phase ${pad2(p.number)} · ${esc(p.title)}</a></p><h1>${esc(meta.title)}</h1><div class="panel" data-testid="coming-soon"><p><b>Coming soon.</b> This lesson is planned but not written yet. A lesson is published only when it is complete and every fact is checked.</p></div></div>${nav}`;
+    root.innerHTML = `<div class="page"><p class="kicker"><a href="#/phase/${p.id}">Phase ${pad2(p.number)} · ${esc(p.title)}</a></p><h1>${esc(meta.title)}</h1><div class="panel" data-testid="lesson-missing"><p>This lesson could not be loaded. Please check your connection and reload the page.</p></div></div>${nav}`;
     return meta.title;
   }
   store.visit(id);
@@ -33,7 +33,7 @@ export async function renderLesson(root, id) {
     mount.replaceWith(form);
   }
   const btn = root.querySelector('[data-complete]');
-  btn.addEventListener('click', () => { store.complete(id); btn.textContent = 'Done ✓'; root.querySelector('[data-done-msg]').textContent = next ? 'Well done. This lesson is ticked off.' : 'Well done. That was the last lesson written so far.'; });
+  btn.addEventListener('click', () => { store.complete(id); btn.textContent = 'Done ✓'; root.querySelector('[data-done-msg]').textContent = next ? 'Well done. This lesson is ticked off.' : 'Well done. That was the last lesson in the course.'; });
   hydrateSteps(root); hydrateTabs(root); hydratePractice(root); readAloud(root);
   return L.title;
 }

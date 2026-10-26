@@ -12,7 +12,7 @@ export function renderHome(root) {
     <h1 id="hero-title" class="display" style="margin-top:14px">Security <br>from <span class="hl">Scratch</span></h1>
     <p class="lede">How to spot phone scams, fake messages and bad links, and how to keep your accounts safe. Short lessons, big text, calm practice.</p>
     <div class="actions"><a class="btn btn-primary" href="#/learn/${last || first}" data-testid="start">${last ? 'Continue where you left off' : 'Start the first lesson'}</a><a class="btn btn-quiet" href="#/practice">Try the practice exercises</a></div>
-    <ul class="stats"><li><b>${allLessons.length}</b><span>short lessons</span></li><li><b>${phases.length}</b><span>phases</span></li><li><b data-testid="written-count">${writtenCount()}</b><span>ready so far</span></li></ul>
+    <ul class="stats"><li><b>${allLessons.length}</b><span>short lessons</span></li><li><b>${phases.length}</b><span>phases</span></li><li><b data-testid="written-count">${writtenCount()}</b><span>${writtenCount() === allLessons.length ? 'ready to read' : 'ready so far'}</span></li></ul>
   </section>
   <section class="section" aria-labelledby="rules-h"><h2 id="rules-h">If you remember only one thing</h2>
     <ol class="rules" data-testid="golden-rules">

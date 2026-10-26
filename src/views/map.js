@@ -8,7 +8,7 @@ export function phaseMap() {
   return `<ol class="map" data-testid="phase-map" aria-label="Phase map">${phases.map((p) => {
     const ids = p.lessons.map((l) => l.id); const done = store.doneCount(ids); const frac = done / ids.length;
     const passed = s.tests[p.id]?.passed; const written = phaseWritten(p);
-    const status = passed ? 'Check passed' : written === 0 ? 'Coming soon' : `${done} of ${ids.length} lessons done` + (written < ids.length ? ` · ${written} ready so far` : phaseComplete(p) ? ' · check open' : '');
+    const status = passed ? 'Check passed' : `${done} of ${ids.length} lessons done` + (written < ids.length ? ` · ${written} ready so far` : phaseComplete(p) ? ' · check open' : '');
     return `<li><a class="map-item${passed ? ' passed' : ''}${written ? '' : ' locked'}" href="#/phase/${p.id}" data-phase="${p.id}">
       <span class="map-node" aria-hidden="true"><svg viewBox="0 0 56 56"><circle class="ring" cx="28" cy="28" r="26" stroke-dasharray="${(C * frac).toFixed(1)} ${C.toFixed(1)}"/></svg>${passed ? '✓' : pad2(p.number)}</span>
       <span><span class="map-t">${esc(p.title)}${p.track === 'optional' ? ' <span class="chip">Optional</span>' : ''}</span><span class="map-s">${esc(status)}</span></span></a></li>`;
