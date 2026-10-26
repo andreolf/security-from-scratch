@@ -65,4 +65,21 @@ export const visuals3 = {
   'support-circle': checklist('support-circle', 'Support after a scam.',
     [[true, 'Talk to someone you trust'], [true, 'CH: 143, Die Dargebotene Hand'], [true, 'US: AARP helpline 877-908-3360'], [true, 'Money worries: debt advice']], 0,
     'Support after a scam: talk to someone you trust. In Switzerland, Die Dargebotene Hand answers on 143, anonymously. In the US, the AARP Fraud Watch Network Helpline is 877-908-3360. If money is now a worry, contact a debt advice service, in Switzerland the one in your canton.'),
+
+  // ---------- Phase 11 ----------
+  'help-not-take-over': checklist('help-not-take-over', 'Helping without taking over.',
+    [[true, 'Ask: “Shall we do it together?”'], [true, 'Let them hold the phone'], [true, 'Explain why, briefly'], [true, 'They keep their passwords'], [false, 'Doing it all for them']], 1,
+    'Helping without taking over: ask if they want to do it together; let them hold the phone and tap; explain why, briefly; let them keep their own passwords. Avoid doing it all for them, because then they can’t do it alone next time.'),
+  'safety-afternoon': flowSteps('safety-afternoon', 'A safety afternoon, in four steps.',
+    ['1. Updates on', '2. Two-step sign-in on', '3. Trusted-numbers card', '4. Agree a family code word'],
+    ['Step 1: turn on automatic updates on the phone and computer.', 'Step 2: turn on two-step sign-in for the email account.', 'Step 3: fill in the trusted-numbers card together: bank, police, family.', 'Step 4: agree a family code word, said out loud, never written in a message.']),
+  'new-phone': checklist('new-phone', 'Setting up a new phone safely.',
+    [[true, 'Screen lock with a passcode'], [true, 'Automatic updates on'], [true, 'Two-step sign-in on'], [true, 'A recovery contact or codes'], [true, 'Text size that’s comfortable']], -1,
+    'Setting up a new phone safely: a screen lock with a passcode; automatic updates on; two-step sign-in on; a recovery contact or backup codes; and a text size that is comfortable to read.'),
+  'call-me-first': flowSteps('call-me-first', 'The “call me first” rule.',
+    ['Money, codes or secrecy asked', 'Pause. Don’t pay yet', 'Call your “call me first” person', 'Decide together, calmly'],
+    ['Step 1: someone asks for money, a code, or to keep it secret.', 'Step 2: pause. Say you will call back. Don’t pay or share anything yet.', 'Step 3: call your agreed person on the number you know.', 'Step 4: decide together. A real request can wait ten minutes.']),
+  'scam-signs': checklist('scam-signs', 'Signs someone may be in a scam.',
+    [[false, 'A secret new “friend” or deal'], [false, 'Large or unusual withdrawals'], [false, 'Buying gift cards or crypto'], [false, 'Withdrawn, anxious, upset'], [true, 'Ask gently. Listen.']], 4,
+    'Signs someone may be in a scam: a secret new online friend or investment; large or unusual withdrawals; buying gift cards or crypto; seeming withdrawn, anxious or upset. If you see them, ask gently and listen, without blame.'),
 };

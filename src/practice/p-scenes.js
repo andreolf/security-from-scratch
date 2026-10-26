@@ -226,6 +226,48 @@ export const SCENES = {
       ['My shopping site password, on the same computer.', false, 'Start with email, and use a device the scammer never touched.'],
       ['None, the bank fixed it.', false, 'The scammer may still have your passwords. Change them, starting with email.']]],
   ] },
+  helper: { who: 'Helping your father', intro: 'Your father, 81, asks you to “make the phone safe”. He hands it to you.', turns: [
+    ['What do you say?', [
+      ['“Let’s do it together. You hold it, I’ll show you where to tap.”', true, 'Yes. He learns, and stays in charge of his own phone.'],
+      ['“Give me ten minutes, I’ll do everything.”', false, 'Quick, but he won’t know what changed or how to do it again.'],
+      ['“Just tell me all your passwords.”', false, 'Passwords should stay his. Help him store them safely instead.']]],
+    ['He gets a step wrong and says: “I’m too old for this.” What now?', [
+      ['“Everyone finds this confusing. Let’s try once more, slowly.”', true, 'Patience and kindness keep him willing to learn.'],
+      ['“It’s easy, look how fast I do it.”', false, 'This can make him feel worse. Slow down.'],
+      ['Take the phone and finish it yourself.', false, 'Let him try again, at his pace.']]],
+    ['You finish. What next?', [
+      ['Write the steps on paper for him, and agree he can call you any time.', true, 'Great. He has a reminder and a person to ask.'],
+      ['Leave and never mention it again.', false, 'Check in next time. Questions come up later.'],
+      ['Change his settings later without telling him.', false, 'It’s his phone. Tell him about any change.']]],
+  ] },
+  callmefirst: { who: 'Message from “your grandson”', intro: 'Your neighbour Ilse, 79, calls you. She agreed you’re her “call me first” person.', turns: [
+    ['Ilse: “My grandson texted from a new number. He needs CHF 1,800 today and says don’t tell his parents.” What do you say?', [
+      ['“Thank you for calling me. Let’s pause and call his old number together.”', true, 'Yes. Praise her for calling, then check calmly.'],
+      ['“You should have known it’s a scam!”', false, 'Blame makes people stop calling you. Thank her instead.'],
+      ['“Just pay it, it’s family.”', false, 'A new number plus secrecy plus money is a classic scam.']]],
+    ['They call his old number. He answers and knows nothing about it. What now?', [
+      ['Help her block the new number and report the message.', true, 'Good. Block, report, and she’s done.'],
+      ['Reply to the scammer to tease them.', false, 'Don’t engage. Block and report.'],
+      ['Forget it. Nothing happened.', false, 'Reporting helps warn others.']]],
+    ['Ilse says: “I feel silly for calling you.” You say:', [
+      ['“Calling me was exactly right. Call me every time.”', true, 'Yes. Make calling you easy and normal.'],
+      ['“Yes, try to sort it out yourself next time.”', false, 'That makes her less likely to call next time, when it may matter.'],
+      ['“Only call if it’s over CHF 5,000.”', false, 'Any amount is worth a call.']]],
+  ] },
+  signs: { who: 'Your friend Peter', intro: 'Peter, 73, has been quiet lately. He mentions a new online friend who “understands him”, and he asked his bank for a big withdrawal.', turns: [
+    ['How do you start?', [
+      ['“You seem a bit worried lately. How are you?”', true, 'Yes. Start with care, not accusations.'],
+      ['“That’s obviously a scam, you fool.”', false, 'Blame makes people defend the scammer and hide things.'],
+      ['Say nothing, it’s not your business.', false, 'A gentle question can make a big difference.']]],
+    ['Peter: “She needs money for a flight to finally meet me. You wouldn’t understand.” What now?', [
+      ['“I’d like to understand. Has she ever met you on a live video call? Would you show me the messages?”', true, 'Good. Ask questions and look together, without pressure.'],
+      ['“Give me your phone, I’m deleting her.”', false, 'Taking over pushes him away. Keep him on your side.'],
+      ['“Fine, do what you want.”', false, 'Stay with him. Suggest checking together.']]],
+    ['Peter agrees it might be a scam but feels ashamed. What do you suggest?', [
+      ['Stop sending money, call his bank, and report it to the police. You’ll go with him.', true, 'Exactly. Concrete steps, and company.'],
+      ['Keep paying until she proves it.', false, 'Scammers always have a new reason. Stop the money.'],
+      ['Keep it secret from everyone.', false, 'Secrecy helps the scammer. The bank and police can help.']]],
+  ] },
 };
 export default function (body, ctx) {
   const sc = SCENES[ctx.args.scene] || SCENES.popup; let t = 0, good = 0;

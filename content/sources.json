@@ -1153,6 +1153,24 @@
       "date": "",
       "checked": "2026-10-26",
       "verified": true
+    },
+    {
+      "url": "https://www.justice.gov/elderjustice/red-flags-elder-abuse",
+      "title": "Red Flags of Elder Abuse",
+      "publisher": "US Department of Justice, Elder Justice Initiative",
+      "evidence": "Warning signs of financial exploitation: sudden changes in bank accounts or banking practices, including an unexplained withdrawal of large sums of money; unexplained disappearance of funds or valuable possessions; bills left unpaid despite adequate financial resources; unexplained sudden transfer of assets; unexplained credit card charges. Emotional signs: being upset or agitated, extremely withdrawn, change in sleeping or eating habits, depression or anxiety. 'If you are in immediate danger, call 911.'",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.finra.org/investors/insights/older-investors-financial-exploitation",
+      "title": "Protecting Older Investors From Financial Exploitation",
+      "publisher": "FINRA",
+      "date": "2025-07-15",
+      "evidence": "A trusted contact person on your account puts your firm in a better position to keep your account safe; a trusted contact cannot make trades or decisions about your account, and is not a power of attorney; recommended for all investors; once money has been disbursed, it is very difficult to get it back.",
+      "checked": "2026-10-26",
+      "verified": true
     }
   ],
   "unverified": [
