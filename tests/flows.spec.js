@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { readdirSync, readFileSync } from 'node:fs';
 import crypto from 'node:crypto';
 import { watchErrors, go, seedPassed } from './helpers.js';
 
@@ -203,4 +204,25 @@ test('reduced motion: step-throughs change without animation', async ({ browser 
   await fig.locator('[data-next]').click();
   await expect(fig.locator('.step.anim-in')).toHaveCount(0);
   await ctx.close();
+});
+
+test('“What would you do?” practices: a wrong choice is explained kindly, the safe path completes', async ({ page }) => {
+  test.setTimeout(120_000);
+  const files = readdirSync(new URL('../lessons/', import.meta.url), { recursive: true }).map(String).filter((f) => f.endsWith('.md'));
+  const ids = files.filter((f) => /:::practice scenes /.test(readFileSync(new URL('../lessons/' + f, import.meta.url), 'utf8'))).map((f) => f.match(/(\d\d-\d\d)-[^/\\]*\.md$/)[1])
+    .filter((id) => !process.env.MAX_PHASE || id.slice(0, 2) <= process.env.MAX_PHASE);
+  expect(ids.length).toBeGreaterThanOrEqual(2);
+  for (const id of ids) {
+    await go(page, `#/learn/${id}`);
+    const p = page.getByTestId('practice-scenes');
+    await expect(p).toHaveAttribute('data-ready', '1');
+    await p.locator('[data-testid^="sc-0-"][data-good="false"]').first().click();
+    await expect(p.locator('.feedback.bad')).toContainText('Let’s think again');
+    for (let t = 1; t < 3; t++) await p.locator(`[data-testid^="sc-${t}-"][data-good="true"]`).click();
+    await expect(page.getByTestId('practice-scenes-status')).toContainText('2 of 3 safe choices');
+    await p.getByTestId('sc-again').click();
+    await expect(p.locator('.feedback')).toHaveCount(0);
+    for (let t = 0; t < 3; t++) await p.locator(`[data-testid^="sc-${t}-"][data-good="true"]`).click();
+    await expect(page.getByTestId('practice-scenes-status')).toContainText('3 of 3 safe choices');
+  }
 });

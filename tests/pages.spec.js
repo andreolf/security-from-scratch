@@ -2,7 +2,8 @@ import { test, expect } from '@playwright/test';
 import { watchErrors, go, noOverflow, tapTargets } from './helpers.js';
 import { readdirSync } from 'node:fs';
 // Every written lesson, read from the lessons/ folder so new phases are covered automatically.
-const WRITTEN = readdirSync(new URL('../lessons/', import.meta.url), { recursive: true }).map(String).filter((f) => /\d\d-\d\d-.*\.md$/.test(f)).map((f) => f.match(/(\d\d-\d\d)-[^/\\]*\.md$/)[1]).sort();
+const WRITTEN = readdirSync(new URL('../lessons/', import.meta.url), { recursive: true }).map(String).filter((f) => /\d\d-\d\d-.*\.md$/.test(f)).map((f) => f.match(/(\d\d-\d\d)-[^/\\]*\.md$/)[1]).filter((id) => !process.env.MAX_PHASE || id.slice(0, 2) <= process.env.MAX_PHASE).sort();
+// MAX_PHASE=04 limits a live check to the phases that were deployed.
 const ROUTES = ['#/', '#/phase/p00', '#/phase/p03', '#/phase/p12', '#/test/p01', '#/progress', '#/glossary', '#/verify', '#/about', '#/practice', '#/learn/08-01', '#/certificate/core'];
 for (const r of ROUTES) {
   test(`page ${r}: banner, no overflow, no console errors, tap targets`, async ({ page }) => {
