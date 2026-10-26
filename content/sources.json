@@ -81,7 +81,7 @@
       "date": "",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "Contact bank immediately to block; many have 24-hour block hotlines; report to police."
+      "evidence": "Contact bank immediately to block; many have 24-hour block hotlines; report to police. Re-checked 2026-10-26: if you notice or suspect financial damage act quickly and systematically: contact your bank or card provider immediately and have accounts or cards blocked; many providers have a 24-hour block hotline; report quickly to your bank and ask for the fraudulent payment to be stopped, have suspicious transactions checked and, where possible, reversed; the faster you act, the better the chances. BACS recommends a criminal complaint at the local police, ideally after phoning ahead; for payments abroad or in crypto the chances of recovery are usually much lower but a report is still important. TWINT payments are executed immediately and usually can't be reversed; adjust your TWINT limit in the app."
     },
     {
       "url": "https://www.twint.ch/privatkunden/support/sicherheit/sicher-twinten/",
@@ -99,7 +99,7 @@
       "date": "",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "Not processed around the clock; acute emergency: call 112 or 117."
+      "evidence": "Not processed around the clock; acute emergency: call 112 or 117. Re-checked 2026-10-26: reports are not processed around the clock; in an acute emergency call 112 or 117. Voluntary notification: answer a few questions, get an automated initial assessment with measures, forward to the NCSC. Online criminal complaints only for listed offences (e.g. false flat ads, online purchase not received, data misused for orders); for all other offences contact a police station; the NCSC does not accept criminal complaints."
     },
     {
       "url": "https://digital-strategy.ec.europa.eu/en/policies/112",
@@ -117,7 +117,7 @@
       "date": "",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "If this is an emergency, call 9-1-1."
+      "evidence": "If this is an emergency, call 9-1-1. Re-checked 2026-10-26: emergency call 9-1-1; for non-life-threatening emergencies: National Elder Fraud Hotline 1-833-FRAUD-11 (833-372-8311), 10 a.m.–6 p.m. Eastern Time, Monday–Friday; Eldercare Locator 1-800-677-1116."
     },
     {
       "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
@@ -1060,6 +1060,96 @@
       "title": "How to change your privacy settings",
       "publisher": "WhatsApp Help Center",
       "evidence": "(WebFetch.) By default any user can see your profile photo; to change who can see last seen and online, profile photo, about, status: Settings > Privacy, tap the setting, select Everyone, My contacts, My contacts except…, or Nobody. My Contacts: only contacts from your address book can see it.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.143.ch/",
+      "title": "Die Dargebotene Hand – 143",
+      "publisher": "Die Dargebotene Hand (Tel 143)",
+      "evidence": "Checked 2026-10-26: 'Darüber reden hilft. Wir sind immer für Sie da. Persönlich, anonym und vertraulich.' Call 143, chat or mail. Support in English: call 0800 143 000 from 6–11 pm.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.ic3.gov/",
+      "title": "Internet Crime Complaint Center (IC3)",
+      "publisher": "FBI",
+      "evidence": "Checked 2026-10-26: the IC3 is the central hub for reporting cyber-enabled crime, run by the FBI. Scammers impersonate the IC3: the IC3 does not work with any non-law-enforcement entity, such as law firms or crypto services, to recover lost funds, and will never directly contact you for information or money.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+      "title": "What To Do if You Were Scammed",
+      "publisher": "FTC Consumer Advice",
+      "evidence": "(WebFetch.) The FTC will never threaten you or say you must transfer money to protect it. Bank transfer: report to your bank immediately, ask to reverse; card: report to issuer using the number on the back; gift card: contact issuer, keep card and receipt; crypto: contact exchange or ATM operator, report at ReportFraud.ftc.gov. Gave account password: create a new strong password (change it wherever reused) and turn on two-factor authentication. Gave computer access: update security software, run a scan, change passwords, turn on 2FA. Report at ReportFraud.ftc.gov; Social Security number misused: IdentityTheft.gov for a recovery plan.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.aarp.org/money/scams-fraud/helpline/",
+      "title": "AARP Fraud Watch Network Helpline",
+      "publisher": "AARP",
+      "evidence": "Checked 2026-10-26: helpline 877-908-3360, Monday–Friday 8 a.m.–8 p.m. ET; 'If you've been affected by a scam, you are not alone'; guidance and support, not investigation or case recovery; free, confidential online support groups.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.europol.europa.eu/report-a-crime/report-cybercrime-online",
+      "title": "Report Cybercrime online",
+      "publisher": "Europol",
+      "date": "2024-12-03",
+      "evidence": "(WebFetch.) If you have fallen victim to cybercrime, links lead to the reporting website of your country; mechanisms vary; where there is no online option, go to your local police station. Lists all EU member states.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://ec.europa.eu/newsroom/just/items/737172/en",
+      "title": "Joint statement concerning 116 006, the single European victim support line",
+      "publisher": "European Commission, DG Justice",
+      "date": "2022-02-21",
+      "evidence": "Since 30 November 2009, 116 006 has been the dedicated helpline for victims of crime throughout Europe; thirteen Member States had implemented it (as of 2022); provides through trained professionals initial information and care, anonymously and confidentially, in social, legal and psychological matters.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.apple.com/en-us/102560",
+      "title": "If you think your Apple Account has been compromised",
+      "publisher": "Apple Support",
+      "evidence": "Signs: notifications of activity you don't recognise, 2FA codes you didn't request, password no longer works. Steps: change your Apple Account password (strong and unique), or reset it; at account.apple.com update security info and remove devices you don't recognise; check you control every email and phone number; if you can't reset, go to iforgot.apple.com for account recovery.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.google.com/accounts/answer/6294825?hl=en",
+      "title": "Secure a hacked or compromised Google Account",
+      "publisher": "Google Account Help",
+      "evidence": "If you can't sign in, use the account recovery page. Review activity: Google Account > Security & sign-in > Recent security events > Review security events; 'No, it wasn't me'. Review devices: Your devices > Manage devices. Turn on 2-Step Verification. Contact your bank or local authorities if banking or ID info was saved.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.apple.com/en-us/101567",
+      "title": "Change your Apple Account password",
+      "publisher": "Apple Support",
+      "evidence": "On iPhone: open Settings, tap [your name], tap Sign-In & Security, tap Change Password, follow the instructions; option Remove Other Devices; may need to wait one hour (Stolen Device Protection).",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.google.com/accounts/answer/41078?co=GENIE.Platform%3DAndroid&hl=en",
+      "title": "Change or reset your password (Android)",
+      "publisher": "Google Account Help",
+      "evidence": "Open the device's Settings app; tap Google > your name > Manage your Google Account (or myaccount.google.com); tap Security & sign-in; under 'How you sign in to Google' tap Password; enter the new password, tap Change Password. After changing, you are signed out everywhere except devices used to verify it's you.",
       "date": "",
       "checked": "2026-10-26",
       "verified": true

@@ -212,6 +212,20 @@ export const SCENES = {
       ['Yes, the group is private.', false, 'Groups and accounts can be taken over. Keep it out of writing.'],
       ['Yes, and also on Facebook.', false, 'Never post it anywhere.']]],
   ] },
+  firststeps: { who: 'Right after a scam', intro: 'You have just realised that the “bank adviser” who called you was a scammer. You moved CHF 4,000.', turns: [
+    ['What do you do first?', [
+      ['Call my bank on the number on my card, and ask them to block and stop the payment.', true, 'Exactly. The faster you act, the better the chances of stopping the money.'],
+      ['Wait until tomorrow, I’m too upset.', false, 'It’s natural to feel shaken. But call the bank now. Minutes can matter.'],
+      ['Call the “adviser” back to ask for the money.', false, 'Their number leads back to the scammer. Call your own bank.']]],
+    ['The bank has blocked your cards. What next?', [
+      ['Report it to the police, and keep all messages and call times.', true, 'Right. A report matters even if the money can’t be recovered.'],
+      ['Delete everything, I don’t want to see it.', false, 'Keep the messages and numbers. The police will need them.'],
+      ['Tell nobody, it’s embarrassing.', false, 'It isn’t your fault. Telling the police and a trusted person helps.']]],
+    ['The scammer had remote access to your computer. Which password do you change first, and where?', [
+      ['My email password, from my phone or another device I trust.', true, 'Good. Your email can reset other accounts, and the computer may not be safe yet.'],
+      ['My shopping site password, on the same computer.', false, 'Start with email, and use a device the scammer never touched.'],
+      ['None, the bank fixed it.', false, 'The scammer may still have your passwords. Change them, starting with email.']]],
+  ] },
 };
 export default function (body, ctx) {
   const sc = SCENES[ctx.args.scene] || SCENES.popup; let t = 0, good = 0;

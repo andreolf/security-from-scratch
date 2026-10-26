@@ -87,6 +87,20 @@ export const SCENARIOS = {
       ['Call the first number back and send the money.', false, 'That number leads back to the scammer.'],
       ['Wait by the phone for the caller to ring again.', false, 'Check with family instead. The scammer will only push harder.']]],
   ] },
+  refund: { who: '“Fraud recovery office”', turns: [
+    ['“Good morning. I’m calling from the international fraud recovery office. We have recovered the money you lost last year.”', [
+      ['“I didn’t contact you. I’ll check with the police myself.” Hang up.', true, 'Exactly. Lists of people who were scammed are sold to new scammers. Hang up and check yourself.'],
+      ['“Really? How much did you find?”', false, 'Hope is natural, but this call is how people lose money twice.'],
+      ['“Thank you, what do you need from me?”', false, 'They will ask for a fee or your bank details next. Hang up.']]],
+    ['“We just need a small release fee of CHF 500, then we transfer CHF 20,000 to you.”', [
+      ['“Real agencies never charge a fee to return money.” Hang up.', true, 'Right. A fee to get money back is the scam.'],
+      ['“OK, I’ll pay by gift card as you say.”', false, 'Gift cards are a classic scam payment. The money would be gone.'],
+      ['“Can I pay half?”', false, 'Any amount is lost. There is no money to release.']]],
+    ['“We work with Interpol and the FBI. If you don’t pay today, the money is lost for ever.”', [
+      ['Hang up, and tell the police about this call.', true, 'Good. The FBI’s IC3 says it never contacts victims to ask for money, and FINMA is never involved in recovery offers.'],
+      ['Pay quickly, it’s the police.', false, 'Real police never ask you for a fee.'],
+      ['Give them my bank login so they can pay me directly.', false, 'Never give your login to anyone.']]],
+  ] },
   robot: { who: 'Recorded voice', turns: [
     ['A recorded voice, in English: “This is the police. Your bank account is involved in a crime. Press 1 to speak to an officer.”', [
       ['Press nothing and hang up.', true, 'Exactly. Real police never call with a recording.'],
