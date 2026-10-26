@@ -45,20 +45,41 @@ test('try-it tabs: iPhone and Android, checked-against links, done box remembere
   await expect(page.locator('section.try [data-try-done]').first()).toBeChecked();
 });
 
-test('read this lesson to me: big button that starts and stops', async ({ page }) => {
+test('read this lesson to me: big button that reads paragraph by paragraph, and stops', async ({ page }) => {
+  // A fake speech engine (headless browsers have no voices): it "speaks" until told to move on or cancel.
+  await page.addInitScript(() => {
+    const q = []; window.__spoken = [];
+    const fake = { speaking: false, speak(u) { q.push(u); window.__spoken.push(u.text); this.speaking = true; }, cancel() { const u = q.shift(); q.length = 0; this.speaking = false; u?.onerror?.({ error: 'canceled' }); }, getVoices: () => [] };
+    window.__finish = () => { const u = q.shift(); u?.onend?.(); };
+    Object.defineProperty(window, 'speechSynthesis', { value: fake, configurable: true });
+    window.SpeechSynthesisUtterance = function (t) { this.text = t; };
+  });
   await go(page, '#/learn/01-02');
   const b = page.getByTestId('read-aloud');
-  await expect(b).toBeVisible();
   const box = await b.boundingBox(); expect(box.height).toBeGreaterThanOrEqual(44);
-  if (await b.isDisabled()) return; // browser without speech: button explains itself
   await b.click();
-  // Either the device speaks (a paragraph is outlined) or it can't, and the page says so in words.
-  await expect.poll(async () => (await page.locator('.reading').count()) === 1 || (await page.getByTestId('read-note').isVisible())).toBe(true);
-  if (await page.getByTestId('read-note').isVisible()) { await expect(b).toHaveAttribute('aria-pressed', 'false'); return; }
   await expect(b).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.reading')).toHaveCount(1);
+  await expect(page.locator('h1.reading, h1 .reading, .reading').first()).toContainText('fake police officer');
+  await page.evaluate(() => window.__finish());
+  await expect(page.locator('.lede-s.reading')).toHaveCount(1);
   await b.click();
   await expect(b).toHaveAttribute('aria-pressed', 'false');
   await expect(page.locator('.reading')).toHaveCount(0);
+  const spoken = await page.evaluate(() => window.__spoken);
+  expect(spoken.length).toBe(2);
+});
+
+test('read aloud: if the device cannot speak, the page says so in words', async ({ page }) => {
+  await page.addInitScript(() => {
+    const fake = { speaking: false, speak(u) { setTimeout(() => u.onerror?.({ error: 'synthesis-failed' }), 10); }, cancel() {}, getVoices: () => [] };
+    Object.defineProperty(window, 'speechSynthesis', { value: fake, configurable: true });
+    window.SpeechSynthesisUtterance = function (t) { this.text = t; };
+  });
+  await go(page, '#/learn/01-02');
+  await page.getByTestId('read-aloud').click();
+  await expect(page.getByTestId('read-note')).toBeVisible();
+  await expect(page.getByTestId('read-aloud')).toHaveAttribute('aria-pressed', 'false');
 });
 
 async function answer(page, nCorrect) {
