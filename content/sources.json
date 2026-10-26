@@ -892,12 +892,32 @@
       "date": "",
       "checked": "2026-10-26",
       "verified": true
+    },
+    {
+      "url": "https://consumer.ftc.gov/consumer-alerts/2025/04/think-text-message-usps-it-could-be-scam",
+      "title": "Think that text message is from USPS? It could be a scam",
+      "publisher": "FTC Consumer Advice",
+      "date": "2025-04-23",
+      "evidence": "(WebFetch.) Texts claiming unpaid postage, a missed delivery or updated shipping preferences, from 'USPS (or FedEx…or DHL…)', link to look-alike sites; if you pay, the money and your card number go to the scammer; verify independently via the retail site or account you ordered from; forward to 7726; report at ReportFraud.ftc.gov.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.uspis.gov/news/scam-article/smishing-package-tracking-text-scams",
+      "title": "Smishing: Package Tracking Text Scams",
+      "publisher": "US Postal Inspection Service",
+      "evidence": "USPS will not send text messages or e-mails without the customer first requesting the service with a tracking number, and it will not contain a link; USPS does not charge for tracking; if you interacted with the URL notify your financial institution; report to spam@uspis.gov and forward to 7726.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
     }
   ],
   "unverified": [
     "Reporting contacts for Phase 10 (beyond 117, 112 and 911) are not published yet. Each will be re-checked before its lesson goes live.",
-    "Phases 07 to 12 are not written yet. Lessons from other sites that link to them show “Coming soon”.",
+    "Phases 08 to 12 are not written yet. Lessons from other sites that link to them show “Coming soon”.",
     "Phase 12 (optional wallet basics) will be checked against ethskills.com before it is written.",
-    "Android steps to preview where a link goes (lesson 02.02): no official Google help page found yet, so no Android steps are given."
+    "Android steps to preview where a link goes (lesson 02.02): no official Google help page found yet, so no Android steps are given.",
+    "Cross-border complaints for US residents (lesson 07.06): econsumer.gov could not be read (the page loads only with JavaScript), so it is not listed. The European Consumer Centres cover people living in the EU, Iceland and Norway; the lesson points people in Switzerland to the Swiss Ombudsstelle E-Commerce instead.",
+    "Card dispute rights outside the US (lesson 07.02): only the US 60-day rule (FTC) is stated; Swiss and EU card rules depend on the card company, so the lesson says to ask it."
   ]
 }
