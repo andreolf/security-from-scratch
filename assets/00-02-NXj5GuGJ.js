@@ -1,0 +1,43 @@
+var e=`00-02`,t=7,n=`Scams don’t work because people are foolish. They work because they cause fear, hurry and secrecy. Learn to notice those three feelings.`,r=`clever`,i=`
+<aside class="story" aria-label="A made-up story"><span class="label">A made-up story. It follows a pattern that police and consumer agencies describe.</span><h3>The doctor and the parcel</h3><p>Martin is 71. He was a doctor for forty years. He reads two newspapers every day.</p>
+<p>One morning his phone shows a text: “Your parcel is waiting. Pay the small fee today, or it goes back.” Martin is expecting a book from his daughter. He taps the link without thinking.</p>
+<p>The page asks for his card number. Something feels rushed. He stops, closes the page and calls his daughter. She sent nothing by post. The text was fake.</p>
+</aside>
+<p>Martin is clever and careful. He still nearly fell for it. That is not a weakness. It is exactly how scams are designed.</p>
+<h2 id="it-is-not-about-intelligence">It is not about intelligence</h2>
+<p>Scammers don’t try to out-think you. They try to stop you from thinking at all. They do that with three feelings.</p>
+<ul>
+<li><strong>Fear.</strong> “Your grandson is in trouble.” “Your account has been hacked.” “The police need you.”</li>
+<li><strong>Hurry.</strong> “Within the hour.” “Today only.” “Don’t hang up.”</li>
+<li><strong>Secrecy.</strong> “Don’t tell anyone.” “Your bank staff can’t be trusted.”</li>
+</ul>
+<p>When we are afraid and rushed, the calm, thinking part of us goes quiet. Any person, of any age, reacts this way. Scammers know it, and they build every trick around it.</p>
+
+<figure class="fig" data-figure="pressure-trio"><svg viewBox="0 0 360 250" role="img" aria-label="Fear, hurry and secrecy push out calm thinking." focusable="false"><defs><marker id="ar-pressure-trio" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:var(--muted-strong)"/></marker></defs><rect x="12" y="14" width="104" height="56" rx="10" class="svg-box" stroke-width="2"/><text x="64" y="48" class="svg-t" text-anchor="middle" style="font-size:18px;font-weight:800"><tspan x="64" dy="0">FEAR</tspan></text><rect x="128" y="14" width="104" height="56" rx="10" class="svg-box" stroke-width="2"/><text x="180" y="48" class="svg-t" text-anchor="middle" style="font-size:18px;font-weight:800"><tspan x="180" dy="0">HURRY</tspan></text><rect x="244" y="14" width="104" height="56" rx="10" class="svg-box" stroke-width="2"/><text x="296" y="48" class="svg-t" text-anchor="middle" style="font-size:18px;font-weight:800"><tspan x="296" dy="0">SECRECY</tspan></text>
+     <path d="M64 72 L180 132" class="svg-line" stroke-width="2.4" fill="none" marker-end="url(#ar-pressure-trio)"/><path d="M180 72 L180 132" class="svg-line" stroke-width="2.4" fill="none" marker-end="url(#ar-pressure-trio)"/><path d="M296 72 L180 132" class="svg-line" stroke-width="2.4" fill="none" marker-end="url(#ar-pressure-trio)"/>
+     <rect x="60" y="136" width="240" height="50" rx="10" class="svg-hl" stroke-width="2"/><text x="180" y="167" class="svg-on-hl" text-anchor="middle" style="font-size:18px;font-weight:800"><tspan x="180" dy="0">Calm thinking stops</tspan></text>
+     <text x="180" y="222" class="svg-m" text-anchor="middle" style="font-size:18px;font-weight:700"><tspan x="180" dy="0">That is the whole trick.</tspan></text></svg><figcaption>The three feelings scammers use.</figcaption><details><summary>Read the picture as text</summary><p>Three boxes at the top: fear, hurry and secrecy. Arrows from all three point down to a highlighted box: calm thinking stops. Underneath: that is the whole trick.</p></details></figure>
+<h2 id="this-happens-to-many-people">This happens to many people</h2>
+<p>You are not alone, and you are not the only one who is targeted. In the second half of 2025, the Swiss Federal Office for Cyber Security received 29,006 reports from the public, and just over half were about fraud (<a href="https://www.bacs.admin.ch/de/hjb-25-2-de" rel="noopener" target="_blank">BACS half-year report</a>). In the United States, people aged 60 and over reported losses of more than $3 billion to the Federal Trade Commission in 2025 (<a href="https://search.ftc.gov/system/files/ftc_gov/pdf/2026-older-adults-report-10192026.pdf" rel="noopener" target="_blank">FTC report on older consumers</a>).</p>
+<p>Most people who are scammed never tell anyone, often because they feel ashamed. Talking about it openly is how we stop it. If it has happened to you or someone you know, it is not your fault.</p>
+
+<div class="remember" role="note"><span class="label">The one thing to remember</span><p><strong>Fear, hurry or secrecy is your signal to stop. The feeling itself is the warning sign.</strong></p>
+</div>
+<h2 id="your-new-habit">Your new habit</h2>
+<p>You don’t need to know every trick. You only need to notice the feeling. When a call, a message or a visitor makes you afraid, rushed or secretive, say to yourself: “This is the moment to stop.”</p>
+<p>Then use the three golden rules from the next lesson.</p>
+
+<section class="practice-mount" data-practice="pressure-spotter" data-args="{}"><div class="practice"><div class="practice-head"><span class="pill">Practice</span><h3>Spot the pressure</h3><p>Read a made-up phone call, one sentence at a time. Is it fear, hurry or secrecy?</p></div><div class="practice-body"><p class="muted">Loading the practice… If it does not load, here is what it does: Six sentences from a made-up scam call. For each one you choose fear, hurry, secrecy or none of these, and see a short explanation.</p></div></div></section>
+
+<aside class="helper" aria-label="For family helpers"><h3>For family helpers</h3><p>Never tease anyone who almost fell for a scam, and never say “How could you?” Shame keeps people silent, and silence helps scammers. Say instead: “Thank you for telling me. Those people are professionals. Let’s check it together.”</p>
+</aside>
+
+<div class="quiz-mount" data-quiz></div>
+
+<nav class="xlink" aria-label="Related lessons"><a href="#/learn/00-03" data-xlink="lesson"><span><span class="xl-label">Lesson 00.03:</span> The three golden rules: Stop, Hang up, Check</span></a><a href="#/learn/01-01" data-xlink="lesson"><span><span class="xl-label">Lesson 01.01:</span> The grandchild-in-trouble phone call</span></a></nav>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://www.bacs.admin.ch/de/hjb-25-2-de" rel="noopener" target="_blank">Swiss Federal Office for Cyber Security (BACS): Half-year report 2025/2</a></li>
+<li><a href="https://search.ftc.gov/system/files/ftc_gov/pdf/2026-older-adults-report-10192026.pdf" rel="noopener" target="_blank">US Federal Trade Commission: Protecting Older Consumers 2025–2026</a></li>
+</ul>
+`,a=[{id:`it-is-not-about-intelligence`,t:`It is not about intelligence`},{id:`this-happens-to-many-people`,t:`This happens to many people`},{id:`your-new-habit`,t:`Your new habit`},{id:`sources`,t:`Sources`}],o=[{id:`00-02-q1`,q:`Why do scams work on clever people?`,options:[`Because they cause fear, hurry and secrecy`,`Because clever people are careless`,`Because scammers know your passwords`],answer:0,explain:`Strong feelings stop calm thinking in everyone. That is the trick, not a lack of intelligence.`,why:null},{id:`00-02-q2`,q:`A caller says, “Don’t tell your family about this.” Which feeling is the caller using?`,options:[`Hurry`,`Secrecy`,`None`],answer:1,explain:`Secrecy cuts you off from the people who would spot the trick.`,why:null},{id:`00-02-q3`,q:`What should you do when a call makes you feel afraid and rushed?`,options:[`Act quickly before it gets worse`,`Stop, because the feeling is the warning sign`,`Ask the caller to prove who they are`],answer:1,explain:`The feeling is your signal. Stop, hang up and check on a number you already have.`,why:null}],s={figures:[`pressure-trio`],practice:[`pressure-spotter`],practiceArgs:[{name:`pressure-spotter`,args:{}}],stories:1,sources:0,exercises:0,tries:[],helpers:1,remember:1},c=[`https://www.bacs.admin.ch/de/hjb-25-2-de`,`https://search.ftc.gov/system/files/ftc_gov/pdf/2026-older-adults-report-10192026.pdf`],l=0,u=`Why scams work on clever people`,d={id:e,minutes:7,summary:n,highlight:r,html:i,toc:a,quiz:o,used:s,links:c,flags:0,title:u};export{d as default,l as flags,r as highlight,i as html,e as id,c as links,t as minutes,o as quiz,n as summary,u as title,a as toc,s as used};

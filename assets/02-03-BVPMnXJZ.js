@@ -1,0 +1,42 @@
+var e=`02-03`,t=8,n=`Fake websites can copy every logo and colour. Look-alike addresses fool the eye, and the padlock only means the connection is private, not that the site is honest.`,r=`look real`,i=`
+<aside class="story" aria-label="A made-up story"><span class="label">A made-up story. It follows a pattern that police and consumer agencies describe.</span><h3>The perfect copy</h3><p>Bruno is 72 and lives in Chur. He searches for his electricity company to pay a bill. He taps the first result. The page looks exactly right: the logo, the colours, the photos. It asks him to sign in.</p>
+<p>Then Bruno looks at the address bar. The name is a little odd: two letters are swapped. He closes the page, finds the paper bill, and types the address printed on it. That is the real site. The first one was a copy.</p>
+</aside>
+
+<div class="remember" role="note"><span class="label">The one thing to remember</span><p><strong>A website can look perfect and still be fake. Check the address, and go in through your own bookmark or app.</strong></p>
+</div>
+<h2 id="copies-are-easy-to-make">Copies are easy to make</h2>
+<p>Anyone can copy the look of a website: the logo, the colours, the text. A fake site may look even more polished than the real one. So the look of a page tells you nothing about who runs it.</p>
+<p>Fake sites reach people in many ways: through links in emails and texts, through QR codes, and through search adverts. The Swiss Federal Office for Cyber Security warns that a QR code can lead to a copy of a real website (<a href="https://www.bacs.admin.ch/de/phishing-de" rel="noopener" target="_blank">BACS: Phishing</a>), and reports that criminals use fraudulent adverts in search engines (<a href="https://www.bacs.admin.ch/de/hjb-25-2-de" rel="noopener" target="_blank">BACS half-year report</a>).</p>
+<h2 id="look-alike-addresses">Look-alike addresses</h2>
+<p>Scammers choose addresses that look almost right at a quick glance:</p>
+<ul>
+<li>a letter swapped: <strong>twlnt.ch</strong> instead of twint.ch (an “l” instead of an “i”)</li>
+<li>letters that look alike together: <strong>rn</strong> looks like <strong>m</strong></li>
+<li>an extra dash or word: <strong>twint-ch.com</strong>, <strong>twint.ch.secure-pay.info</strong></li>
+</ul>
+<p>The FTC advises looking closely for misspellings or a switched letter (<a href="https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information" rel="noopener" target="_blank">FTC</a>). Lesson 02.02 shows how to find the real website name.</p>
+
+<section class="practice-mount" data-practice="lookalike" data-args="{}"><div class="practice"><div class="practice-head"><span class="pill">Practice</span><h3>Find the real address</h3><p>Four addresses that look alike. Only one is real.</p></div><div class="practice-body"><p class="muted">Loading the practice… If it does not load, here is what it does: Rounds of four look-alike web addresses. You pick the real one, and each fake is explained.</p></div></div></section>
+<h2 id="what-the-padlock-really-means">What the padlock really means</h2>
+<p>Many people learned: “Look for the padlock, then the site is safe.” That is no longer true.</p>
+
+<figure class="fig" data-figure="padlock"><svg viewBox="0 0 360 260" role="img" aria-label="The padlock means a private line, not an honest shop." focusable="false"><defs><marker id="ar-padlock" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:var(--muted-strong)"/></marker></defs><rect x="40" y="60" width="80" height="64" rx="10" class="svg-hl"/><path d="M56 60 V44 a24 24 0 0 1 48 0 V60" style="fill:none;stroke:var(--fg);stroke-width:7"/>
+     <text x="150" y="80" class="svg-t" text-anchor="start" style="font-size:17px;font-weight:800"><tspan x="150" dy="0">Padlock means:</tspan><tspan x="150" dy="21.25">nobody can listen in</tspan><tspan x="150" dy="21.25">on the way.</tspan></text>
+     <rect x="20" y="160" width="320" height="80" rx="10" class="svg-box" stroke-dasharray="6 5" stroke-width="2"/><text x="180" y="192" class="svg-t" text-anchor="middle" style="font-size:17px;font-weight:800"><tspan x="180" dy="0">It does NOT mean the site</tspan><tspan x="180" dy="21.25">is honest. Fake sites have it too.</tspan></text></svg><figcaption>The padlock means a private connection, not an honest website.</figcaption><details><summary>Read the picture as text</summary><p>A padlock. The padlock means the connection is private: nobody can listen in on the way. It does not mean the website is honest. Fake websites can have a padlock too.</p></details></figure>
+<p>The padlock and “https” mean that the connection between your phone and the website is private, so others can’t read along. They don’t tell you who you are talking to. Fake sites can have a padlock too. The FBI warns: do not trust a website just because it has a lock icon or “https” in the address (<a href="https://www.ic3.gov/PSA/2019/PSA190610" rel="noopener" target="_blank">FBI IC3</a>).</p>
+
+<aside class="helper" aria-label="For family helpers"><h3>For family helpers</h3><p>Many older adults were taught that the padlock means “safe”. Gently update that advice, and explain why it changed. Then show the alternative: a bookmark or the official app for every site where they sign in or pay. Lesson 02.04 shows how to set that up together.</p>
+</aside>
+
+<div class="quiz-mount" data-quiz></div>
+
+<nav class="xlink" aria-label="Related lessons"><a href="#/learn/02-02" data-xlink="lesson"><span><span class="xl-label">Lesson 02.02:</span> Reading the sender and the link without clicking</span></a><a href="#/learn/02-04" data-xlink="lesson"><span><span class="xl-label">Lesson 02.04:</span> The safe way in: bookmarks and the official app</span></a></nav>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://www.bacs.admin.ch/de/phishing-de" rel="noopener" target="_blank">BACS: Phishing, vishing and smishing</a></li>
+<li><a href="https://www.bacs.admin.ch/de/hjb-25-2-de" rel="noopener" target="_blank">BACS: Half-year report 2025/2</a></li>
+<li><a href="https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information" rel="noopener" target="_blank">US Federal Trade Commission: Scammers hide harmful links in QR codes</a></li>
+<li><a href="https://www.ic3.gov/PSA/2019/PSA190610" rel="noopener" target="_blank">FBI IC3: Cyber actors exploit “secure” websites in phishing campaigns</a></li>
+</ul>
+`,a=[{id:`copies-are-easy-to-make`,t:`Copies are easy to make`},{id:`look-alike-addresses`,t:`Look-alike addresses`},{id:`what-the-padlock-really-means`,t:`What the padlock really means`},{id:`sources`,t:`Sources`}],o=[{id:`02-03-q1`,q:`A website looks exactly like your bank’s site. Does that prove it is real?`,options:[`Yes, if the logo is right`,`No, the look of a site is easy to copy`,`Yes, if it loads quickly`],answer:1,explain:`Logos and colours can be copied in minutes.`,why:null},{id:`02-03-q2`,q:`What does the padlock next to a web address mean?`,options:[`The website is honest`,`The connection is private, but it says nothing about who runs the site`,`The website has been checked by the police`],answer:1,explain:`The FBI warns not to trust a site just because it has a lock icon or https.`,why:null},{id:`02-03-q3`,q:`Which of these addresses is the real TWINT website?`,options:[`twlnt.ch`,`twint.ch`,`twint-ch.com`],answer:1,explain:`“twlnt” has an “l” instead of an “i”, and “twint-ch.com” is a different address.`,why:null}],s={figures:[`padlock`],practice:[`lookalike`],practiceArgs:[{name:`lookalike`,args:{}}],stories:1,sources:0,exercises:0,tries:[],helpers:1,remember:1},c=[`https://www.bacs.admin.ch/de/phishing-de`,`https://www.bacs.admin.ch/de/hjb-25-2-de`,`https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information`,`https://www.ic3.gov/PSA/2019/PSA190610`],l=0,u=`Fake websites that look real`,d={id:e,minutes:8,summary:n,highlight:r,html:i,toc:a,quiz:o,used:s,links:c,flags:0,title:u};export{d as default,l as flags,r as highlight,i as html,e as id,c as links,t as minutes,o as quiz,n as summary,u as title,a as toc,s as used};

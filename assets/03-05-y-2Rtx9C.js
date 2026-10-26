@@ -1,0 +1,55 @@
+var e=`03-05`,t=8,n=`Whoever controls your email can reset almost every other password. Secure your email first, with a unique password, two-step sign-in and up-to-date recovery details.`,r=`master key`,i=`
+<aside class="story" aria-label="A made-up story"><span class="label">A made-up story. It follows a pattern that police and consumer agencies describe.</span><h3>The key ring</h3><p>Claudine is 70 and lives in Neuchâtel. Her daughter explains it with a key ring. “Every website has a ‘forgot your password?’ button. It sends a link to your email. So your email is like the ring that holds all your keys. If someone takes the ring, they can open every door.”</p>
+<p>Claudine likes the picture. That evening, they give her email a new, unique password, and turn on two-step sign-in. “Now the ring is in a safe,” she says.</p>
+</aside>
+
+<div class="remember" role="note"><span class="label">The one thing to remember</span><p><strong>Your email is the master key to your other accounts. Protect it first, and protect it best.</strong></p>
+</div>
+<h2 id="why-email-matters-most">Why email matters most</h2>
+<p>Almost every website lets you reset a forgotten password by email. That is convenient for you, and for a criminal who gets into your email. From your inbox, they can ask for new passwords for your bank, shops and social media.</p>
+
+<figure class="fig" data-figure="master-key"><svg viewBox="0 0 360 290" role="img" aria-label="Your email can reset all your other passwords." focusable="false"><defs><marker id="ar-master-key" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:var(--muted-strong)"/></marker></defs><rect x="110" y="110" width="140" height="60" rx="10" class="svg-hl" stroke-width="2"/><text x="180" y="146" class="svg-on-hl" text-anchor="middle" style="font-size:18px;font-weight:800"><tspan x="180" dy="0">Your email</tspan></text>
+     <rect x="20" y="14" width="100" height="56" rx="10" class="svg-box" stroke-width="2"/><text x="70" y="48" class="svg-t" text-anchor="middle" style="font-size:17px;font-weight:800"><tspan x="70" dy="0">Bank</tspan></text><rect x="240" y="14" width="100" height="56" rx="10" class="svg-box" stroke-width="2"/><text x="290" y="48" class="svg-t" text-anchor="middle" style="font-size:17px;font-weight:800"><tspan x="290" dy="0">Shop</tspan></text><rect x="20" y="216" width="100" height="56" rx="10" class="svg-box" stroke-width="2"/><text x="70" y="250" class="svg-t" text-anchor="middle" style="font-size:17px;font-weight:800"><tspan x="70" dy="0">Photos</tspan></text><rect x="240" y="216" width="100" height="56" rx="10" class="svg-box" stroke-width="2"/><text x="290" y="250" class="svg-t" text-anchor="middle" style="font-size:17px;font-weight:800"><tspan x="290" dy="0">Social</tspan></text>
+     <path d="M140 110 L100 72" class="svg-line" stroke-width="2.4" fill="none" marker-end="url(#ar-master-key)"/><path d="M220 110 L260 72" class="svg-line" stroke-width="2.4" fill="none" marker-end="url(#ar-master-key)"/><path d="M140 170 L100 214" class="svg-line" stroke-width="2.4" fill="none" marker-end="url(#ar-master-key)"/><path d="M220 170 L260 214" class="svg-line" stroke-width="2.4" fill="none" marker-end="url(#ar-master-key)"/>
+     <text x="180" y="100" class="svg-m" text-anchor="middle" style="font-size:14px;font-weight:700"><tspan x="180" dy="0">“Forgot password?”</tspan></text></svg><figcaption>Your email holds the keys to your other accounts.</figcaption><details><summary>Read the picture as text</summary><p>Your email in the middle, with arrows to bank, shop, photos and social media. The arrows are the “forgot password?” links: they send a reset link to your email. Whoever controls your email can reset the others, so your email needs the strongest protection.</p></details></figure>
+<p>This is what happened to “Emma” in CISA’s story: she couldn’t get into her email to receive the bank’s reset link, because the criminal already had it (<a href="https://www.cisa.gov/secure-our-world/use-strong-passwords" rel="noopener" target="_blank">CISA: Use strong passwords</a>). The Swiss Federal Office for Cyber Security advises: if your email password has leaked, change it and also reset the services that are linked to that email (<a href="https://www.bacs.admin.ch/de/phishing-de" rel="noopener" target="_blank">BACS</a>).</p>
+<h2 id="three-steps-to-protect-your-email">Three steps to protect your email</h2>
+<ol>
+<li><strong>A unique, strong password.</strong> Long, random, and used nowhere else. Let your password manager create it (lesson 03.04).</li>
+<li><strong>Two-step sign-in.</strong> Also called two-factor authentication, 2FA or MFA. It asks for a second proof, such as a code or a tap on your phone, when someone signs in. CISA recommends turning it on for every account that offers it, including email (<a href="https://www.cisa.gov/secure-our-world/turn-mfa" rel="noopener" target="_blank">CISA: Turn on MFA</a>). Phase 04 shows how, step by step.</li>
+<li><strong>Up-to-date recovery details.</strong> Your recovery phone number and email address help you get back in if you are locked out, and help alert you to suspicious activity. Google explains this in its account security advice (<a href="https://support.google.com/accounts/answer/46526" rel="noopener" target="_blank">Google Account Help</a>).</li>
+</ol>
+
+<section class="try" data-try="03-05-t1" aria-labelledby="03-05-t1-h"><h3 id="03-05-t1-h">Try it on your own phone: Check your email account’s security</h3><p>These steps are for a Google account (Gmail), which works on any phone. If you use another email service, look in its settings for “Security”.</p>
+
+        
+        <div class="try-panel" role="tabpanel" id="03-05-t1-google-account" aria-labelledby="03-05-t1-google-account-tab"><h4>Google account</h4><ol>
+<li>Sign in to your Google Account.</li>
+<li>Go to <strong>Manage your Google Account</strong>, then <strong>Security &amp; sign-in</strong>, or tap your profile picture and <strong>Recommended actions</strong> if you see it. This opens <strong>Security Checkup</strong>.</li>
+<li>Follow the recommendations, especially <strong>recovery phone</strong> and <strong>recovery email</strong>.</li>
+<li>If it suggests turning on <strong>2-Step Verification</strong>, you can do it now, or wait for Phase 04.</li>
+</ol>
+<p class="try-check">Checked against: <a href="https://support.google.com/accounts/answer/46526" rel="noopener" target="_blank">Google Account Help: Make your account more secure</a>.</p>
+</div>
+        <label class="check"><input type="checkbox" data-try-done="03-05-t1"> Done! I tried this on my phone.</label></section>
+<h2 id="watch-out-for-fake-email-security-messages">Watch out for fake “email security” messages</h2>
+<p>Criminals know that email is valuable. They send fake messages like “Your mailbox is full” or “Confirm your email password”. That is phishing. Use your own door: open your email settings yourself, never through a link.</p>
+
+<div class="exercise"><h3>Practice on paper: Draw your key ring</h3><p>On a piece of paper, draw a circle and write “My email” in the middle. Around it, write every account that sends its password-reset emails to this address: bank, shops, health insurance, social media.</p>
+<details><summary>Show an example answer</summary><p>Most people find five to fifteen accounts around their email. That picture shows why the email password must be unique and why two-step sign-in matters most here. If you have several email addresses, draw one ring for each, and start with the one that has the most keys.</p>
+</details></div>
+
+<aside class="helper" aria-label="For family helpers"><h3>For family helpers</h3><p>Check together which email address the bank and other important accounts use. Make sure the recovery phone number is your relative’s current number, not an old one. Write down, on paper kept at home, which email provider they use and where the recovery codes are, if any.</p>
+</aside>
+
+<div class="quiz-mount" data-quiz></div>
+
+<nav class="xlink" aria-label="Related lessons"><a href="#/learn/03-02" data-xlink="lesson"><span><span class="xl-label">Lesson 03.02:</span> Has my email been in a leak?</span></a><a href="#/learn/03-04" data-xlink="lesson"><span><span class="xl-label">Lesson 03.04:</span> Try it: set up your password manager</span></a></nav>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://www.cisa.gov/secure-our-world/use-strong-passwords" rel="noopener" target="_blank">CISA: Use strong passwords</a></li>
+<li><a href="https://www.cisa.gov/secure-our-world/turn-mfa" rel="noopener" target="_blank">CISA: Turn on multifactor authentication</a></li>
+<li><a href="https://www.bacs.admin.ch/de/phishing-de" rel="noopener" target="_blank">BACS: Phishing, vishing and smishing</a></li>
+<li><a href="https://support.google.com/accounts/answer/46526" rel="noopener" target="_blank">Google Account Help: Make your account more secure</a></li>
+</ul>
+`,a=[{id:`why-email-matters-most`,t:`Why email matters most`},{id:`three-steps-to-protect-your-email`,t:`Three steps to protect your email`},{id:`watch-out-for-fake-email-security-messages`,t:`Watch out for fake “email security” messages`},{id:`sources`,t:`Sources`}],o=[{id:`03-05-q1`,q:`Why is your email account so important?`,options:[`Because it can reset the passwords of your other accounts`,`Because it has the most photos`,`Because it is the oldest account`],answer:0,explain:`Password-reset links go to your email, so it holds the keys to everything else.`,why:null},{id:`03-05-q2`,q:`Which three steps protect your email best?`,options:[`A unique password, two-step sign-in and up-to-date recovery details`,`A short password, no phone number and many emails`,`Writing the password in every email`],answer:0,explain:`Together, these make it much harder for anyone else to get in.`,why:null},{id:`03-05-q3`,q:`An email says “Your mailbox is full, confirm your password here”. What do you do?`,options:[`Confirm quickly`,`Don’t click: it is phishing. Check your email settings yourself`,`Forward it to everyone`],answer:1,explain:`Criminals target email passwords. Use your own door.`,why:null}],s={figures:[`master-key`],practice:[],practiceArgs:[],stories:1,sources:0,exercises:1,tries:[{key:`03-05-t1`,tabs:[{name:`Google account`,links:[`https://support.google.com/accounts/answer/46526`]}]}],helpers:1,remember:1},c=[`https://www.cisa.gov/secure-our-world/use-strong-passwords`,`https://www.bacs.admin.ch/de/phishing-de`,`https://www.cisa.gov/secure-our-world/turn-mfa`,`https://support.google.com/accounts/answer/46526`],l=0,u=`Your email is your master key`,d={id:e,minutes:8,summary:n,highlight:r,html:i,toc:a,quiz:o,used:s,links:c,flags:0,title:u};export{d as default,l as flags,r as highlight,i as html,e as id,c as links,t as minutes,o as quiz,n as summary,u as title,a as toc,s as used};
