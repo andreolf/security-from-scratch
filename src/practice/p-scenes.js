@@ -184,6 +184,34 @@ export const SCENES = {
       ['Pay quickly to end the argument.', false, 'The hurry is the trick. Take the time you need.'],
       ['Send it in small amounts so nobody notices.', false, 'Small amounts add up, and the requests won’t stop.']]],
   ] },
+  video: { who: 'Video call', intro: 'Your phone rings with a video call from an unknown number.', turns: [
+    ['On screen is your nephew Marc, a bit blurry. “Hi! New phone. Can you send me CHF 1,500 by TWINT? I’ll explain later.” His lips don’t quite match his words.', [
+      ['End the call and ring Marc on the number I already have.', true, 'Exactly. A face on a screen can be faked. Your own number for Marc can’t.'],
+      ['It’s his face, so it must be him. Send it.', false, 'Faces and voices can be faked now. Check first.'],
+      ['Ask him to move closer to the camera.', false, 'Looking harder doesn’t help much. Fakes keep improving. Call back.']]],
+    ['A video call from a “police officer” in uniform, showing an ID card: “Your bank account is involved in a crime. Move your savings now.”', [
+      ['Hang up. Real police don’t ask me to move money. I call the police on 117 myself if worried.', true, 'Right. A uniform and ID on a screen prove nothing.'],
+      ['Follow the instructions, it’s the police.', false, 'Real police never ask you to move your money.'],
+      ['Read out my bank details to prove I’m honest.', false, 'Never give bank details to a caller.']]],
+    ['A video message from a famous TV presenter promoting a crypto investment.', [
+      ['Ignore it. Famous people’s faces and voices are used in fake adverts.', true, 'Good. The Swiss cyber security office describes deepfake celebrity adverts.'],
+      ['Invest a little, she wouldn’t lie.', false, 'She didn’t say it. The video was made without her.'],
+      ['Forward it to friends.', false, 'Forwarding spreads the scam.']]],
+  ] },
+  codeword: { who: 'Using your code word', intro: 'Your family agreed on a code word last month. Now it’s time to use it.', turns: [
+    ['A message from your daughter’s number: “Mum, quick, I need you to pay a bill for me.”', [
+      ['Call her on her usual number and ask how she is, before anything else.', true, 'Good. A message can come from a stolen or copied account. A call you start is safer.'],
+      ['Ask for the code word by text.', false, 'Better to call. If her account was taken over, the scammer might find old messages.'],
+      ['Pay, it’s her number.', false, 'Numbers and accounts can be taken over. Check first.']]],
+    ['A caller with your son’s voice asks for money. You ask for the code word. He says: “Come on, Dad, it’s me!”', [
+      ['No word, no money. Hang up and call him back on his number.', true, 'Exactly. An excuse instead of the word is your signal to hang up.'],
+      ['Accept it, he sounds just like him.', false, 'Voices can be cloned. The word is the test, not the voice.'],
+      ['Tell him the first letter.', false, 'Never give hints.']]],
+    ['Your grandson asks: “Can I post our code word in the family WhatsApp group so nobody forgets?”', [
+      ['No. We keep it out of messages and posts. We say it face to face.', true, 'Right. A written word can be read by anyone who gets into an account.'],
+      ['Yes, the group is private.', false, 'Groups and accounts can be taken over. Keep it out of writing.'],
+      ['Yes, and also on Facebook.', false, 'Never post it anywhere.']]],
+  ] },
 };
 export default function (body, ctx) {
   const sc = SCENES[ctx.args.scene] || SCENES.popup; let t = 0, good = 0;

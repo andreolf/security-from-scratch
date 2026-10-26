@@ -126,7 +126,7 @@
       "date": "",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "Voice cloning from a short clip; don’t trust the voice; hang up and call back on a known number."
+      "evidence": "Voice cloning from a short clip; don’t trust the voice; hang up and call back on a known number. (WebFetch.) With a short audio clip, maybe from content posted online, and a voice-cloning program a scammer could sound just like your family member; they say it's urgent, you're the only one who can help, keep it secret; don't trust the voice; hang up or say you'll call back; ask a question only the real person would know; call on a number you know; call someone else in the family even if told to keep it secret; report at ReportFraud.ftc.gov."
     },
     {
       "url": "https://www.ic3.gov/PSA/2024/PSA241203",
@@ -135,7 +135,7 @@
       "date": "2024-12-03",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "Create a secret word or phrase with your family."
+      "evidence": "Create a secret word or phrase with your family. Generative AI increases believability; AI-generated audio: criminals generate short audio clips containing a loved one's voice to impersonate a relative in crisis asking for immediate financial help or ransom; AI-generated videos for real-time video chats with alleged company executives, law enforcement or authority figures, and to 'prove' an online contact is real; AI images for profile photos and fake IDs. Tips: create a secret word or phrase with your family to verify identity; look for imperfections (distorted hands or feet, unrealistic teeth or eyes, irregular faces, inaccurate shadows, lag time, voice matching, unrealistic movements); listen to tone and word choice; if possible limit online content of your image or voice, make social media accounts private, limit followers to people you know; verify by hanging up and calling the number directly; never send money to people met only online or by phone."
     },
     {
       "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams",
@@ -1024,6 +1024,42 @@
       "title": "Beispiele für Anlagebetrug",
       "publisher": "FINMA (Swiss Financial Market Supervisory Authority)",
       "evidence": "Offers to recover losses as a nasty trick: lists of defrauded investors circulate and are sold to new fraudsters; victims usually lose a second time (new money, fees). Misuse of FINMA's name: FINMA generally does not contact private individuals; uses @finma.ch emails; is never involved in offers to recover losses. Cloned websites: check imprint, contacts and URL. 'Im Zweifel Hände weg.'",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/23w49-de",
+      "title": "Woche 49: Einsatz von künstlicher Intelligenz für Betrugsversuche",
+      "publisher": "Federal Office for Cyber Security (BACS, then NCSC)",
+      "date": "2023-12-12",
+      "evidence": "Images and videos can be made from photos of real people (e.g. from social media); videos from little base material; famous people misused in investment ads and give-away scams; voices cloned from voice samples, e.g. from phone calls; used in shock calls where a fake police officer plays a fabricated recording of the son or daughter.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/ecsm24-4-de",
+      "title": "European Cyber Security Month: Tipps für Seniorinnen und Senioren",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "date": "2024-10-24",
+      "evidence": "Shock calls reach a new dimension with AI: software creates a same-sounding voice from one or more voice samples; criminals call with the voice of relatives and claim an emergency; voice samples from social media or other public sources; contact details mostly from the public phone book. Signs: metallic, monotone voice; strange content; untypical vocabulary. Tips: don't trust every caller; call the relative back on the known number; end implausible calls immediately; don't be intimidated or pressured; never give passwords or PIN on the phone; never give strangers access to your computer.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/26w31-de",
+      "title": "Woche 31: Was die Zukunft bringt – Interaktion im KI-Zeitalter",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "date": "2026-08-04",
+      "evidence": "Cloning a voice currently needs an audio file of about 10 seconds; interactive and real-time; reports to BACS still few, isolated cases, likely to change; CEO fraud with cloned voice and in isolated cases a cloned boss in a video conference. Shock calls: many convinced they recognised their child's voice; possibly cloned from social media videos, or stress makes people believe it; BACS can't verify whether AI was used. Silent calls: BACS knows of no cases where a simple 'hello' was used to clone a voice; they test whether a person answers. Lip sync not yet perfect and can be a sign; deepfake videos often show unnatural behaviour; watch gestures, facial expressions and typical expressions. Recommendations: don't trust every caller; call back on the known number; end implausible calls; don't be pressured; never give passwords or PIN by phone; never give strangers access to your computer.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://faq.whatsapp.com/3307102709559968/?cms_platform=iphone&locale=en_US",
+      "title": "How to change your privacy settings",
+      "publisher": "WhatsApp Help Center",
+      "evidence": "(WebFetch.) By default any user can see your profile photo; to change who can see last seen and online, profile photo, about, status: Settings > Privacy, tap the setting, select Everyone, My contacts, My contacts except…, or Nobody. My Contacts: only contacts from your address book can see it.",
       "date": "",
       "checked": "2026-10-26",
       "verified": true

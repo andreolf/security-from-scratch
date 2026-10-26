@@ -73,6 +73,20 @@ export const SCENARIOS = {
       ['Stay on, just in case.', false, 'Hanging up is always safe. A real bank never threatens you.'],
       ['Move my money to a “safe account” they give me.', false, 'There is no such thing as a safe account from a caller. That is the theft.']]],
   ] },
+  voice: { who: 'Caller with your grandson’s voice', turns: [
+    ['It sounds exactly like your grandson Luca, crying: “Nonna, I had an accident. I need money for a lawyer, now. Please don’t tell Mum.”', [
+      ['“Luca, what is our family word?”', true, 'Good. A code word is a quick test. A real Luca knows it, a cloned voice doesn’t.'],
+      ['“Of course, how much do you need?”', false, 'The voice can be copied. Check before anything else.'],
+      ['“I won’t tell Mum, I promise.”', false, 'Secrecy is a warning sign. It stops you from checking with family.']]],
+    ['“I… I don’t remember the word, I’m too upset. Please, there’s no time!”', [
+      ['“I love you. I’ll call you right back on your number.” Hang up.', true, 'Exactly. Hang up and call Luca on the number you already have.'],
+      ['Feel sorry for him and send the money.', false, 'Pressure and tears are part of the script. Call back first.'],
+      ['Give him a hint about the word.', false, 'Never give hints. Hang up and call back.']]],
+    ['You call Luca on his usual number. He doesn’t answer.', [
+      ['Call his mother or another family member to check.', true, 'Right. Another family member can confirm where Luca is. Then tell the police about the call.'],
+      ['Call the first number back and send the money.', false, 'That number leads back to the scammer.'],
+      ['Wait by the phone for the caller to ring again.', false, 'Check with family instead. The scammer will only push harder.']]],
+  ] },
   robot: { who: 'Recorded voice', turns: [
     ['A recorded voice, in English: “This is the police. Your bank account is involved in a crime. Press 1 to speak to an officer.”', [
       ['Press nothing and hang up.', true, 'Exactly. Real police never call with a recording.'],

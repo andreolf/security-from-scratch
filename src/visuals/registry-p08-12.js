@@ -31,4 +31,18 @@ export const visuals3 = {
   'trusted-test': flowSteps('trusted-test', 'The trusted-person test before money moves.',
     ['Someone wants your money', 'Tell one person you trust', 'Show them the messages', 'They worry? Then stop'],
     ['Step 1: someone you know only online, or a caller, asks you to send, move or invest money.', 'Step 2: before you do anything, tell one person you trust, such as a family member, a friend or your bank.', 'Step 3: show them the messages or tell them exactly what was said.', 'Step 4: if they are worried, stop. A real friend or real offer can wait a day. A scammer will push or ask for secrecy.']),
+
+  // ---------- Phase 09 ----------
+  'voice-clone': flowSteps('voice-clone', 'How a cloned voice is used, and how you stop it.',
+    ['A few seconds of voice online', 'Software copies the voice', '“Mum, I’m in trouble! Pay!”', 'Hang up. Call the known number'],
+    ['Step 1: a short recording of someone’s voice, for example from a video on social media.', 'Step 2: voice-cloning software makes a voice that sounds just like them.', 'Step 3: the scammer calls you with that voice, in a hurry, and asks for money or help.', 'Step 4: hang up, and call the person back on the number you already have. Don’t trust the voice.']),
+  'video-fake': checklist('video-fake', 'Possible signs of a faked video, and the safe step.',
+    [[false, 'Lips not in sync with words'], [false, 'Odd eyes, teeth or hands'], [false, 'Lag or stiff movements'], [false, 'Acts unlike the real person'], [true, 'Hang up, call a known number']], 4,
+    'Possible signs that a video is faked: the lips don’t match the words; the eyes, teeth or hands look odd; there is lag or the movements are stiff; the person behaves unlike themselves. But fakes keep improving, so the safe step is the same every time: hang up and call back on a number you know.'),
+  'code-word': flowSteps('code-word', 'A family code word, step by step.',
+    ['Choose a word together', 'Never post it or text it', 'Odd call? Ask for the word', 'No word? Hang up, call back'],
+    ['Step 1: sit together and choose a word or short phrase that only your family knows, and that nobody could guess from social media.', 'Step 2: keep it out of messages and posts. Say it only face to face or on a call you started.', 'Step 3: if a call or message asks for money or help in a hurry, ask: “What is our word?”', 'Step 4: no word, a wrong word or an excuse? Hang up, and call the person back on the number you already have.']),
+  'share-voice': checklist('share-voice', 'Leave less for scammers to copy.',
+    [[true, 'Profile photo: “My contacts”'], [true, 'Accounts private, friends only'], [true, 'Fewer public videos with voice'], [false, 'Strangers as followers']], 0,
+    'Leave less for scammers to copy: set your WhatsApp profile photo to “My contacts”; make your social media accounts private, for friends only; post fewer public videos with your voice; and don’t accept strangers as followers.'),
 };
