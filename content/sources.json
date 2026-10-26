@@ -379,6 +379,15 @@
    "checked": "2026-10-26",
    "verified": true,
    "evidence": "More > Add to bookmarks."
+  },
+  {
+   "url": "https://www.antiphishing.ch/",
+   "title": "antiphishing.ch",
+   "publisher": "Swiss Federal Office for Cyber Security (BACS)",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Report phishing pages via web form; forward phishing emails to reports@antiphishing.ch; run by BACS."
   }
  ],
  "unverified": [
