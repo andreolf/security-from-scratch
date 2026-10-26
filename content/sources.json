@@ -355,12 +355,12 @@
   },
   {
    "url": "https://support.google.com/accounts/answer/9457609",
-   "title": "Use Password Checkup",
+   "title": "Change compromised passwords in your Google Account (Password Checkup)",
    "publisher": "Google Account Help",
    "date": "",
    "checked": "2026-10-26",
    "verified": true,
-   "evidence": "Check saved passwords for leaks, reuse and weakness."
+   "evidence": "Check if saved passwords are exposed, weak or reused; start Password Checkup."
   },
   {
    "url": "https://support.google.com/accounts/answer/46526",
@@ -388,11 +388,21 @@
    "checked": "2026-10-26",
    "verified": true,
    "evidence": "Report phishing pages via web form; forward phishing emails to reports@antiphishing.ch; run by BACS."
+  },
+  {
+   "url": "https://haveibeenpwned.com/About",
+   "title": "Have I Been Pwned: Who, what and why",
+   "publisher": "Troy Hunt (independent service)",
+   "date": "",
+   "checked": "2026-10-26",
+   "verified": true,
+   "evidence": "Created and run by Troy Hunt since 2013 as a free resource."
   }
  ],
  "unverified": [
   "Reporting contacts for Phase 10 (beyond 117, 112 and 911) are not published yet. Each will be re-checked before its lesson goes live.",
   "Phases 04 to 12 are not written yet. Lessons from other sites that link to them show “Coming soon”.",
-  "Phase 12 (optional wallet basics) will be checked against ethskills.com before it is written."
+  "Phase 12 (optional wallet basics) will be checked against ethskills.com before it is written.",
+  "Android steps to preview where a link goes (lesson 02.02): no official Google help page found yet, so no Android steps are given."
  ]
 }
