@@ -1171,6 +1171,24 @@
       "evidence": "A trusted contact person on your account puts your firm in a better position to keep your account safe; a trusted contact cannot make trades or decisions about your account, and is not a power of attorney; recommended for all investors; once money has been disbursed, it is very difficult to get it back.",
       "checked": "2026-10-26",
       "verified": true
+    },
+    {
+      "url": "https://support.apple.com/guide/iphone/set-a-passcode-iph14a867ae/ios",
+      "title": "Set a passcode on iPhone",
+      "publisher": "Apple Support",
+      "evidence": "Go to Settings, then tap Face ID & Passcode (or Touch ID & Passcode on models with Touch ID). Tap Turn Passcode On or Change Passcode. Passcode Options: the most secure options are Custom Alphanumeric Code and Custom Numeric Code. After setting a passcode you can use Face ID or Touch ID to unlock.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.google.com/android/answer/9079129?hl=en",
+      "title": "Set or change a screen lock",
+      "publisher": "Android Help",
+      "evidence": "Open your phone's Settings app. Tap Security (if not found, see the manufacturer's support site). Tap Screen lock, choose the option and follow the on-screen instructions. None and Swipe give no protection. PIN: 4 or more numbers, a 6-digit PIN is recommended; a strong password is the most secure screen lock option.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
     }
   ],
   "unverified": [
