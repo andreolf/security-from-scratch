@@ -3,6 +3,7 @@
 //   kind 'svg'   -> one diagram (role=img + aria-label) and a "Text version" disclosure
 //   kind 'steps' -> step-through; every step's words are real text under the picture; JS shows one at a time
 import { T, box, hlBox, arrow, svg, e } from './svg.js';
+import { visuals2 } from './registry-p04-07.js';
 
 const W = 360;
 const S = { size: 18, weight: 700 };
@@ -128,6 +129,7 @@ export const visuals = {
      ${arrow('master-key', 140, 110, 100, 72)}${arrow('master-key', 220, 110, 260, 72)}${arrow('master-key', 140, 170, 100, 214)}${arrow('master-key', 220, 170, 260, 214)}
      ${T(180, 100, '“Forgot password?”', { size: 14, anchor: 'middle', cls: 'svg-m', weight: 700 })}`,
     'Your email in the middle, with arrows to bank, shop, photos and social media. The arrows are the “forgot password?” links: they send a reset link to your email. Whoever controls your email can reset the others, so your email needs the strongest protection.'),
+  ...visuals2,
 };
 
 export function renderVisual(name, captionHTML = '') {

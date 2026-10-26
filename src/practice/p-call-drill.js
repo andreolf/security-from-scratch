@@ -45,6 +45,20 @@ export const SCENARIOS = {
       ['Install it, but watch the screen.', false, 'Once installed, they can act faster than you can see.'],
       ['Install it on a different phone.', false, 'No stranger should ever control any of your devices.']]],
   ] },
+  code: { who: '“Bank support”', turns: [
+    ['A text: “Your bank: a new device is signing in to your account. If this was not you, call us on this number.” You call.', [
+      ['Don’t call that number. Call the number on the back of my card.', true, 'Right. A number inside a surprise message is not proven. Use the one you already have.'],
+      ['Call quickly: it might be urgent.', false, 'Urgency is the trick. The number in the text leads to the scammer.'],
+      ['Reply to the text with “STOP”.', false, 'Replying shows them your number is active. Just use your own number for the bank.']]],
+    ['Suppose you did call. A friendly voice: “To block the intruder, I’ll send you a code. Please read it to me.”', [
+      ['“I never read a code to anyone. Goodbye.”', true, 'Exactly. The code is for signing in. Whoever has it can get in as you.'],
+      ['Read it out: they are helping.', false, 'Reading the code lets the caller sign in as you, or confirm a payment.'],
+      ['Read only the first half.', false, 'No part of a code is for anyone else.']]],
+    ['“Then just approve the message that pops up in your banking app.”', [
+      ['Approve nothing I didn’t start myself. Hang up and call my bank.', true, 'Perfect. Only approve sign-ins and payments you started yourself, right now.'],
+      ['Approve it, so the call can end.', false, 'Approving would confirm their sign-in or payment.'],
+      ['Approve it, then check later.', false, 'Once approved, money can leave in seconds. Never approve what you didn’t start.']]],
+  ] },
   robot: { who: 'Recorded voice', turns: [
     ['A recorded voice, in English: “This is the police. Your bank account is involved in a crime. Press 1 to speak to an officer.”', [
       ['Press nothing and hang up.', true, 'Exactly. Real police never call with a recording.'],
