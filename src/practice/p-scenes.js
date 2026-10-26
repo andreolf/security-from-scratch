@@ -268,6 +268,62 @@ export const SCENES = {
       ['Keep paying until she proves it.', false, 'Scammers always have a new reason. Stop the money.'],
       ['Keep it secret from everyone.', false, 'Secrecy helps the scammer. The bank and police can help.']]],
   ] },
+  phrase: { who: 'Your new wallet', intro: 'You set up a crypto wallet app. It shows you 12 words and says: write these down.', turns: [
+    ['Where do you keep the 12 words?', [
+      ['On paper, hidden at home.', true, 'Yes. Paper can’t be hacked.'],
+      ['A screenshot in my photos.', false, 'Photos can sync to the cloud, where they can be stolen.'],
+      ['In an email to myself.', false, 'If the email is hacked, the wallet is emptied.']]],
+    ['A message says: “Your wallet will be locked. Enter your 12 words here to keep it.” What do you do?', [
+      ['Ignore it. Nobody real asks for the words.', true, 'Right. Anyone with the words can take everything.'],
+      ['Enter the words quickly.', false, 'That gives the scammer the whole safe.'],
+      ['Enter only half of the words.', false, 'Never share any of them.']]],
+    ['Your niece offers to “keep a copy” of the words on her phone. What do you say?', [
+      ['“Thank you, but the words stay on paper, with me.”', true, 'Good. Every copy is another way in.'],
+      ['“Good idea, send me a photo too.”', false, 'More copies on phones means more risk.'],
+      ['“Post them in the family group.”', false, 'Never. Anyone in the group could take everything.']]],
+  ] },
+  fakesupport: { who: '“Wallet Support” (private message)', intro: 'You asked a question in a public crypto chat group. A minute later, “Wallet Support” writes to you privately.', turns: [
+    ['“Hi! I’m from official support. I can fix your problem. Open this link.”', [
+      ['Don’t click. Real support doesn’t message first in private.', true, 'Right. Support scammers watch public groups for questions.'],
+      ['Open the link.', false, 'It will likely ask for your secret phrase.'],
+      ['Send a screenshot of your wallet.', false, 'Don’t share anything with them.']]],
+    ['“To sync your wallet, enter your 12 words on this page.”', [
+      ['Block them. Nobody real ever asks for the phrase.', true, 'Exactly. That is the whole scam.'],
+      ['Enter them, it’s support.', false, 'Anyone with the words can empty the wallet.'],
+      ['Read them out on a call instead.', false, 'Same result. Never share them.']]],
+    ['They say: “If you don’t sync in 10 minutes, your funds are lost.”', [
+      ['Ignore the pressure, block, and report the account.', true, 'Good. Urgency is a scam sign.'],
+      ['Hurry and do what they say.', false, 'Pressure is how they stop you thinking.'],
+      ['Pay a small fee to extend the time.', false, 'There is no time limit. It’s a scam.']]],
+  ] },
+  hardware: { who: 'A hardware wallet', intro: 'You bought a small hardware wallet online. You open the box.', turns: [
+    ['Inside is a card with 24 words already printed, and a note: “Your recovery phrase”. What do you do?', [
+      ['Don’t use it. A real device makes its own words at setup.', true, 'Exactly. Someone else has those words.'],
+      ['Use the printed words, it’s convenient.', false, 'Whoever printed them can empty the wallet.'],
+      ['Photograph the card to keep it safe.', false, 'Don’t use these words at all.']]],
+    ['The seller was a cheap marketplace shop. What is safer next time?', [
+      ['Buy from the maker or its official resellers.', true, 'Right. The makers warn against unknown sellers.'],
+      ['Buy second-hand, it’s cheaper.', false, 'You can’t know who used it before.'],
+      ['Buy one already set up.', false, 'Set up means someone else may have the words.']]],
+    ['You get a proper device and set it up. It shows you new words. Where do they go?', [
+      ['On the blank card, on paper, kept hidden at home.', true, 'Yes. Your own words, only on paper.'],
+      ['In my phone notes.', false, 'Phones can be hacked or synced. Paper only.'],
+      ['Emailed to the maker for safekeeping.', false, 'The maker never needs your words.']]],
+  ] },
+  clicked: { who: 'You clicked something', intro: 'A site promised free tokens. You connected your wallet and approved something. Now you are worried.', turns: [
+    ['What first?', [
+      ['Close the site and don’t sign or approve anything more.', true, 'Good. Stop the damage first.'],
+      ['Approve again to “undo” it.', false, 'Never sign more on a site you don’t trust.'],
+      ['Ask the site’s chat for help.', false, 'The site is the scam. Leave it.']]],
+    ['You also typed your 12 words into the site. What now?', [
+      ['Treat them as stolen: make a new wallet with new words and move what’s left at once.', true, 'Right. Speed matters. The old words are burned.'],
+      ['Change the wallet app password.', false, 'A password doesn’t help. The words open the wallet anywhere.'],
+      ['Wait and see.', false, 'Scammers often empty wallets within minutes.']]],
+    ['What else helps?', [
+      ['Remove the site’s approval with a revoke tool, and report it to the police.', true, 'Yes. Then talk to someone you trust.'],
+      ['Pay a “recovery service” that messages you.', false, 'That is a recovery scam (lesson 10.05).'],
+      ['Keep it to myself.', false, 'Reporting helps, and you are not to blame.']]],
+  ] },
 };
 export default function (body, ctx) {
   const sc = SCENES[ctx.args.scene] || SCENES.popup; let t = 0, good = 0;

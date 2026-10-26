@@ -101,6 +101,20 @@ export const SCENARIOS = {
       ['Pay quickly, it’s the police.', false, 'Real police never ask you for a fee.'],
       ['Give them my bank login so they can pay me directly.', false, 'Never give your login to anyone.']]],
   ] },
+  cryptoatm: { who: '“Bank security department”', turns: [
+    ['“Your account has been hacked. To protect your savings, take out cash today and stay on the line.”', [
+      ['“I’ll call my bank myself.” Hang up.', true, 'Exactly. Call the number on your card.'],
+      ['“Oh no. How much should I take out?”', false, 'Real banks never ask you to take out cash to protect it.'],
+      ['“Can I bring it to the branch?”', false, 'Hang up and call your bank yourself.']]],
+    ['“We need to move your money into a safe account. Go to the crypto ATM at the station and scan this QR code.”', [
+      ['“No real bank uses crypto ATMs.” Hang up.', true, 'Right. Only scammers demand crypto to protect your money.'],
+      ['Go to the ATM, but keep the receipt.', false, 'The money goes straight to the scammer and can’t be reversed.'],
+      ['Ask them to send the QR code by text.', false, 'Don’t continue the call.']]],
+    ['“Don’t tell the staff at the station what it’s for. They might be part of the fraud.”', [
+      ['That’s a scam sign. Hang up, and call your bank and the police.', true, 'Yes. Telling you to lie is a big red flag.'],
+      ['Stay quiet and do it fast.', false, 'Secrecy protects only the scammer.'],
+      ['Say it’s for a friend.', false, 'Don’t lie for them. Hang up.']]],
+  ] },
   robot: { who: 'Recorded voice', turns: [
     ['A recorded voice, in English: “This is the police. Your bank account is involved in a crime. Press 1 to speak to an officer.”', [
       ['Press nothing and hang up.', true, 'Exactly. Real police never call with a recording.'],

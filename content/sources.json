@@ -18,7 +18,7 @@
       "date": "",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "Victims aged 60+: 201,266 complaints, about $7.7 billion in losses. Elder fraud (60+): 201,266 complaints, $7.748 billion losses; Tech/Customer Support reported by 60+: 21,333 complaints and $1,040,730,043 losses (pp. 45–46). p.12: cryptocurrency investment fraud was the highest source of losses to Americans in 2025, $7.2 billion; contact via texts, social media, ads or dating apps, moved to a messaging platform; fake platforms show fake profits; when victims try to withdraw they are charged taxes and fees. pp.46–47 (60+): Investment 16,926 complaints, $3,519,296,354 losses; Confidence/Romance 10,188 complaints, $584,032,745 losses. p.40: over $19 million Confidence/Romance losses with a likely AI nexus; distress scams with voice cloning over $5 million."
+      "evidence": "Victims aged 60+: 201,266 complaints, about $7.7 billion in losses. Elder fraud (60+): 201,266 complaints, $7.748 billion losses; Tech/Customer Support reported by 60+: 21,333 complaints and $1,040,730,043 losses (pp. 45–46). p.12: cryptocurrency investment fraud was the highest source of losses to Americans in 2025, $7.2 billion; contact via texts, social media, ads or dating apps, moved to a messaging platform; fake platforms show fake profits; when victims try to withdraw they are charged taxes and fees. pp.46–47 (60+): Investment 16,926 complaints, $3,519,296,354 losses; Confidence/Romance 10,188 complaints, $584,032,745 losses. p.40: over $19 million Confidence/Romance losses with a likely AI nexus; distress scams with voice cloning over $5 million. p.54: Cryptocurrency ATMs/Kiosks: 13,460 complaints; $389 million in losses; 23% increase in complaints and 58% increase in losses from 2024; age 60+: 6,188 complaints, $257,466,130. Recovery scams: 10,516 complaints; $1.4 billion in losses."
     },
     {
       "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/2026-older-adults-report-10192026.pdf",
@@ -27,7 +27,7 @@
       "date": "2026-10-19",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "Reported losses by people 60+ over $3 billion in 2025. Older adults report losing far more to investment scams than any other fraud type; aggregate reported losses to investment scams jumped 42% in 2025, scammers often reach them on social media; because many frauds go unreported, reported amounts do not reflect the true cost."
+      "evidence": "Reported losses by people 60+ over $3 billion in 2025. Older adults report losing far more to investment scams than any other fraud type; aggregate reported losses to investment scams jumped 42% in 2025, scammers often reach them on social media; because many frauds go unreported, reported amounts do not reflect the true cost. p.25: bank-impersonation scams convince people a security issue has put their accounts at risk; people report being directed to transfer money, mail cash, or deposit cash into Bitcoin ATMs to keep it 'safe'. FTC impersonators direct people to 'protect' money by mailing cash, handing cash to couriers, buying gift cards, or depositing funds into Bitcoin ATMs."
     },
     {
       "url": "https://cybercrimepolice.ch/de/faelle/schockanruf-durch-falsche-polizisten",
@@ -1186,6 +1186,60 @@
       "title": "Set or change a screen lock",
       "publisher": "Android Help",
       "evidence": "Open your phone's Settings app. Tap Security (if not found, see the manufacturer's support site). Tap Screen lock, choose the option and follow the on-screen instructions. None and Swipe give no protection. PIN: 4 or more numbers, a 6-digit PIN is recommended; a strong password is the most secure screen lock option.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://ethereum.org/en/security/",
+      "title": "Ethereum security and scam prevention",
+      "publisher": "ethereum.org",
+      "evidence": "Never, for any reason, share your recovery phrase or private keys; the recovery phrase (secret recovery phrase, seed phrase) is the master key to your wallet; anyone who has it can access all your accounts and drain every asset; no legitimate service, support agent or website will ever ask for these. Don't take screenshots of seed phrases (cloud sync). Hardware wallets keep private keys offline. A transaction sent on Ethereum is irreversible; check the address. Don't allow unlimited spend limits; revoke access. No one from ethereum.org will ever contact you. Giveaways are always scams; support scams impersonate support staff of wallets and exchanges, often via private messages on Discord. Airdrop scams send a token and a link to a site that asks you to approve a transaction.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://ethereum.org/en/wallets/",
+      "title": "What's an Ethereum wallet?",
+      "publisher": "ethereum.org",
+      "evidence": "Ethereum wallets are applications that give you control over your account; your wallet allows you to sign in to applications, read your balance, send transactions; you can swap wallet providers at any time; wallet providers don't have custody of your funds, they provide a window to see your assets; an account is a pair of keys: the public key creates the address you can share freely, the private key you keep secret; types: hardware wallets (offline), mobile apps, browser wallets, browser extensions.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://ethereum.org/en/guides/how-to-revoke-token-access/",
+      "title": "How to revoke smart contract access to your crypto funds",
+      "publisher": "ethereum.org",
+      "evidence": "Platforms may ask for unlimited permission to spend tokens; malicious actors can then withdraw them with no recovery option; protections: avoid untested new projects, only approve what you need, regularly revoke access. Steps: use a revoke access tool (lists several), connect your wallet on the same network, select the contract, revoke (a transaction with a fee). Revoking should never result in a loss of funds.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://trezor.io/support/troubleshooting/device-issues/is-my-device-safe-to-use",
+      "title": "Is my device safe to use?",
+      "publisher": "Trezor (hardware wallet maker)",
+      "evidence": "Never buy a Trezor from an unauthorized third party, as you can never tell who may have had access to it before you; check the package is complete and not tampered with; devices ship without firmware; if firmware is already installed the device should not be used; you will need to generate a wallet backup during setup, unique to you. Box contents list blank wallet backup cards.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://trezor.io/guides/backups-recovery/general-standards/move-crypto-to-a-wallet-with-a-new-wallet-backup",
+      "title": "Move crypto to a wallet with a new wallet backup",
+      "publisher": "Trezor (hardware wallet maker)",
+      "evidence": "If you suspect your backup has been compromised, you should assume that is the case and move your funds elsewhere immediately; doing the steps promptly minimizes the window during which funds could be drained.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.ledger.com/scam-second-hand-ledger-device",
+      "title": "Scam: second-hand Ledger device",
+      "publisher": "Ledger (hardware wallet maker)",
+      "evidence": "A user bought a second-hand device already initialised by the seller, with the 24 seed words, and lost his coins. Always initialise it yourself: set your own PIN (no PIN should ever be given to you by anybody else), write down the 24 words the device generates. The documentation does not include any pre-existing seed words or PIN code; if you receive a device with seed words or a PIN, don't use it as it is, it may have been used by somebody else; reset it with new seed words.",
       "date": "",
       "checked": "2026-10-26",
       "verified": true
