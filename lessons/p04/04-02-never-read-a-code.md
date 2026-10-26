@@ -62,7 +62,7 @@ Put a small note next to the phone: “I never read codes to anyone.” Agree on
 
 :::xlink
 ai 03-02 | Voice clones and the “family emergency” call
-lesson 01-03 | “Your bank is calling”
+lesson 01-03 | "This is your bank calling."
 :::end
 
 ## Sources
