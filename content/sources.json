@@ -18,7 +18,7 @@
       "date": "",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "Victims aged 60+: 201,266 complaints, about $7.7 billion in losses. Elder fraud (60+): 201,266 complaints, $7.748 billion losses; Tech/Customer Support reported by 60+: 21,333 complaints and $1,040,730,043 losses (pp. 45–46)."
+      "evidence": "Victims aged 60+: 201,266 complaints, about $7.7 billion in losses. Elder fraud (60+): 201,266 complaints, $7.748 billion losses; Tech/Customer Support reported by 60+: 21,333 complaints and $1,040,730,043 losses (pp. 45–46). p.12: cryptocurrency investment fraud was the highest source of losses to Americans in 2025, $7.2 billion; contact via texts, social media, ads or dating apps, moved to a messaging platform; fake platforms show fake profits; when victims try to withdraw they are charged taxes and fees. pp.46–47 (60+): Investment 16,926 complaints, $3,519,296,354 losses; Confidence/Romance 10,188 complaints, $584,032,745 losses. p.40: over $19 million Confidence/Romance losses with a likely AI nexus; distress scams with voice cloning over $5 million."
     },
     {
       "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/2026-older-adults-report-10192026.pdf",
@@ -27,7 +27,7 @@
       "date": "2026-10-19",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "Reported losses by people 60+ over $3 billion in 2025."
+      "evidence": "Reported losses by people 60+ over $3 billion in 2025. Older adults report losing far more to investment scams than any other fraud type; aggregate reported losses to investment scams jumped 42% in 2025, scammers often reach them on social media; because many frauds go unreported, reported amounts do not reflect the true cost."
     },
     {
       "url": "https://cybercrimepolice.ch/de/faelle/schockanruf-durch-falsche-polizisten",
@@ -907,6 +907,123 @@
       "title": "Smishing: Package Tracking Text Scams",
       "publisher": "US Postal Inspection Service",
       "evidence": "USPS will not send text messages or e-mails without the customer first requesting the service with a tracking number, and it will not contain a link; USPS does not charge for tracking; if you interacted with the URL notify your financial institution; report to spam@uspis.gov and forward to 7726.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/romance-scam-de",
+      "title": "Romance Scam",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "Fake profiles on social media and dating sites fake a love relationship; often claim they can't meet because they are abroad; after building trust they ask for money. Measures: end contact and block; if you lost money, BACS recommends a criminal complaint at the local police (find a station via Suisse ePolice); talk to a trusted person if it weighs on you; for money problems contact your canton's debt advice service. Prevention: send neither money nor goods to people you have never met.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/25w32-de",
+      "title": "Woche 32: Die psychologischen Tricks der Betrüger – Teil 2",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "'handeln Sie nicht aus einem Schamgefühl heraus'; romance scams deliberately exploit loneliness and being in love; scammers pick people who suffer from loneliness; emotional bond makes later demands easier; many find it hard to get out alone; demands from someone you never met in person are a clear warning sign, especially money; refuse even if they threaten to break contact; 'Wer Sie wirklich liebt oder schätzt, wird Sie nicht emotional unter Druck setzen'; 'Emotionen sind menschlich – und genau das machen sich Betrüger zunutze.'",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/26w14-de",
+      "title": "Woche 14: «Romance Scam» im Wandel – Mit KI zur perfekten Täuschung",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "date": "2026-04-07",
+      "evidence": "Alongside online investment fraud, romance scams are among the phenomena with the highest losses; case: AI-generated images of the 'partner' in a hospital bed with a cup bearing the victim's name; worsening health updates, request for treatment money, then fake death notice and gravestone image, then promise of refund against fees. Recommendations: end contact once they repeatedly ask for money; police complaint; talk to a trusted person; debt advice; never send money or goods to people you never met.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/25w31-de",
+      "title": "Woche 31: Die psychologischen Tricks der Betrüger – Teil 1",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "Foot-in-the-door: whoever agreed to a small request is more likely to agree to bigger ones; people strive for consistency; just because you agreed to a small request doesn't mean you must keep agreeing; end contact. FOMO: investment platforms claim only a limited number of people can invest, creating fear of missing a unique chance.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.skppsc.ch/de/themen/internet/romance-scam/",
+      "title": "Romance Scam: Liebesbetrüger im Internet",
+      "publisher": "Swiss Crime Prevention (SKP)",
+      "evidence": "Modus operandi: quick declarations of love, relationship built over weeks and months via Skype, WhatsApp; just before a planned meeting an accident, illness or robbery, request to pay costs; new obstacles; if victim stops paying, pressure, sextortion, or a fake 'authority' or 'lawyer' offering return of money against an administrative fee. 'Machen Sie sich keine Vorwürfe ... die Polizei [ahndet] keine menschlichen Schwächen, sondern [fahndet] nach Kriminellen'; your report can protect other victims; bring all information. If victim: send no more money, report to police, end contact and block, don't react to supposed helpers (Interpol, foreign police, victims' lawyers), talk to a trusted person, seek psychological help, debt advice. If you know a victim: encourage police; if no insight and danger of financial hardship, cantonal adult protection authority (KESB).",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://cybercrimepolice.ch/de/faelle/liebesbetrug",
+      "title": "Romance Scam – Liebesbetrug über das Internet",
+      "publisher": "cybercrimepolice.ch (Kantonspolizei Zürich)",
+      "evidence": "Perpetrators often pose as army generals, doctors or engineers abroad; daily charming messages, promises up to marriage; then ask for money for emergencies. Advice: don't accept friend requests from people you don't know in real life; be suspicious if they talk of great love before a first meeting; never transfer money to people you only know from the internet; check their photos with Google image search, reused images are a strong sign of fraud. Already paid: send no more money even under pressure; collect all documents (emails, chats); report to your cantonal police after phoning ahead.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/what-know-about-romance-scams",
+      "title": "What To Know About Romance Scams",
+      "publisher": "FTC Consumer Advice",
+      "date": "2022-08",
+      "evidence": "(WebFetch.) Scammers say they can't meet in person (abroad, oil rig, military); ask for money for medical expenses, tickets, visa; may offer to help you get started in crypto investing; tell you to pay by wire, gift cards, payment app or crypto. Bottom line: never send money or gifts to a sweetheart you haven't met in person. Stop communicating; talk to someone you trust; search the job plus 'scammer'; reverse image search the profile picture. If paid: contact the company or bank right away; report at ReportFraud.ftc.gov and to the dating site or app.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/investment-scams",
+      "title": "Investment Scams",
+      "publisher": "FTC Consumer Advice",
+      "evidence": "(WebFetch.) Crypto investment scams often start with a direct message on social media or dating apps; site or app isn't really investing; fake reports show money growing; urged to invest more; then accounts shut down. Signs: guaranteed profits or returns ('Only scammers will guarantee...'); little risk; few details; secret method; high pressure. All investments come with risk; no guaranteed returns. Before you invest, talk to someone you trust; check registration on Investor.gov. Report to ReportFraud.ftc.gov and SEC at sec.gov/tcr.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/what-know-about-cryptocurrency-scams",
+      "title": "What To Know About Cryptocurrency and Scams",
+      "publisher": "FTC Consumer Advice",
+      "date": "2022-05",
+      "evidence": "(WebFetch.) Crypto stored in a digital wallet; if wallet lost or stolen, no one can step in to recover funds; not insured by government; values change constantly; payments typically not reversible, no legal protections like cards. Only scammers demand payment in crypto, not to buy something and not to protect your money; only scammers guarantee profits; never mix online dating and investment advice. Investment manager: fake website, can't withdraw or only with high fees. Government impersonators tell you to protect money by buying crypto, stay on phone and direct you to a crypto ATM and a QR code into their wallet. Report: ReportFraud.ftc.gov, CFTC, SEC, IC3, the exchange.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/refund-and-recovery-scams",
+      "title": "Refund and Recovery Scams",
+      "publisher": "FTC Consumer Advice",
+      "date": "2023-12",
+      "evidence": "(WebFetch.) Scams that target people who already lost money; scammers buy 'sucker lists'; claim to be government agency, consumer group, law firm; ask for upfront 'retainer fee', 'processing fee', 'tax'. Government agencies and legitimate organisations will never ask for money to help you get a refund and won't guarantee you'll get your money back. Never pay upfront; look up agency numbers yourself. Report at ReportFraud.ftc.gov and state attorney general.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.investor.gov/protect-your-investments/fraud/how-avoid-fraud/what-you-can-do-avoid-investment-fraud",
+      "title": "What You Can Do to Avoid Investment Fraud",
+      "publisher": "Investor.gov (US SEC)",
+      "evidence": "'Guaranteed returns' aren't: every investment carries some risk; high returns entail high risks, possibly total loss; fraudsters try to convince that returns are 'guaranteed' or 'can't miss'. Beware the 'halo' effect: credibility can be faked. 'Everyone is buying it.' Pressure to send money RIGHT NOW: resist.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.investor.gov/protect-your-investments/fraud/how-avoid-fraud/red-flags-investment-fraud-checklist",
+      "title": "Red Flags of Investment Fraud Checklist",
+      "publisher": "Investor.gov (US SEC)",
+      "evidence": "Red flags: unlicensed professionals; aggressive sellers with false credentials; too good to be true; 'risk-free'; promises of great wealth and guaranteed returns; 'everyone is buying it'; pressure to invest right now; sensational pitches with fake testimonials; unsolicited pitches; asked to pay by credit card, gift card or wiring money abroad or to a personal account. Check professionals at Investor.gov.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.finma.ch/de/finma-public/wie-sie-sich-schuetzen-koennen/beispiele-fuer-anlagebetrug/",
+      "title": "Beispiele für Anlagebetrug",
+      "publisher": "FINMA (Swiss Financial Market Supervisory Authority)",
+      "evidence": "Offers to recover losses as a nasty trick: lists of defrauded investors circulate and are sold to new fraudsters; victims usually lose a second time (new money, fees). Misuse of FINMA's name: FINMA generally does not contact private individuals; uses @finma.ch emails; is never involved in offers to recover losses. Cloned websites: check imprint, contacts and URL. 'Im Zweifel Hände weg.'",
       "date": "",
       "checked": "2026-10-26",
       "verified": true

@@ -128,6 +128,62 @@ export const SCENES = {
       ['Pay through the email link, customs is official.', false, 'Criminals copy customs and post messages. Use the carrier’s own site or app.'],
       ['Forward it to friends to ask.', false, 'Better to check with the carrier directly.']]],
   ] },
+  romance: { who: 'Messages from “Daniel”', intro: 'A few weeks ago, a friendly man called Daniel started writing to you on Facebook.', turns: [
+    ['“Good morning, my dear. I think about you all day. I am an engineer on an oil platform, so I can’t video call, but soon I will visit you.”', [
+      ['Be careful. Love that comes fast, from someone who can never meet or video call, is a known warning sign.', true, 'Good. The Swiss police and the FTC both describe people who claim to work abroad and can never meet.'],
+      ['How romantic, he must be busy.', false, 'It may feel romantic. But “I can’t meet you” is part of the script.'],
+      ['Send him my address so he can visit.', false, 'Keep personal details to yourself until you have met someone in person.']]],
+    ['“My love, there was an accident. I need CHF 3,000 for the hospital, my bank card is blocked. Only you can help me.”', [
+      ['Don’t send money. I have never met him in person.', true, 'Exactly. Never send money to someone you have only met online, however real the feelings are.'],
+      ['Send half now, to show I care.', false, 'Any amount leads to the next request. Real love doesn’t ask for money.'],
+      ['Buy gift cards and send him the codes.', false, 'Scammers like gift cards because the money is very hard to get back.']]],
+    ['“If you don’t help me, I will know you never loved me.”', [
+      ['End the contact, block him, and talk to someone I trust.', true, 'Right. Someone who really loves you won’t put you under emotional pressure.'],
+      ['Apologise and promise to send it tomorrow.', false, 'Pressure and guilt are the scammer’s tools. You owe them nothing.'],
+      ['Keep it secret, my family wouldn’t understand.', false, 'Secrecy protects the scammer. Telling someone protects you.']]],
+  ] },
+  trading: { who: 'WhatsApp, “Sarah, investment coach”', intro: 'You joined a WhatsApp group about investing after seeing an advert.', turns: [
+    ['“Our members earn 30% a month, guaranteed. I can open your account today. Places are limited!”', [
+      ['That’s a warning sign. Nobody can guarantee returns, and the hurry is pressure.', true, 'Exactly. All investments carry risk. “Guaranteed” and “act now” are classic red flags.'],
+      ['Sign up quickly before the places are gone.', false, '“Limited places” is meant to rush you. A real offer can wait.'],
+      ['Ask her how she can guarantee it.', false, 'Any answer is part of the script. No one can guarantee returns.']]],
+    ['Suppose you invested CHF 500. The app shows CHF 2,100 after four weeks. “Add CHF 10,000 now and you’ll double it!”', [
+      ['Don’t add more. A number on a screen is not money in my bank account.', true, 'Right. Fake platforms show made-up growth to get more money from you.'],
+      ['Add the money, it’s clearly working.', false, 'The growth is invented. The CHF 500 is probably already gone.'],
+      ['Take a loan to invest more.', false, 'Never borrow to put money into an offer like this.']]],
+    ['You ask to withdraw. “First you must pay a 15% tax, then the money is released.”', [
+      ['Pay nothing more. Keep the messages and report it to the police.', true, 'Good. A “fee to withdraw” is the last stage of the scam. Every fee leads to another.'],
+      ['Pay the tax, then I’ll get it all.', false, 'After this fee, there will be another. The money is not there.'],
+      ['Let them take over my computer to help.', false, 'Never give remote access to anyone who contacted you about money.']]],
+  ] },
+  recovery: { who: 'Phone call, “lawyer”', intro: 'Last year you lost money to a fake trading platform. Today your phone rings.', turns: [
+    ['“I am a lawyer working with Interpol. We found your money, CHF 8,000. We can return it to you.”', [
+      ['Be very careful. Calls offering to recover lost money are a known second scam.', true, 'Exactly. Lists of people who have already been scammed are sold to new scammers.'],
+      ['Wonderful! Tell me what to do.', false, 'It is natural to hope. But this call is how people lose money twice.'],
+      ['Confirm how much I lost so they can check.', false, 'Don’t confirm details. Hang up and check yourself.']]],
+    ['“To release the money, there is a processing fee of CHF 900.”', [
+      ['Refuse. Real authorities never ask for a fee to return money.', true, 'Right. Government agencies and real organisations never ask for money to get your refund, and FINMA is never involved in such offers.'],
+      ['Pay, it is only a small part of 8,000.', false, 'The 8,000 does not exist. The fee is the scam.'],
+      ['Give my bank details so they can send the money.', false, 'Never give account details to someone who called you.']]],
+    ['“If you don’t pay today, the money goes back to the state.”', [
+      ['Hang up, and tell my police contact or a family member about the call.', true, 'Good. Hurry is the warning sign. The police will want to know about the call.'],
+      ['Pay quickly so I don’t lose it.', false, 'There is nothing to lose except the fee they are asking for.'],
+      ['Ask for their number to call back later.', false, 'Their number leads back to them. Use a number you look up yourself.']]],
+  ] },
+  trusted: { who: 'The trusted-person test', intro: 'Before money moves, you tell one person you trust. Here is how it goes.', turns: [
+    ['An online friend asks you to “help with a bill” of CHF 400. Who do you tell first?', [
+      ['A person I trust: my daughter, a friend or my bank.', true, 'Yes. Just saying it out loud to someone else often makes the warning signs clear.'],
+      ['Nobody, it’s my own business.', false, 'It is your money and your choice. But a second pair of eyes protects you.'],
+      ['Only the online friend.', false, 'They can’t check their own story. Ask someone outside it.']]],
+    ['The online friend writes: “Don’t tell your family, they won’t understand us.”', [
+      ['That is a warning sign. I’ll tell them anyway.', true, 'Exactly. A request for secrecy protects the scammer, not you.'],
+      ['Keep it secret to be loyal.', false, 'Real friends don’t ask you to hide money matters from your family.'],
+      ['Tell them only after I’ve paid.', false, 'Talk before the money moves. Afterwards it is often gone.']]],
+    ['Your daughter is worried. The friend says: “It must be today!”', [
+      ['Wait. If it is real, it can wait a day while I check.', true, 'Right. Pressure to act today is one of the clearest warning signs.'],
+      ['Pay quickly to end the argument.', false, 'The hurry is the trick. Take the time you need.'],
+      ['Send it in small amounts so nobody notices.', false, 'Small amounts add up, and the requests won’t stop.']]],
+  ] },
 };
 export default function (body, ctx) {
   const sc = SCENES[ctx.args.scene] || SCENES.popup; let t = 0, good = 0;
