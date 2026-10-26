@@ -53,7 +53,7 @@ Some ideas: “You’re not stupid. These people do this for a living.” “I�
 :::end
 
 :::helper
-If someone shares that they were scammed, thank them for trusting you. Listen first. Then help with the next steps in Phase 10: the bank, the police report, and the passwords. Never take over their accounts without asking (lesson 11.01).
+If someone shares that they were scammed, thank them for trusting you. Listen first. Then help with the next steps in Phase 10: the bank, reporting it, and the passwords. Never take over their accounts without asking (lesson 11.01).
 :::end
 
 :::quiz

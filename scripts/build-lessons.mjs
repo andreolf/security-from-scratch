@@ -105,6 +105,7 @@ export function compile(src, file) {
       const items = block.filter((x) => x.trim()).map((x) => { const [ref, title] = x.split('|').map((s) => s.trim()); const [site, id] = ref.split(/\s+/);
         if (site === 'ai') return `<a href="${esc(aiLesson(id))}" rel="noopener" target="_blank" data-xlink="ai"><span><span class="xl-label">AI Safety from Scratch ${esc(id.replace('-', '.'))}:</span> ${esc(title)}</span></a>`;
         if (!titles.has(id)) errors.push(`${file}: xlink to unknown lesson ${id}`);
+        else if (title && title.replace(/[“”]/g, '"') !== titles.get(id).title.replace(/[“”]/g, '"')) errors.push(`${file}: xlink title for ${id} should be "${titles.get(id).title}", not "${title}"`);
         return `<a href="#/learn/${esc(id)}" data-xlink="lesson"><span><span class="xl-label">Lesson ${esc(id.replace('-', '.'))}:</span> ${esc(title || titles.get(id)?.title)}</span></a>`; });
       html.push(`<nav class="xlink" aria-label="Related lessons">${items.join('')}</nav>`);
     } else errors.push(`${file}: unknown block ${kind}`);
