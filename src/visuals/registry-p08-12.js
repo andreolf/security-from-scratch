@@ -17,7 +17,7 @@ export const visuals3 = {
     ['A charming stranger writes', 'Daily chats, love comes fast', 'Somehow you never meet', 'Then an emergency needs money'],
     ['Step 1: a friendly stranger writes to you on social media, a dating site or a messaging app.', 'Step 2: they write every day, pay compliments and soon talk about love and a future together.', 'Step 3: there is always a reason you can’t meet: they work abroad, on an oil rig, in the army.', 'Step 4: then comes an emergency, such as an accident, an illness or a ticket, and they ask for money. Never send money to someone you have never met in person.']),
   'not-your-fault': checklist('not-your-fault', 'Four true things about being scammed.',
-    [[true, 'Scammers use feelings, not stupidity'], [true, 'Their scripts are practised'], [true, 'Police hunt criminals, not victims'], [true, 'Telling someone stops the harm']], 3,
+    [[true, 'They use feelings, not stupidity'], [true, 'Their scripts are practised'], [true, 'Police hunt criminals, not victims'], [true, 'Telling someone stops the harm']], 3,
     'Four true things: scammers use feelings, not stupidity; their scripts are practised and organised; the police hunt criminals, not victims; and telling someone is how the harm stops.'),
   'guaranteed-flags': checklist('guaranteed-flags', 'Warning signs of an investment scam.',
     [[false, '“Guaranteed” or “risk-free”'], [false, 'Big profits, fast, little effort'], [false, '“Act now, places are limited”'], [false, 'Contacted you out of the blue'], [true, 'Check the licence. Ask someone.']], 4,
