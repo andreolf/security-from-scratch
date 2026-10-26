@@ -15,10 +15,10 @@
       "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
       "title": "Internet Crime Report 2025",
       "publisher": "FBI Internet Crime Complaint Center (IC3)",
-      "date": "2026",
+      "date": "",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "Victims aged 60+: 201,266 complaints, about $7.7 billion in losses."
+      "evidence": "Victims aged 60+: 201,266 complaints, about $7.7 billion in losses. Elder fraud (60+): 201,266 complaints, $7.748 billion losses; Tech/Customer Support reported by 60+: 21,333 complaints and $1,040,730,043 losses (pp. 45–46)."
     },
     {
       "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/2026-older-adults-report-10192026.pdf",
@@ -466,6 +466,150 @@
       "title": "Set up a recovery contact for your Apple Account",
       "publisher": "Apple Support",
       "evidence": "A recovery contact is someone you designate who can get a recovery code for you; they have no access to your account; Settings > [your name] > Sign-In & Security > Recovery Contacts > Add Recovery Contact; needs iOS 15 or later.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/en/ks24-1-en",
+      "title": "S-U-P-E-R.ch – Carry out regular updates",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "All software contains vulnerabilities; cybercriminals exploit them to take control of devices, infect them with malware and steal login or card data; activate the automatic update function for the operating system and all programmes and apps; use the latest browser version.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/geraeteschutz",
+      "title": "Geräteschutz, Passwörter und Zugriffsschutz",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "Make sure all devices install security updates automatically; outdated software is a gateway for criminals; only download software and apps from official manufacturer sites or official app stores; on mobile, download apps only from recognised stores and check ratings and permissions.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.cisa.gov/secure-our-world/update-software",
+      "title": "Update Software",
+      "publisher": "CISA",
+      "evidence": "Page marked as archived content. 'Many software updates are created to fix security risks'; turn on automatic updates in the device's or application's security settings.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.apple.com/en-us/118575",
+      "title": "Update your iPhone or iPad",
+      "publisher": "Apple Support",
+      "evidence": "Keeping software up to date is one of the most important things for security; Settings > General > Software Update > Automatic Updates > turn on Automatically Install (installs overnight while charging on Wi-Fi) / Automatically Download; back up, plug into power, use Wi-Fi.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.google.com/android/answer/7680439?hl=en",
+      "title": "Check & update your Android version",
+      "publisher": "Android Help",
+      "evidence": "Connect to Wi-Fi, charge to at least 75%; most system updates and security patches install automatically; when notified, open the notification and tap the update action; or Settings > System > Software updates (Pixel); steps can vary by device.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/install-windows-updates",
+      "title": "Install Windows Updates",
+      "publisher": "Microsoft Support",
+      "evidence": "Windows 11/10: Start > Settings > Windows Update > Check for Windows updates > Download & install; restart if prompted.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.apple.com/en-us/108382",
+      "title": "Update macOS on Mac",
+      "publisher": "Apple Support",
+      "evidence": "Apple menu > System Settings > General > Software Update; Software Update automatically checks for new software; use Software Update settings to control whether your Mac downloads or installs updates automatically.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.apple.com/en-us/102629",
+      "title": "Update apps or use automatic downloads on iPhone",
+      "publisher": "Apple Support",
+      "evidence": "Apps downloaded from the App Store update automatically by default on iPhone and iPad; manual: App Store > My Account / your photo > App Updates.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.google.com/googleplay/answer/113412?hl=en",
+      "title": "How to update apps on Android",
+      "publisher": "Google Play Help",
+      "evidence": "Updating apps improves app security; Google Play > profile picture > Settings > Network Preferences > Auto-update apps > choose an option.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams",
+      "title": "How to spot, avoid, and report tech support scams",
+      "publisher": "FTC Consumer Advice",
+      "evidence": "Fake pop-up warnings urge you to call a number; scammers ask for remote access, pretend to find a virus and charge a fee; they want gift cards, wire, crypto or payment apps; legitimate tech companies won't contact you to say there's a problem with your computer; real security pop-ups never ask you to call a phone number; talk to someone you trust; report at ReportFraud.ftc.gov. (Fetched via WebFetch; direct fetch returns 404 to scripts.)",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/office/protect-yourself-from-tech-support-scams",
+      "title": "Protect yourself from tech support scams",
+      "publisher": "Microsoft Support",
+      "evidence": "Microsoft doesn't make unsolicited calls or send unsolicited email to provide tech support; Microsoft error and warning messages never include phone numbers; scammers may put the browser in full screen with pop-ups that won't go away; with remote access they install malware; download software only from official sites or the Microsoft Store.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://cybercrimepolice.ch/de/faelle/falsche-sicherheitswarnung-beim-surfen-im-internet",
+      "title": "Falsche Sicherheitswarnung beim Surfen im Internet",
+      "publisher": "cybercrimepolice.ch (Kantonspolizei Zürich)",
+      "evidence": "Fake security warning with a number; caller poses as Microsoft or Apple support, has victim install remote maintenance software, then leads to payment page or e-banking; do not call; Windows: Ctrl+Alt+Del, Task Manager, end the browser; Mac: Cmd+Option+Esc, Force Quit the browser; if you gave access: call bank, change passwords, have the computer reset, report to cantonal police.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/24w41-de",
+      "title": "Woche 41: Entwicklung bei Fake Support",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "Fake support: callers pose as IT firm such as Microsoft; browser lock pages with often Swiss phone numbers, sometimes a voice; neither browser nor computer is really locked; closing the browser or restarting helps; never call the number; never allow remote access; if you did, have a specialist check the computer.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/26w15-de",
+      "title": "Woche 15: Falsche Bankmitarbeiter fordern Installation von Fernwartungssoftware",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "14 April 2026: rise in calls from fake bank staff (also BAKOM) who connect to an 'IT specialist' and push installation of AnyDesk, TeamViewer etc.; with access they see the screen, control the mouse, steal passwords and access e-banking; banks, card companies and authorities never ask by phone to install remote software; end such calls; uninstall and change passwords if installed; report to local police if money lost.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://support.google.com/googleplay/answer/2812853?hl=en",
+      "title": "Use Google Play Protect",
+      "publisher": "Google Play Help",
+      "evidence": "Play Protect runs a safety check on apps from Google Play before download, checks device for harmful apps from other sources, warns and may remove them; on by default; recommended to always keep on; Play Store > profile icon > Play Protect > Settings.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.apple.com/app-store/",
+      "title": "App Store",
+      "publisher": "Apple",
+      "evidence": "'We conduct a thorough review to check that apps come from known sources, are free of known malware …'; App product pages show rankings and reviews.",
       "date": "",
       "checked": "2026-10-26",
       "verified": true

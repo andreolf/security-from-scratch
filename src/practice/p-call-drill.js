@@ -59,6 +59,20 @@ export const SCENARIOS = {
       ['Approve it, so the call can end.', false, 'Approving would confirm their sign-in or payment.'],
       ['Approve it, then check later.', false, 'Once approved, money can leave in seconds. Never approve what you didn’t start.']]],
   ] },
+  support: { who: '“Bank IT specialist”', turns: [
+    ['“Your bank here. There is a wrong booking on your account. I’ll connect you to our IT specialist.” A second voice: “Your e-banking is infected. We must clean it together.”', [
+      ['Hang up, and call my bank on the number on my card.', true, 'Exactly. You check through your own number, not theirs.'],
+      ['Let them explain what is wrong.', false, 'The longer the call, the more pressure. You can always hang up.'],
+      ['Give my e-banking login so they can check.', false, 'Never give your login to a caller.']]],
+    ['Suppose you stayed on. “Please install the support app AnyDesk, then tell me the number it shows.”', [
+      ['“No. I never install apps for a caller.” Hang up.', true, 'Right. Banks and authorities never ask you to install remote-control software on the phone.'],
+      ['Install it but don’t tell them the number.', false, 'Don’t install it at all. Hang up.'],
+      ['Install it, they are from the bank.', false, 'With that app they would see your screen and control your device, including your banking.']]],
+    ['“If you hang up now, your money will be lost!”', [
+      ['Hang up anyway. Then tell a family member and call my bank.', true, 'Perfect. Pressure is the sign of a scam. Your real bank will be glad you checked.'],
+      ['Stay on, just in case.', false, 'Hanging up is always safe. A real bank never threatens you.'],
+      ['Move my money to a “safe account” they give me.', false, 'There is no such thing as a safe account from a caller. That is the theft.']]],
+  ] },
   robot: { who: 'Recorded voice', turns: [
     ['A recorded voice, in English: “This is the police. Your bank account is involved in a crime. Press 1 to speak to an officer.”', [
       ['Press nothing and hang up.', true, 'Exactly. Real police never call with a recording.'],
