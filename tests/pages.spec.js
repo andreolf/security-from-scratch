@@ -6,11 +6,12 @@ const WRITTEN = readdirSync(new URL('../lessons/', import.meta.url), { recursive
 // MAX_PHASE=04 limits a live check to the phases that were deployed.
 const ROUTES = ['#/', '#/phase/p00', '#/phase/p03', '#/phase/p12', '#/test/p01', '#/progress', '#/glossary', '#/verify', '#/about', '#/practice', '#/learn/08-01', '#/certificate/core'];
 for (const r of ROUTES) {
-  test(`page ${r}: banner, no overflow, no console errors, tap targets`, async ({ page }) => {
+  test(`page ${r}: no banner, sibling links, no overflow, no console errors, tap targets`, async ({ page }) => {
     const errs = watchErrors(page);
     await go(page, r);
-    await expect(page.getByTestId('draft-banner')).toBeVisible();
-    await expect(page.getByTestId('draft-banner')).toContainText('Draft preview');
+    await expect(page.getByTestId('draft-banner')).toHaveCount(0);
+    expect(await page.locator('body').innerText()).not.toMatch(/draft preview/i);
+    await expect(page.getByTestId('sibling-courses').locator('a')).toHaveCount(3);
     if (r === '#/practice') { // mount every section so all exercises are checked too
       for (const s of await page.locator('.practice-section').all()) await s.scrollIntoViewIfNeeded();
       await expect(page.locator('.practice-slot[data-mounted="0"]')).toHaveCount(0);
@@ -43,10 +44,10 @@ test(`all ${WRITTEN.length} written lessons: render, no overflow, no console err
   }
   expect(errs).toEqual([]);
 });
-test('robots: noindex, nofollow meta and robots.txt', async ({ page, request }) => {
+test('launched: indexable (no robots meta), robots.txt allows all', async ({ page, request }) => {
   await go(page, '#/');
-  await expect(page.locator('meta[name=robots]')).toHaveAttribute('content', 'noindex, nofollow');
-  const r = await request.get('./robots.txt'); expect(r.ok()).toBeTruthy(); expect(await r.text()).toMatch(/Disallow: \//);
+  await expect(page.locator('meta[name=robots]')).toHaveCount(0);
+  const r = await request.get('./robots.txt'); expect(r.ok()).toBeTruthy(); const t = await r.text(); expect(t).toMatch(/User-agent: \*\s+Allow: \//); expect(t).not.toMatch(/Disallow/);
 });
 test('body text is at least 20px', async ({ page }) => {
   await go(page, '#/learn/01-01');

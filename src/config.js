@@ -1,6 +1,6 @@
 // Site-wide constants. Change cross-site links here only.
 export const SITE_NAME = 'Security from Scratch';
-export const SITE_URL = 'https://andreolf.github.io/security-from-scratch/'; // unlisted draft preview (noindex) until Francesco gives the go to launch
+export const SITE_URL = 'https://andreolf.github.io/security-from-scratch/';
 export const AI_SAFETY_URL = 'https://andreolf.github.io/ai-safety-from-scratch/'; // sibling course (two-way links, shared glossary)
 export const STORE_KEY = 'sfs-v1';
 export const THEME_KEY = 'sfs-theme';

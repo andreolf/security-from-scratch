@@ -83,10 +83,12 @@ test('glossary uses the shared format and every shared term matches the AI Safet
   for (const x of g.terms) if (s.has(x.id)) assert.equal(x.short, s.get(x.id).short, `definition of ${x.id} differs from the AI Safety glossary`);
 });
 
-test('robots: noindex,nofollow meta, Disallow: / and the draft banner are present', () => {
-  assert.match(read('index.html'), /<meta name="robots" content="noindex, nofollow"/);
-  assert.match(read('public/robots.txt'), /User-agent: \*\s+Disallow: \//);
-  assert.match(read('index.html'), /data-testid="draft-banner"/);
+test('launched: no robots meta, robots.txt allows all, no draft banner, sibling course links', () => {
+  assert.doesNotMatch(read('index.html'), /name="robots"|noindex|nofollow/);
+  assert.match(read('public/robots.txt'), /User-agent: \*\s+Allow: \//);
+  assert.doesNotMatch(read('public/robots.txt'), /Disallow/);
+  assert.doesNotMatch(read('index.html'), /draft-banner|Draft preview/);
+  for (const u of ['ai-safety-from-scratch', 'mechanical-engineering-from-scratch', 'mechatronics-from-scratch']) assert.match(read('index.html'), new RegExp(`https://andreolf.github.io/${u}/`));
 });
 
 test('the lesson checker flags an unsourced statistic or attributed claim', () => {

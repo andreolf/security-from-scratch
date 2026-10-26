@@ -54,8 +54,6 @@ code, .mono { font-family: var(--font-mono); font-size: .95em; overflow-wrap: an
 .icon-btn { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; background: var(--surface); color: var(--fg); border: 2px solid var(--line-strong); border-radius: 12px; font: inherit; font-weight: 800; font-size: 1rem; cursor: pointer; padding: 0 12px; text-decoration: none; white-space: nowrap; }
 .icon-btn:hover { border-color: var(--fg); }
 .icon-btn[aria-pressed='true'] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
-.draft-banner { background: var(--accent); color: var(--on-accent); font-size: 1rem; line-height: 1.35; text-align: center; padding: 6px 16px; }
-.draft-banner b { font-weight: var(--weight-black); text-transform: uppercase; letter-spacing: .04em; }
 
 /* Buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: var(--tap); padding: 8px 22px; border-radius: 999px; font: inherit; font-weight: 800; font-size: 1.1rem; line-height: 1.25; text-decoration: none; cursor: pointer; border: 2px solid transparent; text-align: center; }
@@ -263,7 +261,7 @@ details summary { cursor: pointer; font-weight: 800; min-height: 44px; display: 
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
 @media print {
-  .top, .foot, .lesson-nav, .actions, .read-btn, .no-print, .draft-banner { display: none !important; }
+  .top, .foot, .lesson-nav, .actions, .read-btn, .no-print { display: none !important; }
   body { background: var(--white); color: var(--black); }
 }
 @media print {
