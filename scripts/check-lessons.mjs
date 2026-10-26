@@ -55,6 +55,8 @@ for (const dir of fs.readdirSync(path.join(ROOT, 'lessons')).sort()) {
     if (L.used.remember < 1) P('needs a :::remember box');
     L.used.practice.forEach((p) => { if (!practices[p]?.ready) P(`practice ${p} is not implemented yet`); });
     for (const t of L.used.tries) for (const tab of t.tabs) {
+      // Steps inside the WhatsApp app are checked against the WhatsApp Help Center instead of Apple/Google.
+      if (/whatsapp/i.test(tab.name)) { if (!tab.links.some((u) => /^https:\/\/faq\.whatsapp\.com\//.test(u))) P(`${t.key} "${tab.name}": WhatsApp steps need a "Checked against:" link to faq.whatsapp.com`); continue; }
       if (/iphone|ipad/i.test(tab.name) && !tab.links.some((u) => /^https:\/\/support\.apple\.com\//.test(u))) P(`${t.key} "${tab.name}": phone steps need a "Checked against:" link to support.apple.com`);
       if (/android/i.test(tab.name) && !tab.links.some((u) => /^https:\/\/(support\.google\.com|www\.android\.com)\//.test(u))) P(`${t.key} "${tab.name}": phone steps need a "Checked against:" link to support.google.com`);
     }

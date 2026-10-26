@@ -189,7 +189,7 @@
       "date": "",
       "checked": "2026-10-26",
       "verified": true,
-      "evidence": "Long (16+), random, unique; passphrase of 4–7 words; use a password manager."
+      "evidence": "Long (16+), random, unique; passphrase of 4–7 words; use a password manager. Common identifying information, like birthdays and pet names, are not safe passwords."
     },
     {
       "url": "https://www.cisa.gov/secure-our-world/turn-mfa",
@@ -610,6 +610,159 @@
       "title": "App Store",
       "publisher": "Apple",
       "evidence": "'We conduct a thorough review to check that apps come from known sources, are free of known malware …'; App product pages show rankings and reviews.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://cybercrimepolice.ch/de/faelle/hallo-mama-mail-lockt-auf-whatsapp",
+      "title": "«Hallo Mama»-Mail lockt auf WhatsApp",
+      "publisher": "cybercrimepolice.ch (Kantonspolizei Zürich)",
+      "evidence": "Fake 'son/daughter' says the phone is broken and they can only be reached on WhatsApp at a new number; pressure ('it is important'); after trust-building they urgently need money for a bill or transfer and give payment instructions (bank transfer, payment service, voucher/prepaid codes). Advice: don't use the 'new number'; call relatives on the number you know; ask control questions only they can answer, not ones findable online or on social media; don't transfer money because of a message.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://cybercrimepolice.ch/de/faelle/ubernommene-whatsapp-konten-betruger-versenden-links-oder-fordern-geld",
+      "title": "Übernommene WhatsApp-Konten: Betrüger versenden Links oder fordern Geld",
+      "publisher": "cybercrimepolice.ch (Kantonspolizei Zürich)",
+      "evidence": "Criminals use taken-over WhatsApp accounts to message contacts; takeover not visible because messages appear in the existing chat with the same number and profile; they ask for money in chats or in the WhatsApp Status, and send links to fake sites to take over more accounts. Advice: check unusual requests through another channel; never pass on codes sent to you; don't follow links; use 2FA. If affected: Settings > Linked devices, log out unknown devices.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://cybercrimepolice.ch/de/faelle/gefaelschte-tanzabstimmung-fuehrt-zu-zugriff-auf-das-whatsapp-konto",
+      "title": "Gefälschte Tanzabstimmung führt zu Zugriff auf das WhatsApp-Konto",
+      "publisher": "cybercrimepolice.ch (Kantonspolizei Zürich)",
+      "evidence": "Message seemingly from someone you know asks for a vote for a young dancer; fake site asks you to 'verify' by scanning a QR code with WhatsApp, which links your WhatsApp account to the criminals' device. Advice: check unusual requests another way; tell contacts; Settings > Linked devices, log out unknown devices; if locked out, register again with your phone number.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://faq.whatsapp.com/1920866721452534/?cms_platform=android&locale=en_US",
+      "title": "How to manage two-step verification settings",
+      "publisher": "WhatsApp Help Center",
+      "evidence": "(Fetched via WebFetch; scripts get HTTP 400.) WhatsApp is upgrading the 6-digit PIN to a password. Android: More (three dots) > Settings > Account > Two-step verification > toggle on Turn on two-step verification > create a strong password and confirm > add an email you can access (Next) or Skip > Trust this device or Skip. iPhone (cms_platform=iphone): You > Account > Two-step verification, same steps.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://faq.whatsapp.com/1278661612895630",
+      "title": "About two-step verification",
+      "publisher": "WhatsApp Help Center",
+      "evidence": "(WebFetch.) Optional feature that adds more security; by using two forms of authentication you protect against unauthorized access; you can choose phone number, password or email for additional authentication; passkeys also available.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://faq.whatsapp.com/479314433984258/?locale=en_US",
+      "title": "Received verification code without requesting it",
+      "publisher": "WhatsApp Help Center",
+      "evidence": "(WebFetch.) WhatsApp notifies you when someone tries to register your number; can be a typo or an attempt to take over your account; 'you should never share your WhatsApp verification code with others'; without the SMS code, they can't use your number on WhatsApp.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://faq.whatsapp.com/834124628020911/?cms_platform=android&locale=en_US",
+      "title": "How to unlink a device",
+      "publisher": "WhatsApp Help Center",
+      "evidence": "(WebFetch.) Android: More options (three dots) > Linked devices > tap a device > Log out. iPhone: Settings or profile picture > Linked devices > tap a device > Log out > Log out.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/fr/reseaux-sociaux-ne-divulguez-pas-trop-dinformations-personnelles",
+      "title": "Réseaux sociaux: ne divulguez pas trop d’informations personnelles",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "Published 17 May 2026: scammers often collect personal information on social networks to personalise attacks; share personal information with restraint; don't post photos that could be used against you; data collectors build profiles from seemingly harmless details; the internet forgets nothing.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/24w32-de",
+      "title": "Woche 32: Ferienerlebnisse teilen und bewahren",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "AI makes it easy to manipulate pictures; the more images available, the easier deepfakes; think about what each post reveals; don't post photos of people without their consent; set the platform so only people on your friends list can see photos.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.polizeiwallis.ch/medienmitteilungen/lassen-sie-einbrecher-nicht-von-ihren-ferien-profitieren/",
+      "title": "Lassen Sie Einbrecher nicht von Ihren Ferien profitieren!",
+      "publisher": "Kantonspolizei Wallis",
+      "evidence": "'Teilen Sie Ihre Abwesenheit nicht in sozialen Netzwerken' (don't share your absence on social networks); don't leave an absence message on the answering machine.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://consumer.ftc.gov/consumer-alerts/2023/10/friend-request-could-be-scammer",
+      "title": "That friend request could be from a scammer",
+      "publisher": "FTC Consumer Advice",
+      "evidence": "(WebFetch.) 6 Oct 2023: since 2021 people reported losing $2.7 billion to scams that started on social media, more than any other contact method; scammers hack profiles, pretend to be you and con friends; use profile info like age and hobbies; use privacy settings to limit who sees your posts; don't reply to messages asking for money even if from a friend: call them to check.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://consumer.ftc.gov/consumer-alerts/2025/05/can-you-spot-investment-scam-social-media",
+      "title": "Can you spot an investment scam on social media?",
+      "publisher": "FTC Consumer Advice",
+      "evidence": "(WebFetch.) 28 May 2025: a friend's account suddenly promoting quick-money investing is likely taken over; slow down, research, there are no guaranteed returns; tell your real friend by email or text.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.facebook.com/help/167722253287296",
+      "title": "Report a Facebook profile or Page pretending to be you or someone else",
+      "publisher": "Facebook Help Center",
+      "evidence": "(WebFetch.) Impersonating profiles aren't allowed; report: go to the profile > Options below the cover photo > Report profile > follow the prompts; possible without an account via a form.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/social-media-hacking-de",
+      "title": "Social Media Hacking",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "Attackers often use hacked accounts to target your contacts; change password; use the reset function; contact the provider; inform contacts through another channel; report identity misuse to police.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/25w07-de",
+      "title": "Woche 7: Wie Prominente für Investment-Betrug missbraucht werden",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "18 Feb 2025: sites styled like news portals (often Blick, 20min, SRF, RTS) with made-up celebrity interviews promise wealth from small investments (usually CHF/EUR 250); spread via spam, social media (X, Facebook), YouTube ads; after registering a 'personal adviser' calls, fake growing balance, pressure for more; withdrawals need more 'fees'; later fake recovery offers. Advice: check you are on the real media site; check FINMA authorisation and warning list; never be pressured; stop contact; no more payments; report to cantonal police.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://cybercrimepolice.ch/de/faelle/online-anlagebetrueger-missbrauchen-prominente",
+      "title": "Missbräuchliche Verwendung von Promibildern",
+      "publisher": "cybercrimepolice.ch (Kantonspolizei Zürich)",
+      "evidence": "Spam and articles about celebrities (e.g. a fake report on Roger Federer) lead to trading platforms; after registering, a call centre 'broker' calls within minutes; fake early profits; withdrawals blocked; advice: check whether the firm has a FINMA licence; don't give anyone remote access.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.finma.ch/en/finma-public/warnungen/warnliste",
+      "title": "Warning list",
+      "publisher": "FINMA",
+      "evidence": "'These companies are not authorised and may be engaging in financial market activity without the requisite licence.' Also links to the list of authorised institutions.",
       "date": "",
       "checked": "2026-10-26",
       "verified": true
