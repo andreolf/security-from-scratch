@@ -766,6 +766,132 @@
       "date": "",
       "checked": "2026-10-26",
       "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/dam/de/sd-web/O6yLBijwgyl8/BACS-HJB-2025-2_DE.pdf",
+      "title": "Halbjahresbericht 2025/2 (PDF)",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "date": "2026-03-30",
+      "evidence": "p.6: more reports about fraudulent web shops that deliver no or inferior goods; many emphasise Swiss characteristics to build trust. p.11: phishing in the name of SwissPass and parcel services is still about 40 percent of all phishing URLs. p.16: classified-ads portals: criminals posed as buyers in a hurry, claimed to have paid, attached 'twint-rechnung.zip' infostealer malware. p.23: 824 reports of fraudulent web shops in H2 2025, 266 more than H1, peaks November–January (Christmas shopping); classified-ads fraud 462 reports.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/25w28-de",
+      "title": "Woche 28: Betrügerische Websites erkennen",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "date": "2025-07-15",
+      "evidence": "Fake shops increasing; check reviews critically (many 5-star reviews can be a warning sign; bad reviews are most helpful; no reviews is suspicious); check the web address for typos and odd additions; search adverts can be fake; domains younger than three months reported to BACS are practically always fraud; check .ch registration date via nic.ch.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/sicher-online-unterwegs",
+      "title": "Sicher online unterwegs",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "evidence": "Check unknown shops: read reviews; no reviews means a new shop, be careful; check the imprint for a plausible address, correct phone/email and valid commercial register number; prefer invoice to prepayment; avoid giving card numbers where possible, otherwise only on encrypted sites; check card statements and inform the card issuer of discrepancies; reviews can be fake; when selling, ship only after payment has arrived and don't trust payment confirmations by email; never enter e-banking login or card data on alleged shipping portals after a sale.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/online-shopping",
+      "title": "Online shopping",
+      "publisher": "FTC Consumer Advice",
+      "evidence": "(WebFetch.) Search the company name plus 'complaint' or 'scam'; pay by credit card when possible: it best protects you; https doesn't mean legitimate; you can dispute charges for items never received; never buy from sellers who insist on gift cards, wire transfers, payment apps or crypto; keep records. Re-fetched 2026-10-26: 'don't rely on star ratings alone because some reviews and ratings are fake'; 'Paying by credit card best protects you'; https 'doesn't mean it's a legitimate site'; dispute a charge for merchandise never received: letter must reach the card company within 60 days of the first bill showing the error; 'If you have a problem when you shop online, try to work it out directly with the seller... If that doesn't work, tell the FTC at ReportFraud.ftc.gov.'",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.swisscard.ch/de/privatkunden/services/3d-secure",
+      "title": "3-D Secure für sicheres Onlineshopping",
+      "publisher": "Swisscard AECS",
+      "evidence": "3-D Secure (Mastercard Identity Check, Visa Secure): after paying online by credit card you receive an SMS code or a 3-D Secure notification in the Swisscard app to confirm the payment; after approval the payment is confirmed.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/de/25w40-de",
+      "title": "Woche 40: Kleinanzeigen-Phishing – Angreifer verteilen neu Schadsoftware",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "date": "2025-10-07",
+      "evidence": "Fake buyer contacts seller, moves to WhatsApp (Swiss mobile number), sends a link or QR code to a fake PostFinance or payment-service page claiming the seller receives the money by 'confirming'; aim: card or e-banking data; new: 'Twint-Rechnung.zip' malware with pressure to open on a computer. Advice: treat files from buyers as malicious; never open attachments to confirm a payment; insist on your payment method; to receive money you never need to enter card details or confirm a code; check receipt in your own app or e-banking; don't trust screenshots, PDFs or emails; if infected disconnect, change passwords from another device, report to BACS and police.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://site.post.ch/en/about-us/security/phishing-and-fraud/recognizing-phishing",
+      "title": "Recognize phishing: check real Swiss Post messages",
+      "publisher": "Swiss Post",
+      "evidence": "Official Swiss Post websites use post.ch, poste.ch, posta.ch, swisspost.ch or swisspost.com; Swiss Post won't ask for passwords, SMS codes or complete credit card details by e-mail, SMS or WhatsApp; no threats or extremely short deadlines; only download Swiss Post apps from the App Store or Google Play, never via a link.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.bacs.admin.ch/en/ks22-1-en",
+      "title": "S-U-P-E-R.ch – Fake fees",
+      "publisher": "Federal Office for Cyber Security (BACS)",
+      "date": "2022-09-08",
+      "evidence": "Fake parcel/customs messages say payment is awaited; the link leads to a phishing site for card details or a subscription trap; genuine delivery services and the customs authority do not collect postage or fees in this way; compare the consignment number and contact the delivery service or customs authority if in doubt.",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://cybercrimepolice.ch/de/faelle/angeblich-nicht-abgeholtes-aliexpress-paket-fuehrt-zu-kreditkarten-phishing",
+      "title": "Angeblich nicht abgeholtes AliExpress-Paket führt zu Kreditkarten-Phishing",
+      "publisher": "cybercrimepolice.ch (Kantonspolizei Zürich)",
+      "evidence": "Email claims an uncollected AliExpress parcel; phishing site asks delivery questions, then a CHF 1.95 shipping fee, personal details and card details; a fake error asks you to enter the card again or another card. Advice: don't follow links; if you gave data, call your bank and block the cards; report to police.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://commission.europa.eu/topics/consumers/consumer-rights-and-complaints/resolve-your-consumer-complaint/european-consumer-centres-network-ecc-net_en",
+      "title": "European Consumer Centres Network (ECC-Net)",
+      "publisher": "European Commission",
+      "evidence": "Network of offices co-funded by the European Commission; if you live in the EU, Iceland or Norway, the ECC in your country can explain your rights, help settle a dispute with a seller in another EU country (or Iceland or Norway), and tell you whom to contact if they can't help. Switzerland is not listed.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.seco.admin.ch/de/wo-finde-ich-hilfe",
+      "title": "Wo finde ich Hilfe? (Wegweiser Online-Shopping)",
+      "publisher": "State Secretariat for Economic Affairs (SECO)",
+      "evidence": "Ombudsstelle E-Commerce handles complaints about online purchases where no amicable solution was found, free of charge; consumers can usually sue at their place of residence; simplified, low-cost procedure starting with conciliation; SECO can act for collective interests under the UWG (complaint form) but cannot enforce individual refunds.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://konsum.ch/de/ombudsstellen/ombudsstelle-e-commerce/",
+      "title": "Ombudsstelle E-Commerce",
+      "publisher": "Konsumentenforum kf",
+      "evidence": "Free help for complaints after an online purchase that you could not resolve with the company; requests via online form; phone 031 380 50 34 Mon–Fri 09:00–12:00; c/o Konsumentenforum kf, Belpstrasse 11, 3007 Bern.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.seco.admin.ch/de/einkaufen-im-ausland",
+      "title": "Einkaufen im Ausland (Wegweiser Online-Shopping)",
+      "publisher": "State Secretariat for Economic Affairs (SECO)",
+      "evidence": "Foreign goods generally must be declared and are subject to VAT and customs; carriers like DHL, UPS or Swiss Post handle customs declaration and bill the recipient; a .ch domain does not mean a Swiss company — check the seller's identity (imprint); only .swiss domains are certainly Swiss companies or citizens; counterfeits can be seized at the border.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
+    },
+    {
+      "url": "https://www.konsum.admin.ch/de/konsumenten-helpline",
+      "title": "Konsumenten-Helpline",
+      "publisher": "Federal Consumer Affairs Bureau (BFK)",
+      "evidence": "FAQ, list of ombudsman offices; written information form (not legal advice); helpline +41 (0)58 462 20 00, Monday, Wednesday and Friday 10:00–11:00.",
+      "date": "",
+      "checked": "2026-10-26",
+      "verified": true
     }
   ],
   "unverified": [

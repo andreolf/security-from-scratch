@@ -86,6 +86,48 @@ export const SCENES = {
       ['Pay the fee, it’s worth it.', false, 'This is a second scam. Don’t pay.'],
       ['Give them my bank login so they can find the money.', false, 'Never. Report it to the police instead.']]],
   ] },
+  fakeshop: { who: 'Online shop', intro: 'You are looking for a new coffee machine online.', turns: [
+    ['An advert shows your favourite coffee machine at 70% off, from a shop you have never heard of. A banner says “Swiss quality, Swiss shop”.', [
+      ['Before buying, search the shop’s name plus the word “scam”, and look for a real address and phone number.', true, 'Good. A few minutes of checking is the best protection. Fake shops often stress Swiss features to look trustworthy.'],
+      ['Buy at once before the offer ends.', false, 'A huge discount from an unknown shop is a reason to check first, not to hurry.'],
+      ['It ends in .ch, so it must be Swiss.', false, 'A .ch address does not prove a shop is Swiss. Check who runs it.']]],
+    ['The shop has 300 reviews, all five stars and all from the last few weeks. There is no address, only a contact form.', [
+      ['That is suspicious. I’ll buy from a shop I know instead.', true, 'Right. Many glowing reviews can be a warning sign, and a real shop shows its address and phone number.'],
+      ['300 happy customers can’t be wrong.', false, 'Reviews can be fake. Too many perfect ones is itself a warning sign.'],
+      ['Send them my phone number through the form to ask.', false, 'No need to share details with a shop you don’t trust. Choose another one.']]],
+    ['Suppose you still go to the checkout. The only payment option is a bank transfer in advance.', [
+      ['Stop. I don’t pay in advance by transfer to a shop I don’t know.', true, 'Exactly. With transfers the money is usually gone. Prefer invoice or credit card with shops you don’t know.'],
+      ['Transfer the money, it’s just this once.', false, 'Money sent by transfer to a fake shop is very hard to get back.'],
+      ['Pay half now and half later.', false, 'Half is still lost if the shop is fake.']]],
+  ] },
+  buyer: { who: 'Marketplace and WhatsApp', intro: 'You put your old armchair up for sale online for CHF 120.', turns: [
+    ['Within minutes a “buyer” writes: “I take it! I can’t come, a courier will collect it. Let’s continue on WhatsApp, here’s my number.”', [
+      ['Stay in the marketplace’s own messages, and be careful: a rush plus a move to WhatsApp is a known pattern.', true, 'Good. The Swiss cyber security office describes exactly this start.'],
+      ['Great, move to WhatsApp and send my address.', false, 'Moving the chat away from the marketplace is a warning sign. Stay put.'],
+      ['Lower the price to sell even faster.', false, 'The price is not the problem. The hurry is the warning sign.']]],
+    ['The buyer sends a link: “I paid already. Click here and confirm with your card so the money reaches you.”', [
+      ['Don’t click. To receive money you never need card details or codes. I check my own bank or TWINT app.', true, 'Exactly. The only proof of payment is money arriving in your own account.'],
+      ['Enter my card details to get my 120 francs.', false, 'This page steals card details. Getting paid never needs them.'],
+      ['Type the code from my bank into the page.', false, 'Never. That code would approve a payment out of your account.']]],
+    ['Next the buyer sends “Twint-Rechnung.zip”: “Open it on your computer, it’s the payment receipt!”', [
+      ['Don’t open it. Files from buyers can be harmful, and a receipt proves nothing.', true, 'Right. Screenshots, PDFs and emails can be faked. Only money in your own account counts.'],
+      ['Open it to be polite.', false, 'This kind of file can install harmful software that steals your passwords.'],
+      ['Ship the armchair, since there is a receipt.', false, 'Ship only after the money has really arrived in your account.']]],
+  ] },
+  parcel: { who: 'Text message', intro: 'You are waiting for a parcel this week.', turns: [
+    ['A text: “Your parcel could not be delivered. Pay CHF 1.95 here to arrange a new delivery: post-ch-delivery.info/…”', [
+      ['Don’t tap the link. Open the carrier’s own app or type its address myself.', true, 'Good. The address is not Swiss Post’s, and checking through the carrier itself is always safe.'],
+      ['It’s only CHF 1.95, so pay it.', false, 'The small fee is bait. The page wants your full card details.'],
+      ['Reply “STOP” to the message.', false, 'No need to reply. Check through the carrier, then delete it.']]],
+    ['Suppose you tapped the link and typed your card details. Now the page says: “Error. Please enter your card again, or use another card.”', [
+      ['Stop and call my bank at once to block the card.', true, 'Exactly. A fake error asking for a second card is a known trick. Blocking quickly limits the damage.'],
+      ['Try a second card.', false, 'That would give the criminals a second card.'],
+      ['Wait a day and see what happens.', false, 'Call your bank right away. Every hour counts.']]],
+    ['Another day, an email says a parcel from abroad owes customs fees.', [
+      ['Check with the carrier myself, using the tracking number from my own order.', true, 'Right. Real customs fees exist for some parcels from abroad, so check them through the carrier directly, never through a link.'],
+      ['Pay through the email link, customs is official.', false, 'Criminals copy customs and post messages. Use the carrier’s own site or app.'],
+      ['Forward it to friends to ask.', false, 'Better to check with the carrier directly.']]],
+  ] },
 };
 export default function (body, ctx) {
   const sc = SCENES[ctx.args.scene] || SCENES.popup; let t = 0, good = 0;
