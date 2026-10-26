@@ -19,7 +19,7 @@ export async function renderLesson(root, id) {
     <header class="lesson-head"><p class="kicker"><a href="#/phase/${p.id}">Phase ${pad2(p.number)} · ${esc(p.title)}</a></p>
       <h1>${titleHTML(L.title, L.highlight)}</h1><p class="lede-s">${esc(L.summary)}</p>
       <div class="lesson-meta"><span class="chip">Lesson ${id.replace('-', '.')}</span><span class="chip">About ${L.minutes} minutes</span>${done ? '<span class="chip on">Done</span>' : ''}</div>
-      <div class="actions"><button class="btn btn-quiet read-btn" type="button" data-read data-testid="read-aloud" aria-pressed="false">🔊 Read this lesson to me</button></div>
+      <div class="actions"><button class="btn btn-quiet read-btn" type="button" data-read data-testid="read-aloud" aria-pressed="false">🔊 Read this lesson to me</button></div><p class="muted" data-read-note data-testid="read-note" aria-live="polite" hidden></p>
     </header>
     <div class="prose">${L.html}</div>
     <section class="complete-card" aria-labelledby="done-h"><h2 id="done-h" style="margin-top:0">Finished this lesson?</h2><p>Tick it off. Your progress stays in this browser only.</p>
@@ -43,19 +43,19 @@ export async function renderLesson(root, id) {
 function readAloud(root) {
   const rb = root.querySelector('[data-read]');
   if (!('speechSynthesis' in window)) { rb.disabled = true; rb.textContent = 'Reading aloud is not available in this browser'; return; }
-  let on = false, cur = null;
+  let on = false, cur = null; const note = root.querySelector('[data-read-note]');
   const stop = () => { on = false; try { speechSynthesis.cancel(); } catch {} cur?.classList.remove('reading'); cur = null; rb.setAttribute('aria-pressed', 'false'); rb.textContent = '🔊 Read this lesson to me'; };
   const chunks = () => [root.querySelector('h1'), root.querySelector('.lede-s'), ...root.querySelectorAll('.prose :is(h2,h3,p,li,.step-text,figcaption)')]
     .filter((el) => el && el.innerText.trim() && !el.closest('.practice, .quiz, [hidden], details:not([open]), .xlink, .try-check') && !el.parentElement.closest('li'));
   rb.addEventListener('click', () => {
     if (on) return stop();
-    on = true; rb.setAttribute('aria-pressed', 'true'); rb.textContent = '■ Stop reading';
+    on = true; note.hidden = true; rb.setAttribute('aria-pressed', 'true'); rb.textContent = '■ Stop reading';
     const list = chunks(); let i = 0;
     const say = () => {
       cur?.classList.remove('reading'); if (!on || i >= list.length) return stop();
       cur = list[i++]; cur.classList.add('reading'); cur.scrollIntoView({ block: 'center', behavior: reducedMotion() ? 'auto' : 'smooth' });
       const u = new SpeechSynthesisUtterance(cur.innerText.replace(/[→←✓]/g, '')); u.lang = 'en-GB'; u.rate = 0.9;
-      u.onend = say; u.onerror = stop; speechSynthesis.speak(u);
+      u.onend = say; u.onerror = (e) => { if (e.error === 'interrupted' || e.error === 'canceled') return; stop(); note.hidden = false; note.textContent = 'Your device could not read this aloud. You can try another browser, or your phone’s own screen reader (VoiceOver on iPhone, TalkBack on Android).'; }; speechSynthesis.speak(u);
     };
     try { speechSynthesis.cancel(); } catch {} say();
   });

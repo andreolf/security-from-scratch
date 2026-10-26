@@ -17,7 +17,7 @@ const sources = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/sources.json
 export const norm = (u) => { try { const x = new URL(u); return (x.hostname.replace(/^www\./, '') + x.pathname).replace(/\/$/, '') + (x.hostname.startsWith('support.google') && x.searchParams.get('co') ? '?' + x.searchParams.get('co') : ''); } catch { return u; } };
 const known = new Map(sources.map((s) => [norm(s.url), s]));
 // Statistics, money amounts, and "Organisation says/warns/reports…" claims.
-export const STAT = /\b\d{1,3}(?:[,'’]\d{3})+\b|\b\d+(?:\.\d+)?\s?(?:%|percent|per cent|billion|million)\b|[$€£]\s?\d|\bCHF\s?\d/i;
+export const STAT = /\b\d{1,3}(?:[,'’]\d{3})+\b|\b\d+(?:\.\d+)?\s?(?:%|(?:percent|per cent|billion|million)\b)|[$€£]\s?\d|\bCHF\s?\d/i;
 export const ATTR = /\b(FBI|FTC|FCC|IC3|BACS|NCSC|CISA|TWINT|Europol|Interpol|Swiss police|police|Apple|Google|Have I Been Pwned|European Commission)\b[^.!?]{0,80}?\b(says?|said|warns?|reports?|recommends?|explains?|advises?|states?|lists?|describes?|counts?)\b|\baccording to\b/i;
 const LINK = /\]\(https?:\/\/|https?:\/\//;
 export function unsourced(blocks) {

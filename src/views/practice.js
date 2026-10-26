@@ -15,11 +15,12 @@ export function renderPractice(root, anchor) {
     ${list.map((e) => `<section class="practice-section" id="${e.anchor}" data-testid="${e.anchor}" aria-labelledby="${e.anchor}-h"><h2 id="${e.anchor}-h">${esc(practices[e.name]?.title || e.name)}</h2><p class="kicker">From lesson <a href="#/learn/${e.lesson.id}">${esc(e.lesson.id.replace('-', '.'))} · ${esc(e.lesson.title)}</a></p><div class="practice-slot" data-mounted="0"><p class="muted">${esc(practices[e.name]?.text || '')}</p></div></section>`).join('')}
     ${list.length ? '' : '<p>No practice exercises are ready yet.</p>'}</div>`;
   const byAnchor = new Map(list.map((e) => [e.anchor, e]));
-  const mount = (sec) => { const slot = sec.querySelector('.practice-slot'); if (slot.dataset.mounted === '1') return; slot.dataset.mounted = '1'; const e = byAnchor.get(sec.id); mountPractice(slot, e.name, e.args || {}); };
+  const mount = (sec) => { const slot = sec.querySelector('.practice-slot'); if (slot.dataset.mounted === '1') return slot.ready; slot.dataset.mounted = '1'; const e = byAnchor.get(sec.id); return (slot.ready = mountPractice(slot, e.name, e.args || {})); };
   const secs = [...root.querySelectorAll('.practice-section')];
   if (typeof IntersectionObserver === 'function') { const io = new IntersectionObserver((xs) => xs.forEach((x) => { if (x.isIntersecting) { mount(x.target); io.unobserve(x.target); } }), { rootMargin: '200px 0px' }); secs.forEach((s) => io.observe(s)); }
   else secs.forEach(mount);
-  const go = (id, smooth) => { const sec = document.getElementById(id); if (!sec) return; mount(sec); sec.scrollIntoView({ block: 'start', behavior: smooth && !matchMedia('(prefers-reduced-motion: reduce)').matches ? 'smooth' : 'auto' }); sec.querySelector('h2')?.focus?.(); };
+  // Mount every section up to the target first, so the layout above it no longer changes while scrolling.
+  const go = async (id, smooth) => { const sec = document.getElementById(id); if (!sec) return; const k = secs.indexOf(sec); await Promise.all(secs.slice(0, k + 1).map(mount)); sec.scrollIntoView({ block: 'start', behavior: smooth && !matchMedia('(prefers-reduced-motion: reduce)').matches ? 'smooth' : 'auto' }); sec.querySelector('h2')?.focus?.(); };
   root.querySelectorAll('[data-jump]').forEach((a) => a.addEventListener('click', (ev) => { ev.preventDefault(); history.replaceState(null, '', `#/practice#${a.dataset.jump}`); go(a.dataset.jump, true); }));
   if (anchor) requestAnimationFrame(() => go(anchor, false));
   return 'Practice';

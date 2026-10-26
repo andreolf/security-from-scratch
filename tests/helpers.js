@@ -28,8 +28,9 @@ export async function tapTargets(page) {
   });
   expect(bad, 'tap targets under 44px').toEqual([]);
 }
-export const seedPassedFoundations = (page, extra = {}) => page.addInitScript(([extra]) => {
+// Seed progress: phase checks passed (default: all core phases 00–11), stored under this site's key.
+export const seedPassed = (page, ids = Array.from({ length: 12 }, (_, i) => 'p' + String(i).padStart(2, '0')), extra = {}) => page.addInitScript(([ids, extra]) => {
   if (sessionStorage.getItem('seeded')) return; sessionStorage.setItem('seeded', '1');
-  const tests = {}; for (let i = 0; i <= 10; i++) tests['p' + String(i).padStart(2, '0')] = { best: 1, passed: true, date: '2026-10-26', attempts: 1 };
-  localStorage.setItem('aisfs-v1', JSON.stringify({ v: 1, xp: 0, lessons: {}, quiz: {}, tests, days: [], name: '', certs: {}, labs: {}, last: null, ...extra }));
-}, [extra]);
+  const tests = {}; for (const id of ids) tests[id] = { best: 1, passed: true, date: '2026-10-26', attempts: 1 };
+  localStorage.setItem('sfs-v1', JSON.stringify({ v: 1, lessons: {}, quiz: {}, tests, tries: {}, practice: {}, name: '', certs: {}, card: {}, last: null, ...extra }));
+}, [ids, extra]);
