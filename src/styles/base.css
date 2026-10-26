@@ -253,11 +253,31 @@ details summary { cursor: pointer; font-weight: 800; min-height: 44px; display: 
 .toast { position: fixed; left: 50%; bottom: 96px; transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 12px 18px; border-radius: 12px; font-weight: 800; z-index: 60; max-width: calc(100% - 32px); }
 
 /* Footer */
-.foot { border-top: 2px solid var(--line); padding: 28px 0 120px; font-size: 1.05rem; }
-.foot p { max-width: 75ch; }
-.foot-emergency { font-size: 1.2rem; }
-.foot-links { display: flex; flex-wrap: wrap; gap: 6px 10px; }
-.foot-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 4px; }
+/* Footer: its own band. Top row = brand + emergency callout; grid of three columns; muted bottom row. */
+.foot { background: var(--surface-2); border-top: 1px solid var(--line); margin-top: 0; padding: var(--space-7) 0 calc(var(--space-8) + 64px); font-size: 1.125rem; line-height: var(--leading-body); }
+.foot a { text-decoration: none; }
+.foot-brand:hover span:last-child, .foot-brand:focus-visible span:last-child { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.foot a:hover .foot-link-t, .foot a:focus-visible .foot-link-t, .foot-list:not(.foot-list-desc) a:hover, .foot-list:not(.foot-list-desc) a:focus-visible { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; text-decoration-color: var(--accent-ink); }
+.foot-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-5); padding-bottom: var(--space-6); border-bottom: 1px solid var(--line); }
+.foot-brand { display: inline-flex; align-items: center; gap: var(--space-3); min-height: var(--tap-min); font-weight: var(--weight-black); font-stretch: var(--stretch-expanded); font-size: clamp(var(--text-body), 4.6vw, var(--text-lg)); line-height: 1; white-space: nowrap; }
+.foot-sos { margin: 0; display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-2); padding: var(--space-4) var(--space-5); background: var(--surface); border: 2px solid var(--fg); border-radius: var(--radius); }
+.foot-sos-label { font-size: var(--text-sm); font-weight: var(--weight-extrabold); line-height: var(--leading-snug); }
+.foot-sos-nums { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: var(--space-6); }
+.foot-sos-nums > span { display: flex; flex-direction: column; gap: var(--space-1); white-space: nowrap; color: var(--muted-strong); font-size: var(--text-sm); }
+.foot-sos-nums b { color: var(--fg); font-weight: var(--weight-black); font-stretch: var(--stretch-expanded); font-size: var(--text-xl); line-height: 1; font-variant-numeric: tabular-nums; }
+.foot-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1.6fr); gap: var(--space-6) var(--space-7); padding: var(--space-6) 0; }
+.foot-h { margin: 0 0 var(--space-3); font-family: var(--font-body); font-size: var(--text-sm); font-weight: var(--weight-extrabold); text-transform: uppercase; letter-spacing: .06em; color: var(--muted-strong); line-height: var(--leading-snug); }
+.foot-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-1); }
+.foot-list a { display: flex; align-items: center; min-height: var(--tap-min); font-weight: var(--weight-bold); line-height: var(--leading-snug); }
+.foot-list-desc { gap: var(--space-3); }
+.foot-list-desc a { flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; padding: var(--space-1) 0; }
+.foot-link-d { font-weight: var(--weight-regular); font-size: var(--text-sm); color: var(--muted-strong); }
+.foot-about p { margin: 0 0 var(--space-3); max-width: 62ch; font-size: var(--text-body); }
+.foot-about p:last-child { margin-bottom: 0; }
+.foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2) var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--line); color: var(--muted-strong); font-size: var(--text-sm); }
+.foot-bottom p { margin: 0; }
+@media (max-width: 960px) { .foot-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); } .foot-about { grid-column: 1 / -1; } }
+@media (max-width: 600px) { .foot { padding-top: var(--space-6); } .foot-sos-nums { align-self: stretch; justify-content: space-between; gap: var(--space-4); } .foot-grid { grid-template-columns: minmax(0, 1fr); gap: var(--space-6); } .foot-sos { width: 100%; } }
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
 @media print {

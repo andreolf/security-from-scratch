@@ -132,7 +132,7 @@ export function renderAbout(root) {
     <h2>How facts are handled</h2><p>Every fact and number links to a source that was opened and read on the date shown. Phone steps were checked against Apple’s and Google’s own support pages. Phone menus change with updates, so if a step looks different on your phone, follow the linked support page. Anything not yet confirmed is marked <span class="flag">NEEDS SOURCED DATA</span>. Last full check: ${fmtDate(LAST_CHECKED)}.</p>
     <h2>Not yet checked</h2><ul>${(sources.unverified || []).map((u) => `<li>${esc(u)}</li>`).join('')}</ul>
     <h2>Practice exercises</h2><p>All practice exercises are simulations on this page. No real call is made, no message is sent, and no link opens a real website.</p>
-    <h2>Sister course</h2><p><a href="${esc(AI_SAFETY_URL)}" target="_blank" rel="noopener">AI Safety from Scratch</a> explains how AI works and how it can be misused, including voice clones and deepfakes.</p>
+    <h2>Sibling courses</h2><p>Lessons here link to <a href="${esc(AI_SAFETY_URL)}" target="_blank" rel="noopener">AI Safety from Scratch</a> wherever AI is involved, such as voice clones and deepfakes. All sibling courses are listed at the bottom of every page.</p>
     <h2>Source list</h2><ol class="sources-list" data-testid="sources">${sources.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>, ${esc(s.publisher)}${s.date ? `, ${esc(s.date)}` : ''}. Checked ${esc(s.checked)}.</li>`).join('')}</ol></div></div>`;
   return 'About and sources';
 }

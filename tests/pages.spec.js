@@ -54,3 +54,17 @@ test('body text is at least 20px', async ({ page }) => {
   const px = await page.evaluate(() => parseFloat(getComputedStyle(document.querySelector('.prose p')).fontSize));
   expect(px).toBeGreaterThanOrEqual(20);
 });
+test('footer: own band, emergency callout, three columns, links 44px with no underline at rest, no overflow', async ({ page }) => {
+  await go(page, '#/');
+  const f = page.locator('footer.foot');
+  await expect(f.getByTestId('foot-emergency')).toContainText('117');
+  await expect(f.getByTestId('foot-emergency')).toContainText('112');
+  await expect(f.getByTestId('foot-emergency')).toContainText('911');
+  await expect(f.locator('.foot-h')).toHaveText(['This course', 'More from Scratch', 'About']);
+  await expect(f.locator('.foot-list a')).toHaveCount(8);
+  const r = await f.locator('.foot-list a').evaluateAll((as) => as.map((a) => ({ h: a.getBoundingClientRect().height, d: getComputedStyle(a).textDecorationLine })));
+  for (const x of r) { expect(x.h).toBeGreaterThanOrEqual(43.5); expect(x.d).toBe('none'); }
+  await expect(f).toContainText('Nothing here recommends a wallet, a product or buying crypto.');
+  expect(await page.locator('main').innerText()).not.toMatch(/Sister course/);
+  await f.scrollIntoViewIfNeeded(); await noOverflow(page);
+});

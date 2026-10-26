@@ -30,7 +30,6 @@ export function renderHome(root) {
     </div>
   </section>
   <section class="section" aria-labelledby="map-h"><h2 id="map-h">The course, phase by phase</h2>${meter()}<div style="margin-top:16px">${phaseMap()}</div></section>
-  <section class="section" aria-labelledby="sib"><h2 id="sib">Sister course</h2><p style="max-width:60ch">Curious how AI voice clones and deepfakes work? <a href="${esc(AI_SAFETY_URL)}" target="_blank" rel="noopener" data-xlink="ai-safety">AI Safety from Scratch</a> explains it, and the two courses link to each other lesson by lesson.</p></section>
   </div>`;
   return '';
 }
