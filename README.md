@@ -2,7 +2,7 @@
 
 A free, calm course on everyday digital safety for older adults and the family members who help them: phone and text-message scams, phishing and fake websites, passwords, and more. English, for Switzerland, the EU and the US.
 
-**Status:** draft preview. 50 of 71 lessons are written (Phases 00–08). The site shows a “Draft preview” banner and is set to `noindex` until all lessons are done. Please don’t share or link to it yet.
+**Status:** draft preview. 54 of 71 lessons are written (Phases 00–09). The site shows a “Draft preview” banner and is set to `noindex` until all lessons are done. Please don’t share or link to it yet.
 
 Live preview: https://andreolf.github.io/security-from-scratch/
 
